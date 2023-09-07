@@ -19,9 +19,6 @@ aux_links:
 
 # Define Jekyll collections
 collections:
-  introduction:
-    permalink: "/:collection/:path"
-    output: true
   quickstart:
     permalink: "/:collection/:path"
     output: true
@@ -74,7 +71,7 @@ just_the_docs:
     quickstart:
       name: Quickstart
     water:
-      name: Linked Data Interactions Core Building Blocks
+      name: Water Data Space
     ldio:
       name: Linked Data Interactions Orchestrator
     ldi-nifi:
