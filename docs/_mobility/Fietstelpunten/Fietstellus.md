@@ -1,6 +1,6 @@
 ---
 layout: default
-parent: 1. Telraam
+parent: Fietstelpunten
 title: Fietstelpunten
 ---
 
