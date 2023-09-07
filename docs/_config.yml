@@ -19,19 +19,10 @@ aux_links:
 
 # Define Jekyll collections
 collections:
-  quickstart:
-    permalink: "/:collection/:path"
-    output: true
   water:
     permalink: "/:collection/:path"
     output: true
-  ldio:
-    permalink: "/:collection/:path"
-    output: true
-  ldi-nifi:
-    permalink: "/:collection/:path"
-    output: true
-  releasemanagement:
+  mobility:
     permalink: "/:collection/:path"
     output: true
 
@@ -65,19 +56,10 @@ search:
 
 just_the_docs:
   collections:
-
-    introduction:
-      name: Introduction to LDES
-    quickstart:
-      name: Quickstart
     water:
       name: Water Data Space
-    ldio:
-      name: Linked Data Interactions Orchestrator
-    ldi-nifi:
-      name: Linked Data Interactions for Apache NiFi
-    release:
-      name: Release Management
+    mobility:
+      name: Mobility Data Space
 
 
 enable_copy_code_button: true
