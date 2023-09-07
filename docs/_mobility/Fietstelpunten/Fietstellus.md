@@ -1,10 +1,7 @@
 ---
 layout: default
-title: Mobility
-parent: Fietstelpunten
-has_children: true
-has_toc: true
-nav_order: 3
+parent: Fietstellus
+title: Fietstellus
 ---
 
 # Fietstelpunten
