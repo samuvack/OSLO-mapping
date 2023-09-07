@@ -2,7 +2,7 @@
 layout: default
 title: Fietstelpunten
 has_children: true
-nav_order: 2
+nav_order: 1
 ---
 
 
@@ -12,7 +12,7 @@ Deze OSLO mapping heeft een cross check ondergaan en kan worden geïmplementeerd
 
 
 
-<div style="text-align: left;"><img src="../../images/Fietstelpunt.jpg" width="200" alt="My Image" id="hp"/>
+<div style="text-align: left;"><img src="../../../images/Fietstelpunt.jpg" width="200" alt="My Image" id="hp"/>
 
 
 
@@ -32,4 +32,4 @@ Fietstelpalen hebben ook een motiverende en sensibiliserende functie, fietsers w
 
 
 
-<p align="center"><img src="../../images/Fietstellus_schets.jpg" width="60%" text-align="center"></p>
+<p align="center"><img src="../../../images/Fietstellus_schets.jpg" width="60%" text-align="center"></p>
