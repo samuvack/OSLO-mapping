@@ -6,9 +6,9 @@ title: Fietstellus
 
 # Fietstelpunten
 
-```note
+{: .note }
 Deze OSLO mapping heeft een cross check ondergaan en kan worden geïmplementeerd. Het vereenvoudigd implementatiemodel (overview figuur) wordt later nog gefinaliseerd.
-```
+
 
 <div style="text-align: left;"><img src="../images/Fietstelpunt.jpg" width="200" alt="My Image" id="hp"/>
 
