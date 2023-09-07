@@ -1,5 +1,5 @@
-title: Technical Documentation
-description: Technical Documentation Flanders Smart Data Space
+title: OSLO mapping
+description: OSLO mapping
 remote_theme: just-the-docs/just-the-docs@v0.5.3
 
 url: https://just-the-docs.github.io
@@ -14,30 +14,15 @@ callouts:
     title: Tip
     color: green
 
-aux_links:
-  VSDS portal: https://www.vlaanderen.be/vlaamse-smart-data-space-portaal
 
 # Define Jekyll collections
 collections:
-  introduction:
+  water:
     permalink: "/:collection/:path"
     output: true
-  quickstart:
+  mobility:
     permalink: "/:collection/:path"
     output: true
-  core:
-    permalink: "/:collection/:path"
-    output: true
-  ldio:
-    permalink: "/:collection/:path"
-    output: true
-  ldi-nifi:
-    permalink: "/:collection/:path"
-    output: true
-  releasemanagement:
-    permalink: "/:collection/:path"
-    output: true
-
 
 # Enable or disable the site search
 # Supports true (default) or false
@@ -69,26 +54,18 @@ search:
 just_the_docs:
   collections:
 
-    introduction:
-      name: Introduction to LDES
-    quickstart:
-      name: Quickstart
-    core:
-      name: Linked Data Interactions Core Building Blocks
-    ldio:
-      name: Linked Data Interactions Orchestrator
-    ldi-nifi:
-      name: Linked Data Interactions for Apache NiFi
-    release:
-      name: Release Management
-
+    water:
+      name: Water Data Space
+    mobility:
+      name: Mobility Data Space
+    
 
 enable_copy_code_button: true
 
 
 
 
-footer_content: "Technical Documentation of the building blocks developed in the frame of the <a href=\"https://www.vlaanderen.be/vlaamse-smart-data-space-portaal\">Flanders Smart Data Space</a>."
+footer_content: " "
 
 
 # Footer "Edit this page on GitHub" link text
