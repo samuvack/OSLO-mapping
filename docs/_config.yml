@@ -25,7 +25,7 @@ collections:
   quickstart:
     permalink: "/:collection/:path"
     output: true
-  core:
+  water:
     permalink: "/:collection/:path"
     output: true
   ldio:
@@ -73,7 +73,7 @@ just_the_docs:
       name: Introduction to LDES
     quickstart:
       name: Quickstart
-    core:
+    water:
       name: Linked Data Interactions Core Building Blocks
     ldio:
       name: Linked Data Interactions Orchestrator
