@@ -1,5 +1,5 @@
-title: Technical Documentation
-description: Technical Documentation Flanders Smart Data Space
+title: OSLO mapping
+description: OSLO mapping
 remote_theme: just-the-docs/just-the-docs@v0.5.3
 
 url: https://just-the-docs.github.io
@@ -13,9 +13,6 @@ callouts:
   highlight:
     title: Tip
     color: green
-
-aux_links:
-  VSDS portal: https://www.vlaanderen.be/vlaamse-smart-data-space-portaal
 
 # Define Jekyll collections
 collections:
@@ -67,7 +64,7 @@ enable_copy_code_button: true
 
 
 
-footer_content: "Technical Documentation of the building blocks developed in the frame of the <a href=\"https://www.vlaanderen.be/vlaamse-smart-data-space-portaal\">Flanders Smart Data Space</a>."
+footer_content: " "
 
 
 # Footer "Edit this page on GitHub" link text
