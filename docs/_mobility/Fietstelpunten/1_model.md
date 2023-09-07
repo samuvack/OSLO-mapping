@@ -11,3 +11,4 @@ nav_order: 2
 <a href="https://raw.githubusercontent.com/samuvack/Implementatie-OSLO-mapping/main/images/Fietstellus_overview.jpg"><img src="../../../images/Fietstellus_overview.jpg" width="100%" text-align="center"></a>
 </div>
 
+![](../../../images/Fietstellus_overview.jpg)
