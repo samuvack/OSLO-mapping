@@ -8,7 +8,11 @@ nav_order: 1
 {: .note }
 Deze OSLO mapping heeft een cross check ondergaan en kan worden geïmplementeerd. Het vereenvoudigd implementatiemodel (overview figuur) wordt later nog gefinaliseerd.
 
-<div style="text-align: left;"><img src="https://raw.githubusercontent.com/samuvack/Implementatie-OSLO-mapping/main/images/Fietstelpunt.jpg" width="200" alt="My Image" id="hp"/>
+
+
+
+
+<div style="text-align: left;">
 
 De telpunten langs belangrijke fietsverbindingen verzamelen heel wat nuttige informatie. Dankzij deze fietstelpunten brengen we het verplaatsingsgedrag van fietsers in kaart. Zo maken we het fietsbeleid slimmer en accurater.
 
@@ -18,6 +22,11 @@ De fietstelpunten zijn fietstelpalen met display, maar ook onzichtbare fietstell
 <li>Wat is het aantal op piekmomenten?</li>
 <li>Wanneer zijn die piekmomenten?</li>
 <li>Wordt de route ook ‘s nachts gebruikt?</li>
+
+
+
+<img src="https://raw.githubusercontent.com/samuvack/Implementatie-OSLO-mapping/main/images/Fietstelpunt.jpg" width="200" alt="My Image" id="hp"/>
+
 
 Fietstelpalen hebben ook een motiverende en sensibiliserende functie, fietsers weten dat ze niet alleen zijn en ook de omgeving ziet dat mensen bewust een mobiliteitskeuze maken. De data die we hieruit verkrijgen helpt ons het fietsbeleid te optimaliseren.
 
