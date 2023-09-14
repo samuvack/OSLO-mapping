@@ -7,6 +7,8 @@ nav_order: 4
 
 # OSLO mapping
 
+Momenteel bevat de context file "https://data.vlaanderen.be/doc/applicatieprofiel/verkeersmetingen/ontwerpstandaard/2023-03-14/context/Verkeersmetingen-ap.jsonld" nog steeds issues (fixme.be e.d.). Dit is doorgegeven aan het OSLO team.
+
 ```json
 {
   "@context": [
