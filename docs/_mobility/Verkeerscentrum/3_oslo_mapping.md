@@ -158,7 +158,7 @@ nav_order: 4
             "Observatie.geobserveerdKenmerk": {
                 "@type": "Verkeerskenmerk",
                 "Verkeerskenmerk.type": "cl-vkt:aantal",
-                "Verkeerskenmerk.voertuigType": "cl-vrt:zwaarverkeer"
+                "Verkeerskenmerk.voertuigType": "cl-vrt:vrachtwagen"
             },
             "Observatie.geobserveerdObject": "_:rst001",
             "Observatie.fenomeentijd":":_fenomtime001",
@@ -173,7 +173,7 @@ nav_order: 4
             "Observatie.geobserveerdKenmerk": {
                 "@type": "Verkeerskenmerk",
                 "Verkeerskenmerk.type": "cl-vkt:snelheid",
-                "Verkeerskenmerk.voertuigType": "cl-vrt:zwaarverkeer"
+                "Verkeerskenmerk.voertuigType": "cl-vrt:vrachtwagen"
             },
             "Observatie.geobserveerdObject": "_:rst001",
             "Observatie.fenomeentijd":":_fenomtime001",

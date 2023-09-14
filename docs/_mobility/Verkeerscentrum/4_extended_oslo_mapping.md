@@ -154,7 +154,7 @@ nav_order: 5
         ],
         "https://data.vlaanderen.be/ns/verkeersmetingen#voertuigType": [
           {
-            "@id": "https://data.vlaanderen.be/doc/conceptscheme/VkmVoertuigType/zwaarverkeer"
+            "@id": "https://data.vlaanderen.be/doc/conceptscheme/VkmVoertuigType/vrachtwagen"
           }
         ]
       }
@@ -208,7 +208,7 @@ nav_order: 5
         ],
         "https://data.vlaanderen.be/ns/verkeersmetingen#voertuigType": [
           {
-            "@id": "https://data.vlaanderen.be/doc/conceptscheme/VkmVoertuigType/zwaarverkeer"
+            "@id": "https://data.vlaanderen.be/doc/conceptscheme/VkmVoertuigType/vrachtwagen"
           }
         ]
       }
