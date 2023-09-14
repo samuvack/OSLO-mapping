@@ -25,11 +25,11 @@ nav_order: 4
       "dcterms": "http://purl.org/dc/terms/",
       "time": "http://www.w3.org/2006/time#",
 
-      "cl-vrt": "https://data.vlaanderen.be/doc/conceptscheme/VkmVoertuigTypes",
-      "cl-vkt": "https://data.vlaanderen.be/doc/conceptscheme/VkmVerkeersKenmerkType",
-      "cl-trt": "https://inspire.ec.europa.eu/codelist/LinkDirectionValue",
-      "cl-mit": "https://data.vlaanderen.be/doc/conceptscheme/VkmMeetInstrumentType",
-      "cl-op": "https://data.vlaanderen.be/doc/conceptscheme/VkmObservatieProcedure",
+      "cl-vrt": "https://data.vlaanderen.be/doc/conceptscheme/VkmVoertuigTypes/",
+      "cl-vkt": "https://data.vlaanderen.be/doc/conceptscheme/VkmVerkeersKenmerkType/",
+      "cl-trt": "https://inspire.ec.europa.eu/codelist/LinkDirectionValue/",
+      "cl-mit": "https://data.vlaanderen.be/doc/conceptscheme/VkmMeetInstrumentType/",
+      "cl-op": "https://data.vlaanderen.be/doc/conceptscheme/VkmObservatieProcedure/",
       "cl-access": "http://publications.europa.eu/resource/authority/access-right/"
     }
   ],
@@ -141,7 +141,7 @@ nav_order: 4
       "Systeem.type": "cl-mit:fietstelslang",
       "Sensor.implementeert": {
         "@type": "Observatieproceduretype",
-        "Observatieprocedure.type": "cl-opt:type"
+        "Observatieprocedure.type": "cl-op:type"
       }
     }
   ]

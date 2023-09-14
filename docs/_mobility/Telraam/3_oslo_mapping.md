@@ -107,7 +107,7 @@ nav_order: 4
       "Observatie.geobserveerdKenmerk": {
         "@type": "Verkeerskenmerk",
         "Verkeerskenmerk.type": "cl-vkt:aantal",
-        "Verkeerskenmerk.voertuigType": "cl-vrt:zwaarverkeer"
+        "Verkeerskenmerk.voertuigType": "cl-vrt:vrachtwagen"
       },
       "Observatie.geobserveerdObject": "_:wgs426009",
       "Observatie.fenomeentijd": ":_fenomtime001",
