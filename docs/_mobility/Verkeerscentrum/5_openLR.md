@@ -17,4 +17,4 @@ Open vraag: zit deze data in de dataset van het verkeerscentrum
 Zoniet:
 Uit data van het verkeerscentrum halen we momenteel de locatie van het meetpunt. Aan de hand van een GIS functie, wordt het mogelijk om het dichtstbijzijnde wegsegment te vinden. Hierna kan de offset berekend worden.
 
-![Alt text](https://raw.githubusercontent.com/samuvack/OSLO-mapping/main/images/OpenLR_wegsegment.png)
+![Alt text](https://raw.githubusercontent.com/samuvack/OSLO-mapping/main/docs/images/OpenLR_wegsegment.png)

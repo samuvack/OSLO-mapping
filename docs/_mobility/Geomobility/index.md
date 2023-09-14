@@ -4,8 +4,7 @@ title: Geomobility
 has_children: true
 ---
 
-
-<div style="text-align: left;"><img src="https://raw.githubusercontent.com/samuvack/OSLO-mapping/main/images/GeoMobility.png" width="200" alt="My Image" id="hp"></div>
+<div style="text-align: left;"><img src="https://raw.githubusercontent.com/samuvack/OSLO-mapping/main/docs/images/GeoMobility.png" width="200" alt="My Image" id="hp"></div>
 
 Floating Car Data geeft een zeer goed beeld van de verkeerssituatie in een stad, maar soms is het essentieel om exact te weten hoeveel verkeer er in beide richtingen door een straat rijdt en wat de modal split is.
 
