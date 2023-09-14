@@ -5,11 +5,6 @@ has_children: true
 nav_order: 1
 ---
 
-{: .note }
-Deze OSLO mapping heeft een cross check ondergaan en kan worden geïmplementeerd. Het vereenvoudigd implementatiemodel (overview figuur) wordt later nog gefinaliseerd.
-
-
-
 
 
 <div style="text-align: left;">
@@ -31,5 +26,7 @@ De fietstelpunten zijn fietstelpalen met display, maar ook onzichtbare fietstell
 Fietstelpalen hebben ook een motiverende en sensibiliserende functie, fietsers weten dat ze niet alleen zijn en ook de omgeving ziet dat mensen bewust een mobiliteitskeuze maken. De data die we hieruit verkrijgen helpt ons het fietsbeleid te optimaliseren.
 
 </div>
+
+
 
 <p align="center"><img src="https://raw.githubusercontent.com/samuvack/Implementatie-OSLO-mapping/main/images/Fietstellus_schets.jpg" width="60%" text-align="center"></p>
