@@ -73,7 +73,7 @@ nav_order: 4
             "@type": "Punt",
             "Geometrie.gml": {
               "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>50.91618331151478,4.456121776137429</gml:coordinates><gml:Point>",
-              "@type": "geosparql:gmlliteral"
+              "@type": "geosparql:gmlLiteral"
             }
           },
           "Bemonsteringsobject.bemonsterdObject": "_:rri001"
@@ -120,7 +120,7 @@ nav_order: 4
         "@type": "Punt",
         "Geometrie.gml": {
           "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>14.13421178,46.15023795</gml:coordinates><gml:Point>",
-          "@type": "geosparql:gmlliteral"
+          "@type": "geosparql:gmlLiteral"
         }
       }
     },
@@ -131,7 +131,7 @@ nav_order: 4
         "@type": "Punt",
         "Geometrie.gml": {
           "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>17.13421178,49.15023795</gml:coordinates><gml:Point>",
-          "@type": "geosparql:gmlliteral"
+          "@type": "geosparql:gmlLiteral"
         }
       }
     },

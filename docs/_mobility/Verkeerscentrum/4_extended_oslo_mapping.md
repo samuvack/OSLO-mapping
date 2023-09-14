@@ -87,7 +87,7 @@ nav_order: 5
         "@type": ["http://www.opengis.net/ont/sf#Point"],
         "http://www.opengis.net/ont/geosparql#asGML": [
           {
-            "@type": "http://www.opengis.net/ont/geosparql#gmlliteral",
+            "@type": "http://www.opengis.net/ont/geosparql#gmlLiteral",
             "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/31370\"><gml:coordinates></gml:coordinates><gml:Point>"
           }
         ]
@@ -102,7 +102,7 @@ nav_order: 5
         "@type": ["http://www.opengis.net/ont/sf#Point"],
         "http://www.opengis.net/ont/geosparql#asGML": [
           {
-            "@type": "http://www.opengis.net/ont/geosparql#gmlliteral",
+            "@type": "http://www.opengis.net/ont/geosparql#gmlLiteral",
             "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/31370\"><gml:coordinates></gml:coordinates><gml:Point>"
           }
         ]
@@ -409,7 +409,7 @@ nav_order: 5
         "@type": ["http://www.opengis.net/ont/sf#Point"],
         "http://www.opengis.net/ont/geosparql#asGML": [
           {
-            "@type": "http://www.opengis.net/ont/geosparql#gmlliteral",
+            "@type": "http://www.opengis.net/ont/geosparql#gmlLiteral",
             "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/31370\"><gml:coordinates>144474.5297,208293.5324</gml:coordinates><gml:Point>"
           }
         ]

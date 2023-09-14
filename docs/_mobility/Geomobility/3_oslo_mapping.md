@@ -101,7 +101,7 @@ nav_order: 4
         "@type": "Punt",
         "Geometrie.gml": {
           "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates> 3.24239104986191, 51.2259355430829</gml:coordinates><gml:Point>",
-          "@type": "geosparql:gmlliteral"
+          "@type": "geosparql:gmlLiteral"
         }
       }
     },
@@ -112,7 +112,7 @@ nav_order: 4
         "@type": "Punt",
         "Geometrie.gml": {
           "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>3.24177950620651, 51.2256331896095</gml:coordinates><gml:Point>",
-          "@type": "geosparql:gmlliteral"
+          "@type": "geosparql:gmlLiteral"
         }
       }
     },
@@ -158,7 +158,7 @@ nav_order: 4
         "@type": "Punt",
         "Geometrie.gml": {
           "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>3.24177950620651, 51.2256331896095</gml:coordinates><gml:Point>",
-          "@type": "geosparql:gmlliteral"
+          "@type": "geosparql:gmlLiteral"
         }
       },
       "Verkeersmeetpunt.rijstrook": "_rst001"

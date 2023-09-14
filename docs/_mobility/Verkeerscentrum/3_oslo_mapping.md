@@ -133,7 +133,7 @@ nav_order: 4
         "@type": "Punt",
         "Geometrie.gml": {
           "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/31370\"><gml:coordinates></gml:coordinates><gml:Point>",
-          "@type": "geosparql:gmlliteral"
+          "@type": "geosparql:gmlLiteral"
         }
       }
     },
@@ -144,7 +144,7 @@ nav_order: 4
         "@type": "Punt",
         "Geometrie.gml": {
           "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/31370\"><gml:coordinates></gml:coordinates><gml:Point>",
-          "@type": "geosparql:gmlliteral"
+          "@type": "geosparql:gmlLiteral"
         }
       }
     },
@@ -249,8 +249,12 @@ nav_order: 4
       "Bemonsteringspunt.geometrie": {
         "@type": "Punt",
         "Geometrie.gml": {
-          "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/31370\"><gml:coordinates>144474.5297,208293.5324</gml:coordinates><gml:Point>",
-          "@type": "geosparql:gmlliteral"
+          "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/31370\"><gml:coordinates>144474.5297,208293.5324, offset(m)</gml:coordinates><gml:Point>",
+          "@type": "geosparql:gmlLiteral"
+        },
+        "Geometrie.wkt": {
+          "@value": "Point(144474.5297,208293.5324, offset(m))",
+          "@type": "geosparql:wktLiteral"
         }
       },
       "Bemonsteringspunt.netwerkreferentie": {
