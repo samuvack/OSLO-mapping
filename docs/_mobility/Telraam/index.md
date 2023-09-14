@@ -7,9 +7,7 @@ nav_order: 1
 
 # Telraam
 
-
-<div style="text-align: left;"><img src="../images/Telraam.jpg" width="200" alt="My Image" id="hp"/>
-
+<div style="text-align: left;"><img src="https://raw.githubusercontent.com/samuvack/Implementatie-OSLO-mapping/main/images/Telraam.jpg" width="200" alt="My Image" id="hp"/>
 
 Telraam is een oplossing (met burgers) voor het verzamelen van multimodale verkeersgegevens met een speciaal gebouwd, betaalbaar en gebruiksvriendelijk toestel.
 
@@ -17,10 +15,6 @@ Onze Telraam-toestel scant voortdurend een straat vanuit het raam van een burger
 
 </div>
 
+Fietstelpunt
 
- 
-
-Fietstelpunt 
-
-<p align="center"><img src="../images/Telraam_schets.jpg" width="60%" text-align="center"></p>
-
+<p align="center"><img src="https://raw.githubusercontent.com/samuvack/Implementatie-OSLO-mapping/main/images/Telraam_schets.jpg" width="60%" text-align="center"></p>

@@ -7,27 +7,26 @@ nav_order: 1
 
 # Verkeerscentrum
 
-
 # Verkeerscentrum - Meten-in-Vlaanderen (MIV)
 
 ```note
 Deze OSLO mapping heeft nog GEEN cross check ondergaan, er kunnen nog wijzigingen gebeuren na cross check. Het vereenvoudigd implementatiemodel (overview figuur) wordt later nog gefinaliseerd.
 ```
 
-<div style="text-align: left;"><img src="../images/verkeerscentrum.jpg" width="200" alt="My Image" id="hp"></div>
+<div style="text-align: left;"><img src="https://raw.githubusercontent.com/samuvack/Implementatie-OSLO-mapping/main/images/verkeerscentrum.jpg" width="200" alt="My Image" id="hp"></div>
 
 - Deze gegevens zijn afkomstig van dubbele meetlussen, hoofdzakelijk op snelwegen in het Vlaams gewest.
 - Verantwoordelijken voor deze gegevens zijn het [Agentschap Wegen en Verkeer (AWV)](http://www.wegenenverkeer.be) en het [Vlaams Verkeerscentrum (VVC)](http://www.verkeerscentrum.be).
 - De gegevens bevatten o.a. aantallen voertuigen en gemiddelde snelheden, opgedeeld in 5 voertuigklassen, per minuut geaggregeerd en de bijhorende locaties van de meetlussen.
 - De gegevens worden elke minuut geüpdatet.
 - Rijstroken logica:
-    - R: rijstrook
-    - B: Bijzonder Overrijdbare Bedding (BOB) of busbaan
-    - TR: meting van het verkeer in tegengestelde richting (meestal bij Tunnels) op de R-rijstrook
-    - P: Pechstrook
-    - W: parking of andere weg
-    - S: spitsstrook
-    - A: meetpunt op een gearceerd gedeelte van de weg
+  - R: rijstrook
+  - B: Bijzonder Overrijdbare Bedding (BOB) of busbaan
+  - TR: meting van het verkeer in tegengestelde richting (meestal bij Tunnels) op de R-rijstrook
+  - P: Pechstrook
+  - W: parking of andere weg
+  - S: spitsstrook
+  - A: meetpunt op een gearceerd gedeelte van de weg
 
 De nummering start bij R10 voor de eerste reguliere rijstrook op de hoofdrijbaan. De nummering stijgt van rechts/trager naar links/sneller.
 
@@ -44,6 +43,4 @@ De TR-rijstrook is identiek aan de overeenkomstige R-rijstrook (TR10=R10,TR11=R1
 Data set meetpunten: [Meetpunten Verkeerscentrum](https://raw.githubusercontent.com/samuvack/Implementatie-OSLO-mapping/main/docs/%C2%B4meetpunten_verkeerscentrum.json)
 Data set verkeersmeting: [Verkeersmeting Verkeerscentrum](https://raw.githubusercontent.com/samuvack/Implementatie-OSLO-mapping/main/docs/verkeerscentrum.json)
 
-
-
-<p align="center"><img src="../images/Verkeerscentrum_schets.jpg" width="60%" text-align="center"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/samuvack/Implementatie-OSLO-mapping/main/images/Verkeerscentrum_schets.jpg" width="60%" text-align="center"></p>
