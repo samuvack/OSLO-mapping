@@ -58,7 +58,7 @@ nav_order: 5
         "@type": ["http://www.w3.org/ns/adms#Identifier"],
         "skos:notation": [
           {
-            "@type": "https://data.vlaanderen.be/doc/conceptscheme/VkmRijstrookType/rechter_rijstrook",
+            "@type": "https://data.vlaanderen.be/doc/concept/VkmRijstrookType/rechter_rijstrook",
             "@value": "R10"
           }
         ]
@@ -124,12 +124,12 @@ nav_order: 5
         ],
         "https://data.vlaanderen.be/ns/verkeersmetingen#type": [
           {
-            "@id": "https://data.vlaanderen.be/doc/conceptscheme/VkmVerkeersKenmerkType/aantal"
+            "@id": "https://data.vlaanderen.be/doc/concept/VkmVerkeersKenmerkType/aantal"
           }
         ],
         "https://data.vlaanderen.be/ns/verkeersmetingen#voertuigType": [
           {
-            "@id": "https://data.vlaanderen.be/doc/conceptscheme/VkmVoertuigType/vrachtwagen"
+            "@id": "https://data.vlaanderen.be/doc/concept/VkmVoertuigType/vrachtwagen"
           }
         ]
       }
@@ -176,12 +176,12 @@ nav_order: 5
         ],
         "https://data.vlaanderen.be/ns/verkeersmetingen#type": [
           {
-            "@id": "https://data.vlaanderen.be/doc/conceptscheme/VkmVerkeersKenmerkType/snelheid"
+            "@id": "https://data.vlaanderen.be/doc/concept/VkmVerkeersKenmerkType/snelheid"
           }
         ],
         "https://data.vlaanderen.be/ns/verkeersmetingen#voertuigType": [
           {
-            "@id": "https://data.vlaanderen.be/doc/conceptscheme/VkmVoertuigType/vrachtwagen"
+            "@id": "https://data.vlaanderen.be/doc/concept/VkmVoertuigType/vrachtwagen"
           }
         ]
       }
@@ -228,12 +228,12 @@ nav_order: 5
         ],
         "https://data.vlaanderen.be/ns/verkeersmetingen#type": [
           {
-            "@id": "https://data.vlaanderen.be/doc/conceptscheme/VkmVerkeersKenmerkType/aantal"
+            "@id": "https://data.vlaanderen.be/doc/concept/VkmVerkeersKenmerkType/aantal"
           }
         ],
         "https://data.vlaanderen.be/ns/verkeersmetingen#voertuigType": [
           {
-            "@id": "https://data.vlaanderen.be/doc/conceptscheme/VkmVoertuigType/auto"
+            "@id": "https://data.vlaanderen.be/doc/concept/VkmVoertuigType/auto"
           }
         ]
       }
@@ -280,12 +280,12 @@ nav_order: 5
         ],
         "https://data.vlaanderen.be/ns/verkeersmetingen#type": [
           {
-            "@id": "https://data.vlaanderen.be/doc/conceptscheme/VkmVerkeersKenmerkType/snelheid"
+            "@id": "https://data.vlaanderen.be/doc/concept/VkmVerkeersKenmerkType/snelheid"
           }
         ],
         "https://data.vlaanderen.be/ns/verkeersmetingen#voertuigType": [
           {
-            "@id": "https://data.vlaanderen.be/doc/conceptscheme/VkmVoertuigType/auto"
+            "@id": "https://data.vlaanderen.be/doc/concept/VkmVoertuigType/auto"
           }
         ]
       }
@@ -332,12 +332,12 @@ nav_order: 5
         ],
         "https://data.vlaanderen.be/ns/verkeersmetingen#type": [
           {
-            "@id": "https://data.vlaanderen.be/doc/conceptscheme/VkmVerkeersKenmerkType/aantal"
+            "@id": "https://data.vlaanderen.be/doc/concept/VkmVerkeersKenmerkType/aantal"
           }
         ],
         "https://data.vlaanderen.be/ns/verkeersmetingen#voertuigType": [
           {
-            "@id": "https://data.vlaanderen.be/doc/conceptscheme/VkmVoertuigType/auto"
+            "@id": "https://data.vlaanderen.be/doc/concept/VkmVoertuigType/auto"
           }
         ]
       }
@@ -424,14 +424,14 @@ nav_order: 5
         "@type": ["http://www.w3.org/2004/02/skos/core#Concept"],
         "http://purl.org/dc/terms/type": [
           {
-            "@id": "https://data.vlaanderen.be/doc/conceptscheme/VkmObservatieProcedure/type"
+            "@id": "https://data.vlaanderen.be/doc/concept/VkmObservatieProcedure/type"
           }
         ]
       }
     ],
     "http://purl.org/dc/terms/type": [
       {
-        "@id": "https://data.vlaanderen.be/doc/conceptscheme/VkmMeetInstrumentType/verkeersmeting"
+        "@id": "https://data.vlaanderen.be/doc/concept/VkmMeetInstrumentType/standaard_Camera"
       }
     ]
   }
