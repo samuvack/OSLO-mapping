@@ -2,10 +2,7 @@
 layout: default
 title: Verkeerscentrum
 has_children: true
-nav_order: 1
 ---
-
-# Verkeerscentrum
 
 # Verkeerscentrum - Meten-in-Vlaanderen (MIV)
 
