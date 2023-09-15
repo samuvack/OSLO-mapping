@@ -123,6 +123,15 @@ nav_order: 4
     {
       "@id": "_:wgs001",
       "@type": "Wegsegment",
+      {
+      "@id": "_:wgs426009",
+      "@type": "Wegsegment",
+      "Wegsegment.geometriemiddenlijn": {
+        "Geometrie.gml": {
+          "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates></gml:coordinates><gml:Point>",
+          "@type": "geosparql:gmlLiteral"
+        }
+      },
       "Wegsegment.beginknoop": "_:wgkn001",
       "Wegsegment.eindknoop": "_:wgkn002"
     },
