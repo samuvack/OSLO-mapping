@@ -7,7 +7,6 @@ nav_order: 4
 
 # OSLO mapping
 
-Momenteel bevat de context file "https://raw.githubusercontent.com/samuvack/context/main/Verkeersmetingen-ap.jsonld" nog steeds issues (fixme.be e.d.). Dit is doorgegeven aan het OSLO team.
 
 ```json
 {
