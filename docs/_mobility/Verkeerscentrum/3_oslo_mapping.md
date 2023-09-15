@@ -259,25 +259,6 @@ Momenteel bevat de context file "https://data.vlaanderen.be/doc/applicatieprofie
           "@type": "geosparql:wktLiteral"
         }
       },
-      "Bemonsteringspunt.netwerkreferentie": {
-        "@type": "Netwerkreferentie",
-        "LineaireReferentie.vanPositie": {
-          "@type": "Lengte",
-          "KwantitatieveWaarde.waarde": "0",
-          "KwantitatieveWaarde.standaardEenheid": {
-            "@value": "m",
-            "@type": "ucum:ucumunit"
-          }
-        },
-        "LineaireReferentie.totPositie": {
-          "@type": "Lengte",
-          "KwantitatieveWaarde.waarde": "300",
-          "KwantitatieveWaarde.standaardEenheid": {
-            "@value": "m",
-            "@type": "ucum:ucumunit"
-          }
-        }
-      },
 
       "Verkeersmeetpunt.rijstrook": "_rst001"
     },

@@ -74,7 +74,7 @@ Momenteel bevat de context file "https://data.vlaanderen.be/doc/applicatieprofie
           "Bemonsteringspunt.geometrie": {
             "@type": "Punt",
             "Geometrie.gml": {
-              "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>50.91618331151478,4.456121776137429</gml:coordinates><gml:Point>",
+              "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>50.91618331151478,4.456121776137429, offset(m)</gml:coordinates><gml:Point>",
               "@type": "geosparql:gmlLiteral"
             }
           },
@@ -113,7 +113,14 @@ Momenteel bevat de context file "https://data.vlaanderen.be/doc/applicatieprofie
       "@id": "_:wgs001",
       "@type": "Wegsegment",
       "Wegsegment.beginknoop": "_:wgkn001",
-      "Wegsegment.eindknoop": "_:wgkn002"
+      "Wegsegment.eindknoop": "_:wgkn002",
+      "Wegsegment.geometriemiddenlijn":{
+        "@type": "LineString",
+        "Geometrie.wkt": {
+          "@value": "LINESTRING (30 10, 10 30, 40 40)",
+          "@type": "geosparql:wktLiteral"
+        }
+      }
     },
     {
       "@id": "_:wgkn001",

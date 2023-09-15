@@ -94,7 +94,14 @@ Momenteel bevat de context file "https://data.vlaanderen.be/doc/applicatieprofie
       "@id": "_:wgs001",
       "@type": "Wegsegment",
       "Wegsegment.beginknoop": "_:wgkn001",
-      "Wegsegment.eindknoop": "_:wgkn002"
+      "Wegsegment.eindknoop": "_:wgkn002",
+      "Wegsegment.geometriemiddenlijn":{
+        "@type": "LineString",
+        "Geometrie.wkt": {
+          "@value": "LINESTRING (30 10, 10 30, 40 40)",
+          "@type": "geosparql:wktLiteral"
+        }
+      }
     },
     {
       "@id": "_:wgkn001",

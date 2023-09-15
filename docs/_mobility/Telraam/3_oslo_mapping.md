@@ -74,8 +74,33 @@ Momenteel bevat de context file "https://data.vlaanderen.be/doc/applicatieprofie
           "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\">50.9346197016993 4.04451041920408,50.9346499094883 4.04468516398887,50.9346736897766 4.04476128017613, 50.9347048165154 4.04486091154096,50.9347897018035 4.0450104190652,50.9348297017355 4.04508041942127,50.9349798325647 4.04536795581668,50.9350979049717 4.04561050090522, 50.9351073291995 4.04563353497237,50.9351797011571 4.04581042002322<gml:coordinates></gml:coordinates><gml:Point>",
           "@type": "geosparql:gmlLiteral"
         }
+      },
+      "Wegsegment.beginknoop": "_:wgkn001",
+      "Wegsegment.eindknoop": "_:wgkn002"
+    },
+    {
+      "@id": "_:wgkn001",
+      "@type": "Wegknoop",
+      "Wegknoop.geometrie": {
+        "@type": "Punt",
+        "Geometrie.gml": {
+          "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>50.9346197016993 4.0445104192040</gml:coordinates><gml:Point>",
+          "@type": "geosparql:gmlLiteral"
+        }
       }
     },
+    {
+      "@id": "_:wgkn002",
+      "@type": "Wegknoop",
+      "Wegknoop.geometrie": {
+        "@type": "Punt",
+        "Geometrie.gml": {
+          "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>50.9351797011571 4.04581042002322</gml:coordinates><gml:Point>",
+          "@type": "geosparql:gmlLiteral"
+        }
+      }
+    },
+
     {
       "@id": "_:vkmfiets001",
       "@type": "Verkeersmeting",
@@ -143,6 +168,19 @@ Momenteel bevat de context file "https://data.vlaanderen.be/doc/applicatieprofie
       "Observatie.fenomeentijd": ":_fenomtime001",
       "Verkeersmeting.resultaat": 277.230655312846,
       "Observatie.uitgevoerdDoor": "_:mti001"
+    },
+     {
+      "@id": "_:mpt001",
+      "@type": "Verkeersmeetpunt",
+      "Bemonsteringspunt.geometrie": {
+        "@type": "Punt",
+        "Geometrie.gml": {
+          "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>virtual_x,virtual_y, offset(m)</gml:coordinates><gml:Point>",
+          "@type": "geosparql:gmlLiteral"
+        }
+      },
+
+      "Verkeersmeetpunt.rijstrook": "_rst001"
     },
     {
       "@id": "_:fenomtime001",
