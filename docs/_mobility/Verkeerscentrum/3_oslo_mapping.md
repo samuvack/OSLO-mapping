@@ -120,9 +120,6 @@ nav_order: 4
       },
       "Rijstrook.rijstrook": "R10"
     },
-    {
-      "@id": "_:wgs001",
-      "@type": "Wegsegment",
       {
       "@id": "_:wgs426009",
       "@type": "Wegsegment",
