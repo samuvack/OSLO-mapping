@@ -269,6 +269,25 @@ nav_order: 5
     ]
   },
   {
+    "@id": "_:mpt001",
+    "@type": [
+      "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt"
+    ],
+    "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape": [
+      {
+        "@type": [
+          "http://www.opengis.net/ont/sf#Point"
+        ],
+        "http://www.opengis.net/ont/geosparql#asGML": [
+          {
+            "@type": "http://www.opengis.net/ont/geosparql#gmlLiteral",
+            "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>4.456121776137429, 50.91618331151478,offset(m)</gml:coordinates><gml:Point>"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "@id": "_:mti001",
     "@type": [
       "https://www.w3.org/ns/sosa/Sensor"
