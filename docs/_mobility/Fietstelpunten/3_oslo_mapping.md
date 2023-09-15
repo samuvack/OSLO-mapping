@@ -62,7 +62,7 @@ Momenteel bevat de context file "https://data.vlaanderen.be/doc/applicatieprofie
       "@type": "Verkeersmeting",
       "Observatie.geobserveerdKenmerk": {
         "@type": "Verkeerskenmerk",
-        "Verkeerskenmerk.type": "cl-vkt:aantalvoertuigen",
+        "Verkeerskenmerk.type": "cl-vkt:aantal",
         "Verkeerskenmerk.voertuigType": "cl-vrt:fiets"
       },
       "Telling.resultaat": 60,
