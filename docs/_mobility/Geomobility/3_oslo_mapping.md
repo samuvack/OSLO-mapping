@@ -32,6 +32,10 @@ Momenteel bevat de context file "https://data.vlaanderen.be/doc/applicatieprofie
         "@type": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
         "@id": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result"
       },
+      "Rijrichting.netwerkreferentie": {
+         "@type": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
+        "@id": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result"
+      },
 
       "cl-vrt": "https://data.vlaanderen.be/doc/conceptscheme/VkmVoertuigType/",
       "cl-vkt": "https://data.vlaanderen.be/doc/conceptscheme/VkmVerkeersKenmerkType/",
@@ -95,7 +99,7 @@ Momenteel bevat de context file "https://data.vlaanderen.be/doc/applicatieprofie
       "@type": "Wegsegment",
       "Wegsegment.beginknoop": "_:wgkn001",
       "Wegsegment.eindknoop": "_:wgkn002",
-      "Wegsegment.geometriemiddenlijn":{
+      "Wegsegment.geometriemiddenlijn": {
         "@type": "LineString",
         "Geometrie.wkt": {
           "@value": "LINESTRING (30 10, 10 30, 40 40)",
@@ -131,7 +135,7 @@ Momenteel bevat de context file "https://data.vlaanderen.be/doc/applicatieprofie
       "Observatie.geobserveerdKenmerk": {
         "@type": "Verkeerskenmerk",
         "Verkeerskenmerk.type": "cl-vkt:aantal",
-        "Verkeerskenmerk.voertuigType": "cl-vrt:pcl"
+        "Verkeerskenmerk.voertuigType": "cl-vrt:fiets"
       },
       "Observatie.geobserveerdObject": "_:wgs001",
       "Observatie.fenomeentijd": ":_fenomtime001",
