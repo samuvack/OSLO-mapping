@@ -7,7 +7,6 @@ nav_order: 4
 
 # OSLO mapping
 
-
 ```json
 {
   "@context": [
@@ -32,21 +31,18 @@ nav_order: 4
       },
       "Rijrichting.netwerkreferentie": {
         "@id": "https://data.vlaanderen.be/ns/weg#Rijrichting.netwerkreferentie",
-        "@type": "https://data.vlaanderen.be/ns/netwerk/#LineaireReferentie",
+        "@type": "https://data.vlaanderen.be/ns/netwerk/#LineaireReferentie"
       },
       "Rijstrook.netwerkreferentie": {
-      "@id": "https://data.vlaanderen.be/ns/weg#Rijstrook.netwerkreferentie",
-      "@type": "https://data.vlaanderen.be/ns/netwerk/#LineaireReferentie"
+        "@id": "https://data.vlaanderen.be/ns/weg#Rijstrook.netwerkreferentie",
+        "@type": "https://data.vlaanderen.be/ns/netwerk/#LineaireReferentie"
       },
 
-
-
-
-      "cl-vrt": "https://data.vlaanderen.be/doc/conceptscheme/VkmVoertuigTypes/",
-      "cl-vkt": "https://data.vlaanderen.be/doc/conceptscheme/VkmVerkeersKenmerkType/",
+      "cl-vrt": "https://data.vlaanderen.be/doc/concept/VkmVoertuigTypes/",
+      "cl-vkt": "https://data.vlaanderen.be/doc/concept/VkmVerkeersKenmerkType/",
       "cl-trt": "https://inspire.ec.europa.eu/codelist/LinkDirectionValue/",
-      "cl-mit": "https://data.vlaanderen.be/doc/conceptscheme/VkmMeetInstrumentType/",
-      "cl-op": "https://data.vlaanderen.be/doc/conceptscheme/VkmObservatieProcedure/",
+      "cl-mit": "https://data.vlaanderen.be/doc/concept/VkmMeetInstrumentType/",
+      "cl-op": "https://data.vlaanderen.be/doc/concept/VkmObservatieProcedure/",
       "cl-access": "http://publications.europa.eu/resource/authority/access-right/"
     }
   ],
@@ -119,7 +115,7 @@ nav_order: 4
       "@type": "Rijrichting",
       "Rijrichting.netwerkreferentie": {
         "@type": "LineaireReferentie",
-         "LineaireReferentie.vanPositie": {
+        "LineaireReferentie.vanPositie": {
           "@type": "Lengte",
           "KwantitatieveWaarde.waarde": "0",
           "KwantitatieveWaarde.standaardEenheid": {

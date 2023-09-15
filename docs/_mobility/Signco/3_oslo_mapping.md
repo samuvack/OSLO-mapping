@@ -31,11 +31,11 @@ nav_order: 4
         "@id": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result"
       },
 
-      "cl-vrt": "https://data.vlaanderen.be/doc/conceptscheme/VkmVoertuigType/",
-      "cl-vkt": "https://data.vlaanderen.be/doc/conceptscheme/VkmVerkeersKenmerkType/",
+      "cl-vrt": "https://data.vlaanderen.be/doc/concept/VkmVoertuigType/",
+      "cl-vkt": "https://data.vlaanderen.be/doc/concept/VkmVerkeersKenmerkType/",
       "cl-trt": "https://inspire.ec.europa.eu/codelist/LinkDirectionValue/",
-      "cl-mit": "https://data.vlaanderen.be/doc/conceptscheme/VkmMeetInstrumentType/",
-      "cl-op": "https://data.vlaanderen.be/doc/conceptscheme/VkmObservatieProcedure/",
+      "cl-mit": "https://data.vlaanderen.be/doc/concept/VkmMeetInstrumentType/",
+      "cl-op": "https://data.vlaanderen.be/doc/concept/VkmObservatieProcedure/",
       "cl-access": "http://publications.europa.eu/resource/authority/access-right/"
     }
   ],

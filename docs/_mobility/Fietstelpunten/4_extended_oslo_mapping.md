@@ -104,7 +104,7 @@ nav_order: 5
                 "http://www.opengis.net/ont/geosparql#asGML": [
                   {
                     "@type": "http://www.opengis.net/ont/geosparql#gmlLiteral",
-                    "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>50.91618331151478,4.456121776137429</gml:coordinates><gml:Point>"
+                    "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>50.91618331151478,4.456121776137429, offset(m)</gml:coordinates><gml:Point>"
                   }
                 ]
               }
@@ -128,6 +128,53 @@ nav_order: 5
   {
     "@id": "_:rri001",
     "@type": ["https://data.vlaanderen.be/ns/weg#Rijrichting"],
+    "https://data.vlaanderen.be/ns/weg#Rijrichting.netwerkreferentie": [
+      {
+        "@type": ["https://data.vlaanderen.be/ns/netwerk/#LineaireReferentie"],
+        "https://data.vlaanderen.be/ns/weg#totPositie": [
+          {
+            "@type": ["https://schema.org/Distance"],
+            "https://schema.org/unitCode": [
+              {
+                "@type": "ucum:ucumunit",
+                "@value": "m"
+              }
+            ],
+            "https://schema.org/value": [
+              {
+                "@id": "600"
+              }
+            ]
+          }
+        ],
+        "https://data.vlaanderen.be/ns/weg#vanPositie": [
+          {
+            "@type": ["https://schema.org/Distance"],
+            "https://schema.org/unitCode": [
+              {
+                "@type": "ucum:ucumunit",
+                "@value": "m"
+              }
+            ],
+            "https://schema.org/value": [
+              {
+                "@id": "0"
+              }
+            ]
+          }
+        ],
+        "https://data.vlaanderen.be/ns/netwerk/#toepassingsRichting": [
+          {
+            "@id": "https://inspire.ec.europa.eu/codelist/LinkDirectionValue/beide"
+          }
+        ],
+        "https://data.vlaanderen.be/ns/weg#NetwerkElement": [
+          {
+            "@id": "_:wgs001"
+          }
+        ]
+      }
+    ],
     "https://data.vlaanderen.be/ns/weg#rijrichting": [
       {
         "@id": "https://inspire.ec.europa.eu/codelist/LinkDirectionValue/beide"
@@ -145,6 +192,17 @@ nav_order: 5
     "https://data.vlaanderen.be/ns/netwerk#eindknoop": [
       {
         "@id": "_:wgkn002"
+      }
+    ],
+    "https://data.vlaanderen.be/ns/weg#middellijnGeometrie": [
+      {
+        "@type": ["LineString"],
+        "http://www.opengis.net/ont/geosparql#asWKT": [
+          {
+            "@type": "http://www.opengis.net/ont/geosparql#wktLiteral",
+            "@value": "LINESTRING (30 10, 10 30, 40 40)"
+          }
+        ]
       }
     ]
   },
