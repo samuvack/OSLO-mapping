@@ -7,12 +7,12 @@ nav_order: 4
 
 # OSLO mapping
 
-Momenteel bevat de context file "https://data.vlaanderen.be/doc/applicatieprofiel/verkeersmetingen/ontwerpstandaard/2023-03-14/context/Verkeersmetingen-ap.jsonld" nog steeds issues (fixme.be e.d.). Dit is doorgegeven aan het OSLO team.
+Momenteel bevat de context file "https://raw.githubusercontent.com/samuvack/context/main/Verkeersmetingen-ap.jsonld" nog steeds issues (fixme.be e.d.). Dit is doorgegeven aan het OSLO team.
 
 ```json
 {
   "@context": [
-    "https://data.vlaanderen.be/doc/applicatieprofiel/verkeersmetingen/ontwerpstandaard/2023-03-14/context/Verkeersmetingen-ap.jsonld",
+    "https://raw.githubusercontent.com/samuvack/context/main/Verkeersmetingen-ap.jsonld",
     "https://data.vlaanderen.be/doc/applicatieprofiel/sensoren-en-bemonstering/kandidaatstandaard/2022-04-28/context/ap-sensoren-en-bemonstering.jsonld",
     "https://data.vlaanderen.be/doc/applicatieprofiel/observaties-en-metingen/kandidaatstandaard/2022-04-28/context/ap-observaties-en-metingen.jsonld",
     "https://raw.githubusercontent.com/samuvack/context/main/wegenregister.jsonld",
@@ -33,7 +33,7 @@ Momenteel bevat de context file "https://data.vlaanderen.be/doc/applicatieprofie
         "@id": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result"
       },
       "Rijrichting.netwerkreferentie": {
-         "@type": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
+        "@type": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
         "@id": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result"
       },
 
