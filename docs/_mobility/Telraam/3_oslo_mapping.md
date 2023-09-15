@@ -175,9 +175,7 @@ nav_order: 4
           "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>virtual_x,virtual_y, offset(m)</gml:coordinates><gml:Point>",
           "@type": "geosparql:gmlLiteral"
         }
-      },
-
-      "Verkeersmeetpunt.rijstrook": "_rst001"
+      }
     },
     {
       "@id": "_:fenomtime001",

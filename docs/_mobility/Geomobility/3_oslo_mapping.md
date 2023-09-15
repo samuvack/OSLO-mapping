@@ -7,7 +7,6 @@ nav_order: 4
 
 # OSLO mapping
 
-
 ```json
 {
   "@context": [
@@ -172,8 +171,7 @@ nav_order: 4
           "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>3.24177950620651, 51.2256331896095</gml:coordinates><gml:Point>",
           "@type": "geosparql:gmlLiteral"
         }
-      },
-      "Verkeersmeetpunt.rijstrook": "_rst001"
+      }
     },
 
     {
