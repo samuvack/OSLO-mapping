@@ -189,7 +189,7 @@ nav_order: 4
       "Bemonsteringspunt.geometrie": {
         "@type": "Punt",
         "Geometrie.gml": {
-          "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>51.041935,4.35714</gml:coordinates><gml:Point>",
+          "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>51.041935,4.35714, offset(m)</gml:coordinates><gml:Point>",
           "@type": "geosparql:gmlLiteral"
         }
       }
