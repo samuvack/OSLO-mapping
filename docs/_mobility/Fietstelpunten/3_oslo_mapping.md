@@ -26,6 +26,25 @@ nav_order: 4
       "dcterms": "http://purl.org/dc/terms/",
       "time": "http://www.w3.org/2006/time#",
 
+      "Verkeersmeting.resultaat": {
+        "@type": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
+        "@id": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result"
+      },
+      "Rijrichting.netwerkreferentie": {
+        "@id": "https://data.vlaanderen.be/ns/weg#Rijrichting.netwerkreferentie",
+        "@type": "https://data.vlaanderen.be/ns/netwerk/#LineaireReferentie",
+      },
+      "Rijstrook.netwerkreferentie": {
+      "@id": "https://data.vlaanderen.be/ns/weg#Rijstrook.netwerkreferentie",
+      "@type": "https://data.vlaanderen.be/ns/netwerk/#LineaireReferentie"
+      },
+      "Verkeersmetingverzameling.uitgevoerdMet": {
+      "@id": "https://fixme.com",
+      "@type": "@id"
+      },
+
+
+
       "cl-vrt": "https://data.vlaanderen.be/doc/conceptscheme/VkmVoertuigTypes/",
       "cl-vkt": "https://data.vlaanderen.be/doc/conceptscheme/VkmVerkeersKenmerkType/",
       "cl-trt": "https://inspire.ec.europa.eu/codelist/LinkDirectionValue/",
