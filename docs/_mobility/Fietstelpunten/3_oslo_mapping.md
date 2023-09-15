@@ -174,7 +174,7 @@ nav_order: 4
     {
       "@id": "_:mti001",
       "@type": "Sensor",
-      "Systeem.type": "cl-mit:fietstelslang",
+      "Systeem.type": "cl-mit:rubberslang",
       "Sensor.implementeert": {
         "@type": "Observatieproceduretype",
         "Observatieprocedure.type": "cl-op:type"

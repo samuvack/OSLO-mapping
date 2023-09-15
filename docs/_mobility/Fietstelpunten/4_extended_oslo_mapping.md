@@ -251,7 +251,7 @@ nav_order: 5
     ],
     "http://purl.org/dc/terms/type": [
       {
-        "@id": "https://data.vlaanderen.be/doc/concept/VkmMeetInstrumentType/fietstelslang"
+        "@id": "https://data.vlaanderen.be/doc/concept/VkmMeetInstrumentType/rubberslang"
       }
     ]
   }
