@@ -264,7 +264,7 @@ nav_order: 5
     ],
     "http://purl.org/dc/terms/type": [
       {
-        "@id": "https://data.vlaanderen.be/doc/concept/VkmMeetInstrumentType/atc"
+        "@id": "https://data.vlaanderen.be/doc/concept/VkmMeetInstrumentType/rubberslang"
       }
     ]
   }

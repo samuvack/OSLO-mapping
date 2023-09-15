@@ -172,6 +172,17 @@ nav_order: 4
       }
     },
     {
+      "@id": "_:mpt001",
+      "@type": "Verkeersmeetpunt",
+      "Bemonsteringspunt.geometrie": {
+        "@type": "Punt",
+        "Geometrie.gml": {
+          "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>4.456121776137429, 50.91618331151478,</gml:coordinates><gml:Point>",
+          "@type": "geosparql:gmlLiteral"
+        }
+      }
+    },
+    {
       "@id": "_:mti001",
       "@type": "Sensor",
       "Systeem.type": "cl-mit:rubberslang",

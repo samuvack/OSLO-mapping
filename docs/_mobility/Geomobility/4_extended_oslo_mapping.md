@@ -39,6 +39,53 @@ nav_order: 5
   {
     "@id": "_:rri001",
     "@type": ["https://data.vlaanderen.be/ns/weg#Rijrichting"],
+    "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result": [
+      {
+        "@type": ["https://data.vlaanderen.be/ns/netwerk/#LineaireReferentie"],
+        "https://data.vlaanderen.be/ns/weg#totPositie": [
+          {
+            "@type": ["https://schema.org/Distance"],
+            "https://schema.org/unitCode": [
+              {
+                "@type": "ucum:ucumunit",
+                "@value": "m"
+              }
+            ],
+            "https://schema.org/value": [
+              {
+                "@id": "600"
+              }
+            ]
+          }
+        ],
+        "https://data.vlaanderen.be/ns/weg#vanPositie": [
+          {
+            "@type": ["https://schema.org/Distance"],
+            "https://schema.org/unitCode": [
+              {
+                "@type": "ucum:ucumunit",
+                "@value": "m"
+              }
+            ],
+            "https://schema.org/value": [
+              {
+                "@id": "0"
+              }
+            ]
+          }
+        ],
+        "https://data.vlaanderen.be/ns/netwerk/#toepassingsRichting": [
+          {
+            "@id": "https://inspire.ec.europa.eu/codelist/LinkDirectionValue/inDirection"
+          }
+        ],
+        "https://data.vlaanderen.be/ns/weg#NetwerkElement": [
+          {
+            "@id": "_:wgs001"
+          }
+        ]
+      }
+    ],
     "https://data.vlaanderen.be/ns/weg#rijrichting": [
       {
         "@id": "https://inspire.ec.europa.eu/codelist/LinkDirectionValue/inDirection"
@@ -56,6 +103,17 @@ nav_order: 5
     "https://data.vlaanderen.be/ns/netwerk#eindknoop": [
       {
         "@id": "_:wgkn002"
+      }
+    ],
+    "https://data.vlaanderen.be/ns/weg#middellijnGeometrie": [
+      {
+        "@type": ["LineString"],
+        "http://www.opengis.net/ont/geosparql#asWKT": [
+          {
+            "@type": "http://www.opengis.net/ont/geosparql#wktLiteral",
+            "@value": "LINESTRING (30 10, 10 30, 40 40)"
+          }
+        ]
       }
     ]
   },
@@ -203,7 +261,7 @@ nav_order: 5
     ],
     "http://purl.org/dc/terms/type": [
       {
-        "@id": "https://data.vlaanderen.be/doc/concept/VkmMeetInstrumentType/atc"
+        "@id": "https://data.vlaanderen.be/doc/concept/VkmMeetInstrumentType/rubberslang"
       }
     ]
   }
