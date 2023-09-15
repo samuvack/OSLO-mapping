@@ -38,10 +38,7 @@ nav_order: 4
       "@id": "https://data.vlaanderen.be/ns/weg#Rijstrook.netwerkreferentie",
       "@type": "https://data.vlaanderen.be/ns/netwerk/#LineaireReferentie"
       },
-      "Verkeersmetingverzameling.uitgevoerdMet": {
-      "@id": "https://fixme.com",
-      "@type": "@id"
-      },
+
 
 
 
