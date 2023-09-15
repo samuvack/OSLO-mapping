@@ -14,7 +14,20 @@ nav_order: 5
     <td><b style="font-size:30px">Title 2</b></td>
  </tr>
  <tr>
-    <td>Lorem ipsum ...</td>
-    <td>Lorem ipsum ...</td>
+    <td>
+    
+```json
+test
+```
+    
+    
+    
+    </td>
+    <td>
+```json
+test
+```
+
+</td>
  </tr>
 </table>
