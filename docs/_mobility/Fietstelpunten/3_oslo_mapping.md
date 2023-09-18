@@ -89,7 +89,7 @@ nav_order: 4
               "@type": "geosparql:gmlLiteral"
             }
           },
-          "Bemonsteringsobject.bemonsterdObject": "_:rri001"
+          "Bemonsteringsobject.bemonsterdObject": "_:wgs001"
         },
         "Observatie.fenomeentijd": {
           "@type": "time:ProperInterval",
@@ -110,6 +110,8 @@ nav_order: 4
         }
       }
     },
+
+
     {
       "@id": "_:rri001",
       "@type": "Rijrichting",
@@ -136,6 +138,8 @@ nav_order: 4
       },
       "Rijrichting.rijrichting": "cl-trt:beide"
     },
+
+    
     {
       "@id": "_:wgs001",
       "@type": "Wegsegment",

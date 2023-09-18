@@ -192,7 +192,8 @@ nav_order: 4
           "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>51.041935,4.35714, offset(m)</gml:coordinates><gml:Point>",
           "@type": "geosparql:gmlLiteral"
         }
-      }
+      },
+      "Bemonsteringsobject.bemonsterdObject": "_:wgs001"
     },
 
     {

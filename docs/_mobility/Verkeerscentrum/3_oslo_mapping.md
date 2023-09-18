@@ -262,7 +262,8 @@ nav_order: 4
           "@value": "Point(144474.5297,208293.5324, offset(m))",
           "@type": "geosparql:wktLiteral"
         }
-      }
+      },
+      "Bemonsteringsobject.bemonsterdObject": "_:wgs001"
     },
 
     {
