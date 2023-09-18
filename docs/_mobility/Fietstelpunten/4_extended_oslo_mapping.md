@@ -43,7 +43,45 @@ nav_order: 5
     "@type": [
       "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeting"
     ],
-    "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.observedProperty": [
+    "https://data.vlaanderen.be/ns/observaties-en-metingen#Observatie.uitgevoerdDoor": [
+      {
+        "@id": "_:mti001"
+      }
+    ],
+    "https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime": [
+      {
+        "@type": [
+          "http://www.w3.org/2006/time#ProperInterval"
+        ],
+        "http://www.w3.org/2006/time#hasBeginning": [
+          {
+            "@type": [
+              "http://www.w3.org/2006/time#Instant"
+            ],
+            "http://www.w3.org/2006/time#inXSDDateTime": [
+              {
+                "@type": "xml-schema:dateTime",
+                "@value": "20230601T00:00:00.000"
+              }
+            ]
+          }
+        ],
+        "http://www.w3.org/2006/time#hasEnd": [
+          {
+            "@type": [
+              "http://www.w3.org/2006/time#Instant"
+            ],
+            "http://www.w3.org/2006/time#inXSDDateTime": [
+              {
+                "@type": "xml-schema:dateTime",
+                "@value": "20230601T00:00:15.000"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdKenmerk": [
       {
         "@type": [
           "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk"
@@ -60,80 +98,64 @@ nav_order: 5
         ]
       }
     ],
-    "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest": [
+    "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdObject": [
+      {
+        "@id": "_:mpt001"
+      }
+    ],
+    "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result": [
+      {
+        "@type": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
+        "@value": 60
+      }
+    ]
+  },
+  {
+    "@id": "_:mpt001",
+    "@type": [
+      "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt"
+    ],
+    "https://data.vlaanderen.be/ns/verkeersmetingen#bemonsterdObject": [
+      {
+        "@id": "_:wgs001"
+      }
+    ],
+    "https://data.vlaanderen.be/ns/weg#geometrie": [
       {
         "@type": [
-          "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt"
+          "http://www.opengis.net/ont/sf#Point"
         ],
-        "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime": [
+        "http://www.opengis.net/ont/geosparql#asWKT": [
           {
-            "@type": [
-              "http://www.w3.org/2006/time#ProperInterval"
-            ],
-            "http://www.w3.org/2006/time#hasBeginning": [
-              {
-                "@type": [
-                  "http://www.w3.org/2006/time#Instant"
-                ],
-                "http://www.w3.org/2006/time#inXSDDateTime": [
-                  {
-                    "@type": "xml-schema:dateTime",
-                    "@value": "20230601T00:00:00.000"
-                  }
-                ]
-              }
-            ],
-            "http://www.w3.org/2006/time#hasEnd": [
-              {
-                "@type": [
-                  "http://www.w3.org/2006/time#Instant"
-                ],
-                "http://www.w3.org/2006/time#inXSDDateTime": [
-                  {
-                    "@type": "xml-schema:dateTime",
-                    "@value": "20230601T00:00:15.000"
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.featureOfInterest": [
-          {
-            "@type": [
-              "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt"
-            ],
-            "http://def.isotc211.org/iso19156/2011/SamplingFeature#SF_SamplingFeature.sampledFeature": [
-              {
-                "@id": "_:rri001"
-              }
-            ],
-            "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape": [
-              {
-                "@type": [
-                  "http://www.opengis.net/ont/sf#Point"
-                ],
-                "http://www.opengis.net/ont/geosparql#asGML": [
-                  {
-                    "@type": "http://www.opengis.net/ont/geosparql#gmlLiteral",
-                    "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>50.91618331151478,4.456121776137429, offset(m)</gml:coordinates><gml:Point>"
-                  }
-                ]
-              }
-            ]
+            "@type": "http://www.opengis.net/ont/geosparql#wktLiteral",
+            "@value": "<http://www.opengis.net/def/crs/EPSG/0/4326> Point(50.91618331151478 4.456121776137429)"
           }
         ]
       }
     ],
-    "https://data.vlaanderen.be/ns/observaties-en-metingen#Observatie.uitgevoerdDoor": [
+    "https://data.vlaanderen.be/ns/verkeersmetingen#netwerkreferentie": [
       {
-        "@id": "_:mti001"
-      }
-    ],
-    "http://def.isotc211.org/iso19156/2011/CountObservation#OM_CountObservation.result": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 60
+        "@type": [
+          "https://data.vlaanderen.be/ns/netwerk/#Puntreferentie"
+        ],
+        "https://data.vlaanderen.be/ns/netwerk/#opPositie": [
+          {
+            "@type": [
+              "https://schema.org/Distance"
+            ],
+            "https://schema.org/unitCode": [
+              {
+                "@type": "ucum:ucumunit",
+                "@value": "m"
+              }
+            ],
+            "https://schema.org/value": [
+              {
+                "@id": "300"
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -145,43 +167,7 @@ nav_order: 5
     "https://data.vlaanderen.be/ns/weg#Rijrichting.netwerkreferentie": [
       {
         "@type": [
-          "https://data.vlaanderen.be/ns/netwerk/#LineaireReferentie"
-        ],
-        "https://data.vlaanderen.be/ns/weg#totPositie": [
-          {
-            "@type": [
-              "https://schema.org/Distance"
-            ],
-            "https://schema.org/unitCode": [
-              {
-                "@type": "ucum:ucumunit",
-                "@value": "m"
-              }
-            ],
-            "https://schema.org/value": [
-              {
-                "@id": "600"
-              }
-            ]
-          }
-        ],
-        "https://data.vlaanderen.be/ns/weg#vanPositie": [
-          {
-            "@type": [
-              "https://schema.org/Distance"
-            ],
-            "https://schema.org/unitCode": [
-              {
-                "@type": "ucum:ucumunit",
-                "@value": "m"
-              }
-            ],
-            "https://schema.org/value": [
-              {
-                "@id": "0"
-              }
-            ]
-          }
+          "LinkReferentie"
         ],
         "https://data.vlaanderen.be/ns/netwerk/#toepassingsRichting": [
           {
@@ -273,7 +259,7 @@ nav_order: 5
     "@type": [
       "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt"
     ],
-    "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape": [
+    "https://data.vlaanderen.be/ns/weg#geometrie": [
       {
         "@type": [
           "http://www.opengis.net/ont/sf#Point"

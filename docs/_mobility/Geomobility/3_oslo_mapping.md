@@ -26,6 +26,8 @@ nav_order: 4
       "dcterms": "http://purl.org/dc/terms/",
       "time": "http://www.w3.org/2006/time#",
       "adms": "http://www.w3.org/ns/adms#",
+      "ucum": "https://w3id.org/cdt/",
+      
       "Verkeersmeting.resultaat": {
         "@type": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
         "@id": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result"
@@ -135,7 +137,7 @@ nav_order: 4
         "Verkeerskenmerk.type": "cl-vkt:aantal",
         "Verkeerskenmerk.voertuigType": "cl-vrt:fiets"
       },
-      "Observatie.geobserveerdObject": "_:wgs001",
+      "Verkeersmeting.geobserveerdObject": "_:mpt001",
       "Observatie.fenomeentijd": ":_fenomtime001",
       "Verkeersmeting.resultaat": 5,
       "Observatie.uitgevoerdDoor": "_:mti001",
@@ -172,7 +174,7 @@ nav_order: 4
           "@type": "geosparql:gmlLiteral"
         }
       },
-      "Bemonsteringsobject.bemonsterdObject": "_:wgs001"
+      "Verkeersbemonsteringsobject.bemonsterdObject": "_:wgs001"
     },
 
     {
