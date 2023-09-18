@@ -120,7 +120,7 @@ nav_order: 5
       },
       "Rijstrook.rijstrook": "R10"
     },
-      {
+    {
       "@id": "_:wgs426009",
       "@type": "Wegsegment",
       "Wegsegment.geometriemiddenlijn": {
@@ -157,81 +157,81 @@ nav_order: 5
     {
       "@id": "_:vkmzwaar001",
       "@type": "Verkeersmeting",
-      "Observatie.geobserveerdKenmerk": {
+      "Verkeersmeting.geobserveerdKenmerk": {
         "@type": "Verkeerskenmerk",
         "Verkeerskenmerk.type": "cl-vkt:aantal",
         "Verkeerskenmerk.voertuigType": "cl-vrt:vrachtwagen"
       },
-      "Observatie.geobserveerdObject": "_:rst001",
-      "Observatie.fenomeentijd": ":_fenomtime001",
+      "Verkeersmeting.geobserveerdObject": "_:mpt001",
+      "Verkeersmeting.fenomeenTijd": ":_fenomtime001",
       "Verkeersmeting.resultaat": 0,
-      "Observatie.uitgevoerdDoor": "_:mti001",
+      "Verkeersmeting.uitgevoerdDoor": "_:mti001",
       "Verkeersmeetpunt": "_:mpt001",
       "dct:memberOf": "_:MIV001"
     },
     {
       "@id": "_:vkmzwaar001",
       "@type": "Verkeersmeting",
-      "Observatie.geobserveerdKenmerk": {
+      "Verkeersmeting.geobserveerdKenmerk": {
         "@type": "Verkeerskenmerk",
         "Verkeerskenmerk.type": "cl-vkt:snelheid",
         "Verkeerskenmerk.voertuigType": "cl-vrt:vrachtwagen"
       },
-      "Observatie.geobserveerdObject": "_:rst001",
-      "Observatie.fenomeentijd": ":_fenomtime001",
+      "Verkeersmeting.geobserveerdObject": "_:mpt001",
+      "Verkeersmeting.fenomeenTijd": ":_fenomtime001",
       "Verkeersmeting.resultaat": 0,
-      "Observatie.uitgevoerdDoor": "_:mti001",
+      "Verkeersmeting.uitgevoerdDoor": "_:mti001",
       "Verkeersmeetpunt": "_:mpt001",
       "dct:memberOf": "_:MIV001"
     },
     {
       "@id": "_:vkmauto001",
       "@type": "Verkeersmeting",
-      "Observatie.geobserveerdKenmerk": {
+      "Verkeersmeting.geobserveerdKenmerk": {
         "@type": "Verkeerskenmerk",
         "Verkeerskenmerk.type": "cl-vkt:aantal",
         "Verkeerskenmerk.voertuigType": "cl-vrt:auto"
       },
-      "Observatie.geobserveerdObject": "_:rst001",
-      "Observatie.fenomeentijd": ":_fenomtime001",
+      "Verkeersmeting.geobserveerdObject": "_:mpt001",
+      "Verkeersmeting.fenomeenTijd": ":_fenomtime001",
       "Verkeersmeting.resultaat": 0,
-      "Observatie.uitgevoerdDoor": "_:mti001",
+      "Verkeersmeting.uitgevoerdDoor": "_:mti001",
       "Verkeersmeetpunt": "_:mpt001",
       "dct:memberOf": "_:MIV001"
     },
     {
       "@id": "_:vkmauto001",
       "@type": "Verkeersmeting",
-      "Observatie.geobserveerdKenmerk": {
+      "Verkeersmeting.geobserveerdKenmerk": {
         "@type": "Verkeerskenmerk",
         "Verkeerskenmerk.type": "cl-vkt:snelheid",
         "Verkeerskenmerk.voertuigType": "cl-vrt:auto"
       },
-      "Observatie.geobserveerdObject": "_:rst001",
-      "Observatie.fenomeentijd": ":_fenomtime001",
+      "Verkeersmeting.geobserveerdObject": "_:mpt001",
+      "Verkeersmeting.fenomeenTijd": ":_fenomtime001",
       "Verkeersmeting.resultaat": 0,
-      "Observatie.uitgevoerdDoor": "_:mti001",
+      "Verkeersmeting.uitgevoerdDoor": "_:mti001",
       "Verkeersmeetpunt": "_:mpt001",
       "dct:memberOf": "_:MIV001"
     },
     {
       "@id": "_:vmtauto001",
       "@type": "Verkeersmeting",
-      "Observatie.geobserveerdKenmerk": {
+      "Verkeersmeting.geobserveerdKenmerk": {
         "@type": "Verkeerskenmerk",
         "Verkeerskenmerk.type": "cl-vkt:aantal",
         "Verkeerskenmerk.voertuigType": "cl-vrt:auto"
       },
-      "Observatie.geobserveerdObject": "_:wgs426009",
-      "Observatie.fenomeentijd": ":_fenomtime001",
+      "Verkeersmeting.geobserveerdObject": "_:mpt001",
+      "Verkeersmeting.fenomeenTijd": ":_fenomtime001",
       "Verkeersmeting.resultaat": 0,
-      "Observatie.uitgevoerdDoor": "_:mti001",
+      "Verkeersmeting.uitgevoerdDoor": "_:mti001",
       "Verkeersmeetpunt": "_:mpt001",
       "dct:memberOf": "_:MIV001"
     },
     {
       "@id": "_:fenomtime001",
-      "Observatie.fenomeentijd": {
+      "Verkeersmeting.fenomeenTijd": {
         "@type": "time:ProperInterval",
         "time:hasBeginning": {
           "@type": "time:Instant",
@@ -252,14 +252,14 @@ nav_order: 5
     {
       "@id": "_:mpt001",
       "@type": "Verkeersmeetpunt",
-      "Bemonsteringspunt.geometrie": {
+      "Verkeersmeetpunt.geometrie": {
         "@type": "Punt",
         "Geometrie.gml": {
           "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/31370\"><gml:coordinates>144474.5297,208293.5324, offset(m)</gml:coordinates><gml:Point>",
           "@type": "geosparql:gmlLiteral"
         },
         "Geometrie.wkt": {
-          "@value": "Point(144474.5297,208293.5324, offset(m))",
+          "@value": "<http://www.opengis.net/def/crs/EPSG/0/31370> Point(144474.5297,208293.5324)",
           "@type": "geosparql:wktLiteral"
         }
       }
@@ -276,5 +276,4 @@ nav_order: 5
     }
   ]
 }
-
 ```

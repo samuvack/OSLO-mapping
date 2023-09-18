@@ -384,11 +384,11 @@
     },
     "Verkeersmeting.uitgevoerdDoor": {
       "@container": "@set",
-      "@id": "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdDoor",
+      "@id": "https://data.vlaanderen.be/ns/observaties-en-metingen/#Verkeersmeting.uitgevoerdDoor",
       "@type": "@id"
     },
     "Verkeersmetingverzameling": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmetingverzameling",
-    "Verkeersmetingverzameling.fenomeentijd": {
+    "Verkeersmetingverzameling.fenomeenTijd": {
       "@id": "https://fixme.com",
       "@type": "@id"
     },

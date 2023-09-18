@@ -26,7 +26,6 @@ nav_order: 4
       "time": "http://www.w3.org/2006/time#",
       "ucum": "https://w3id.org/cdt/",
 
-
       "Verkeersmeting.resultaat": {
         "@type": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
         "@id": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result"
@@ -104,86 +103,97 @@ nav_order: 4
     {
       "@id": "_:vkmfiets001",
       "@type": "Verkeersmeting",
-      "Observatie.geobserveerdKenmerk": {
+      "Verkeersmeting.geobserveerdKenmerk": {
         "@type": "Verkeerskenmerk",
         "Verkeerskenmerk.type": "cl-vkt:aantal",
         "Verkeerskenmerk.voertuigType": "cl-vrt:fiets"
       },
-      "Observatie.geobserveerdObject": "_:wgs426009",
-      "Observatie.fenomeentijd": ":_fenomtime001",
+      "Verkeersmeting.geobserveerdObject": "_:mpt001",
+      "Verkeersmeting.fenomeenTijd": ":_fenomtime001",
       "Verkeersmeting.resultaat": 33.3209922251018,
-      "Observatie.uitgevoerdDoor": "_:mti001",
+      "Verkeersmeting.uitgevoerdDoor": "_:mti001",
       "dct:memberOf": "_:dataset001"
     },
     {
       "@id": "_:vkmvoet001",
       "@type": "Verkeersmeting",
-      "Observatie.geobserveerdKenmerk": {
+      "Verkeersmeting.geobserveerdKenmerk": {
         "@type": "Verkeerskenmerk",
         "Verkeerskenmerk.type": "cl-vkt:aantal",
         "Verkeerskenmerk.voertuigType": "cl-vrt:voetganger"
       },
-      "Observatie.geobserveerdObject": "_:wgs426009",
-      "Observatie.fenomeentijd": ":_fenomtime001",
+      "Verkeersmeting.geobserveerdObject": "_:mpt001",
+      "Verkeersmeting.fenomeenTijd": ":_fenomtime001",
       "Verkeersmeting.resultaat": 33.3209922251018,
-      "Observatie.uitgevoerdDoor": "_:mti001",
+      "Verkeersmeting.uitgevoerdDoor": "_:mti001",
       "dct:memberOf": "_:dataset001"
     },
     {
       "@id": "_:vkmzwaar001",
       "@type": "Verkeersmeting",
-      "Observatie.geobserveerdKenmerk": {
+      "Verkeersmeting.geobserveerdKenmerk": {
         "@type": "Verkeerskenmerk",
         "Verkeerskenmerk.type": "cl-vkt:aantal",
         "Verkeerskenmerk.voertuigType": "cl-vrt:vrachtwagen"
       },
-      "Observatie.geobserveerdObject": "_:wgs426009",
-      "Observatie.fenomeentijd": ":_fenomtime001",
+      "Verkeersmeting.geobserveerdObject": "_:mpt001",
+      "Verkeersmeting.fenomeenTijd": ":_fenomtime001",
       "Verkeersmeting.resultaat": 26.6567937800814,
-      "Observatie.uitgevoerdDoor": "_:mti001",
+      "Verkeersmeting.uitgevoerdDoor": "_:mti001",
       "dct:memberOf": "_:dataset001"
     },
     {
       "@id": "_:vkmauto001",
       "@type": "Verkeersmeting",
-      "Observatie.geobserveerdKenmerk": {
-        "@type": "Verkeerskenmerk",
-        "Verkeerskenmerk.type": "cl-vkt:aantal",
-        "Verkeerskenmerk.voertuigType": "cl-vrt:auto"
-      },
-      "Observatie.geobserveerdObject": "_:wgs426009",
-      "Observatie.fenomeentijd": ":_fenomtime001",
-      "Verkeersmeting.resultaat": 277.230655312846,
-      "Observatie.uitgevoerdDoor": "_:mti001"
-    },
-    {
-      "@id": "_:vmtauto001",
-      "@type": "Verkeersmeting",
-      "Observatie.geobserveerdKenmerk": {
+      "Verkeersmeting.geobserveerdKenmerk": {
         "@type": "Verkeerskenmerk",
         "Verkeerskenmerk.type": "cl-vkt:aantal",
         "Verkeerskenmerk.voertuigType": "cl-vrt:auto"
       },
       "Verkeersmeting.geobserveerdObject": "_:mpt001",
-      "Observatie.fenomeentijd": ":_fenomtime001",
+      "Verkeersmeting.fenomeenTijd": ":_fenomtime001",
       "Verkeersmeting.resultaat": 277.230655312846,
-      "Observatie.uitgevoerdDoor": "_:mti001"
+      "Verkeersmeting.uitgevoerdDoor": "_:mti001"
+    },
+    {
+      "@id": "_:vmtauto001",
+      "@type": "Verkeersmeting",
+      "Verkeersmeting.geobserveerdKenmerk": {
+        "@type": "Verkeerskenmerk",
+        "Verkeerskenmerk.type": "cl-vkt:aantal",
+        "Verkeerskenmerk.voertuigType": "cl-vrt:auto"
+      },
+      "Verkeersmeting.geobserveerdObject": "_:mpt001",
+      "Verkeersmeting.fenomeenTijd": ":_fenomtime001",
+      "Verkeersmeting.resultaat": 277.230655312846,
+      "Verkeersmeting.uitgevoerdDoor": "_:mti001"
     },
     {
       "@id": "_:mpt001",
       "@type": "Verkeersmeetpunt",
-      "Bemonsteringspunt.geometrie": {
+      "Verkeersmeetpunt.geometrie": {
         "@type": "Punt",
         "Geometrie.gml": {
-          "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>virtual_x,virtual_y, offset(m)</gml:coordinates><gml:Point>",
+          "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>virtual_x,virtual_y</gml:coordinates><gml:Point>",
           "@type": "geosparql:gmlLiteral"
+        }
+      },
+      "Verkeersmeetpunt.netwerkreferentie": {
+        "@type": "Puntreferentie",
+        "Puntreferentie.opPositie": {
+          "@type": "Lengte",
+          "KwantitatieveWaarde.waarde": "300",
+          "KwantitatieveWaarde.standaardEenheid": {
+            "@value": "m",
+            "@type": "ucum:ucumunit"
+          }
         }
       },
       "Verkeersbemonsteringsobject.bemonsterdObject": "_:wgs001"
     },
     {
       "@id": "_:fenomtime001",
-      "Observatie.fenomeentijd": {
+      "Verkeersmeting.fenomeenTijd": {
         "@type": "time:ProperInterval",
         "time:hasBeginning": {
           "@type": "time:Instant",
@@ -226,24 +236,8 @@ Dit zou eventueel wel kunnen, door dit element toe te voegen:
   "@id": "_:rri001",
   "@type": "Rijrichting",
   "Rijrichting.netwerkreferentie": {
-    "@type": "LineaireReferentie",
-    "LineaireReferentie.vanPositie": {
-      "@type": "Lengte",
-      "KwantitatieveWaarde.waarde": "0",
-      "KwantitatieveWaarde.standaardEenheid": {
-        "@value": "m",
-        "@type": "ucum:ucumunit"
-      }
-    },
-    "LineaireReferentie.totPositie": {
-      "@type": "Lengte",
-      "KwantitatieveWaarde.waarde": "600",
-      "KwantitatieveWaarde.standaardEenheid": {
-        "@value": "m",
-        "@type": "ucum:ucumunit"
-      }
-    },
-    "Netwerkreferentie.element": "_:wgs426009",
+    "@type": "Linkreferentie",
+    "Netwerkreferentie.element": "_:wgs001",
     "Linkreferentie.toepassingsRichting": "cl-trt:inDirection"
   },
   "Rijrichting.rijrichting": "cl-trt:inDirection"

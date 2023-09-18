@@ -86,7 +86,7 @@ nav_order: 4
       "Wegsegment.geometriemiddenlijn": {
         "@type": "LineString",
         "Geometrie.wkt": {
-          "@value": "LINESTRING (30 10, 10 30, 40 40)",
+          "@value": "<http://www.opengis.net/def/crs/EPSG/0/4326> LINESTRING (30 10, 10 30, 40 40)",
           "@type": "geosparql:wktLiteral"
         }
       }
@@ -116,21 +116,20 @@ nav_order: 4
     {
       "@id": "_:vkmauto001",
       "@type": "Verkeersmeting",
-      "Observatie.geobserveerdKenmerk": {
+      "Verkeersmeting.geobserveerdKenmerk": {
         "@type": "Verkeerskenmerk",
         "Verkeerskenmerk.type": "cl-vkt:aantal",
         "Verkeerskenmerk.voertuigType": "cl-vrt:fiets"
       },
       "Verkeersmeting.geobserveerdObject": "_:mpt001",
-      "Observatie.fenomeentijd": ":_fenomtime001",
+      "Verkeersmeting.fenomeenTijd": ":_fenomtime001",
       "Verkeersmeting.resultaat": 5,
-      "Observatie.uitgevoerdDoor": "_:mti001",
-      "Verkeersmeetpunt": "_:mpt001",
+      "Verkeersmeting.uitgevoerdDoor": "_:mti001",
       "dct:memberOf": "_:GM001"
     },
     {
       "@id": "_:fenomtime001",
-      "Observatie.fenomeentijd": {
+      "Verkeersmeting.fenomeenTijd": {
         "@type": "time:ProperInterval",
         "time:hasBeginning": {
           "@type": "time:Instant",
@@ -151,11 +150,22 @@ nav_order: 4
     {
       "@id": "_:mpt001",
       "@type": "Verkeersmeetpunt",
-      "Bemonsteringspunt.geometrie": {
+      "Verkeersmeetpunt.geometrie": {
         "@type": "Punt",
         "Geometrie.gml": {
-          "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>3.24177950620651, 51.2256331896095, offset(m)</gml:coordinates><gml:Point>",
+          "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>3.24177950620651, 51.2256331896095</gml:coordinates><gml:Point>",
           "@type": "geosparql:gmlLiteral"
+        }
+      },
+      "Verkeersmeetpunt.netwerkreferentie": {
+        "@type": "Puntreferentie",
+        "Puntreferentie.opPositie": {
+          "@type": "Lengte",
+          "KwantitatieveWaarde.waarde": "300",
+          "KwantitatieveWaarde.standaardEenheid": {
+            "@value": "m",
+            "@type": "ucum:ucumunit"
+          }
         }
       },
       "Verkeersbemonsteringsobject.bemonsterdObject": "_:wgs001"

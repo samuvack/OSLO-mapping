@@ -77,7 +77,7 @@ nav_order: 4
         "Verkeerskenmerk.voertuigType": "cl-vrt:fiets"
       },
       "Verkeersmeting.resultaat": 60,
-      "Observatie.uitgevoerdDoor": "_:mti001",
+      "Verkeersmeting.uitgevoerdDoor": "_:mti001",
       "Verkeersmeting.geobserveerdObject": "_:mpt001",
       "Verkeersmeting.fenomeenTijd": {
         "@type": "time:ProperInterval",
@@ -93,29 +93,33 @@ nav_order: 4
           "time:inXSDDateTime": {
             "@type": "xml-schema:dateTime",
             "@value": "20230601T00:00:15.000"
-          }}}
+          }
+        }
+      }
+    },
+    {
+      "@id": "_:mpt001",
+      "@type": "Verkeersmeetpunt",
+      "Verkeersmeetpunt.netwerkreferentie": {
+        "@type": "Puntreferentie",
+        "Puntreferentie.opPositie": {
+          "@type": "Lengte",
+          "KwantitatieveWaarde.waarde": "300",
+          "KwantitatieveWaarde.standaardEenheid": {
+            "@value": "m",
+            "@type": "ucum:ucumunit"
+          }
+        }
       },
-      {
-        "@id": "_:mpt001",
-        "@type": "Verkeersmeetpunt",
-        "Verkeersmeetpunt.netwerkreferentie":{
-          "@type": "Puntreferentie",
-          "Puntreferentie.opPositie":{
-              "@type": "Lengte",
-              "KwantitatieveWaarde.waarde": "300",
-              "KwantitatieveWaarde.standaardEenheid": {
-              "@value": "m",
-              "@type": "ucum:ucumunit"
-              }}},
-          "Verkeersmeetpunt.geometrie": {
-            "@type": "Punt",
-            "Geometrie.wkt": {
-                "@value": "<http://www.opengis.net/def/crs/EPSG/0/4326> Point(50.91618331151478 4.456121776137429)", 
-                "@type": "geosparql:wktLiteral"
-            }
-          },
-          "Verkeersbemonsteringsobject.bemonsterdObject": "_:wgs001"
-        },
+      "Verkeersmeetpunt.geometrie": {
+        "@type": "Punt",
+        "Geometrie.wkt": {
+          "@value": "<http://www.opengis.net/def/crs/EPSG/0/4326> Point(50.91618331151478 4.456121776137429)",
+          "@type": "geosparql:wktLiteral"
+        }
+      },
+      "Verkeersbemonsteringsobject.bemonsterdObject": "_:wgs001"
+    },
 
     {
       "@id": "_:rri001",
