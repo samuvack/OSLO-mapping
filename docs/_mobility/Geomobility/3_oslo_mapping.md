@@ -56,7 +56,7 @@ nav_order: 4
       "Dataset.beschrijving": [
         {
           "@language": "nl",
-          "@value": "Floating Car Data geeft een zeer goed beeld van de verkeerssituatie in een stad, maar soms is het essentieel om exact te weten hoeveel verkeer er in beide richtingen door een straat rijdt en wat de modal split is."
+          "@value": "Floating Car Data geeft een zeer goed beeld van de verkeerssituatie in een stad, maar soms is het essentieel om exact te weten hoeveel verkeer er in bothDirections richtingen door een straat rijdt en wat de modal split is."
         }
       ],
       "Dataset.toegankelijkheid": "cl-access:PUBLIC",

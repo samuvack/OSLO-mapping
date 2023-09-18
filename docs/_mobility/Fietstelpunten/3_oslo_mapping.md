@@ -126,10 +126,10 @@ nav_order: 4
       "@type": "Rijrichting",
       "Rijrichting.netwerkreferentie": {
         "@type": "LinkReferentie",
-        "Linkreferentie.toepassingsRichting": "cl-trt:beide",
+        "Linkreferentie.toepassingsRichting": "cl-trt:bothDirections",
         "Netwerkreferentie.element": "_:wgs001"
       },
-      "Rijrichting.rijrichting": "cl-trt:beide"
+      "Rijrichting.rijrichting": "cl-trt:bothDirections"
     },
     {
       "@id": "_:wgs001",
