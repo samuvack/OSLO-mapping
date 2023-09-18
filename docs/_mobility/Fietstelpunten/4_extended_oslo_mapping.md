@@ -210,7 +210,7 @@ nav_order: 5
         "http://www.opengis.net/ont/geosparql#asWKT": [
           {
             "@type": "http://www.opengis.net/ont/geosparql#wktLiteral",
-            "@value": "LINESTRING (30 10, 10 30, 40 40)"
+            "@value": "<http://www.opengis.net/def/crs/EPSG/0/4326> LINESTRING (30 10, 10 30, 40 40)"
           }
         ]
       }

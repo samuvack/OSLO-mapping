@@ -27,7 +27,7 @@ nav_order: 4
       "time": "http://www.w3.org/2006/time#",
       "adms": "http://www.w3.org/ns/adms#",
       "ucum": "https://w3id.org/cdt/",
-      
+
       "Verkeersmeting.resultaat": {
         "@type": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
         "@id": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result"
@@ -71,25 +71,9 @@ nav_order: 4
       "@id": "_:rri001",
       "@type": "Rijrichting",
       "Rijrichting.netwerkreferentie": {
-        "@type": "LineaireReferentie",
-        "LineaireReferentie.vanPositie": {
-          "@type": "Lengte",
-          "KwantitatieveWaarde.waarde": "0",
-          "KwantitatieveWaarde.standaardEenheid": {
-            "@value": "m",
-            "@type": "ucum:ucumunit"
-          }
-        },
-        "LineaireReferentie.totPositie": {
-          "@type": "Lengte",
-          "KwantitatieveWaarde.waarde": "600",
-          "KwantitatieveWaarde.standaardEenheid": {
-            "@value": "m",
-            "@type": "ucum:ucumunit"
-          }
-        },
-        "Netwerkreferentie.element": "_:wgs001",
-        "Linkreferentie.toepassingsRichting": "cl-trt:inDirection"
+        "@type": "Linkreferentie",
+        "Linkreferentie.toepassingsRichting": "cl-trt:inDirection",
+        "Netwerkreferentie.element": "_:wgs001"
       },
       "Rijrichting.rijrichting": "cl-trt:inDirection"
     },
