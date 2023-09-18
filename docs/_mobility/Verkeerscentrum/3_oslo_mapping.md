@@ -102,7 +102,7 @@ nav_order: 4
       "Rijstrook.netwerkreferentie": {
         "@type": "Linkreferentie",
         "Netwerkreferentie.element": "_:wgs001",
-        "Linkreferentie.toepassingsRichting": "cl-trt:inDirection",
+        "Linkreferentie.toepassingsRichting": "cl-trt:inDirection"
       },
       "Rijstrook.rijstrook": "R10"
     },
