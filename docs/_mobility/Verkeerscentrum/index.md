@@ -15,7 +15,7 @@ has_children: true
 - Rijstroken logica:
   - R: rijstrook
   - B: Bijzonder Overrijdbare Bedding (BOB) of busbaan
-  - TR: meting van het verkeer in tegengestelde richting (meestal bij Tunnels) op de R-rijstrook
+  - TR: meting van het verkeer in inOppositeDirectione richting (meestal bij Tunnels) op de R-rijstrook
   - P: Pechstrook
   - W: parking of andere weg
   - S: spitsstrook

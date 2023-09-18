@@ -79,9 +79,9 @@ nav_order: 4
       "Rijrichting.netwerkreferentie": {
         "@type": "LineaireReferentie",
         "Netwerkreferentie.element": "_:wgs001",
-        "Linkreferentie.toepassingsRichting": "cl-trt:tegengesteld"
+        "Linkreferentie.toepassingsRichting": "cl-trt:inOppositeDirection"
       },
-      "Rijrichting.rijrichting": "cl-trt:tegengesteld"
+      "Rijrichting.rijrichting": "cl-trt:inOppositeDirection"
     },
 
     {
