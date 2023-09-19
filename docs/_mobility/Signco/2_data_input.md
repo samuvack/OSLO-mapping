@@ -7,7 +7,7 @@ nav_order: 3
 
 # Data input
 
-Test data wordt opgehaald via de Signco Swagger API: https://devapi.signcoserv.be/swagger/index.html
+Test data wordt opgehaald via de Signco Swagger API: [](https://devapi.signcoserv.be/swagger/index.html)
 
 ## Site voorbeeld Signco 
 ![Alt text](image.png)
