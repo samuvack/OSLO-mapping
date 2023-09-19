@@ -3,7 +3,7 @@ import openai
 openai.api_type = "azure"
 openai.api_base = "https://gpt92023.openai.azure.com/"
 openai.api_version = "2023-07-01-preview"
-openai.api_key = '75fae0ec5d9744d2b886fd40b8524b89'
+openai.api_key = ''
 # Load your training data
 with open("training_dataset.txt", "r") as f:
     training_data = f.read()
