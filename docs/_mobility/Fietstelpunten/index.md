@@ -4,6 +4,8 @@ title: Fietstelpunten
 has_children: true
 ---
 
+# Fietstelpunten
+
 <div style="text-align: left;">
 
 De telpunten langs belangrijke fietsverbindingen verzamelen heel wat nuttige informatie. Dankzij deze fietstelpunten brengen we het verplaatsingsgedrag van fietsers in kaart. Zo maken we het fietsbeleid slimmer en accurater.

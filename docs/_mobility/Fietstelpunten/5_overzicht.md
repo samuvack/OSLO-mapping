@@ -6,6 +6,41 @@ nav_order: 5
 ---
 
 
+# Verkeersmeting type transportmiddel
+
+
+```json
+"type": "FIETSERS",
+"aantal": 0
+```
+
+```json
+{
+  "@context": [
+ "https://data.vlaanderen.be/doc/applicatieprofiel/verkeersmetingen/ontwerpstandaard/2023-03-14/context/Verkeersmetingen-ap.jsonld",
+ "cl-vrt": "https://data.vlaanderen.be/doc/concept/VkmVoertuigTypes/",
+ "cl-vkt": "https://data.vlaanderen.be/doc/concept/VkmVerkeersKenmerkType/",
+],
+
+   "@graph": [
+    {
+      "@id": "_:vrm001",
+      "@type": "Verkeersmeting",
+      "Verkeersmeting.geobserveerdKenmerk": {
+        "@type": "Verkeerskenmerk",
+        "Verkeerskenmerk.type": "cl-vkt:aantal",
+        "Verkeerskenmerk.voertuigType": "cl-vrt:fiets"
+      },
+      "Verkeersmeting.resultaat": 60,
+      "Verkeersmeting.uitgevoerdDoor": "_:mti001",
+      "Verkeersmeting.geobserveerdObject": "_:mpt001",
+      "Verkeersmeting.fenomeenTijd": ":_fenomtime001"
+    }
+   ]
+
+```
+
+
 
 
 

@@ -18,7 +18,7 @@ nav_order: 3
 "type": "FIETSERS",
 "van":"2023-06-01 00:00:00.0",
 "tot": "2023-06-01 00:15:00.0",
-"aantal": 0
+"aantal": 60
 }
 {
 "site ID": 47,
@@ -26,7 +26,7 @@ nav_order: 3
 "type": "FIETSERS",
 "van":"2023-06-01 00:00:00.0",
 "tot": "2023-06-01 00:15:00.0",
-"aantal": 0
+"aantal": 100
 }],
 
 "sites":

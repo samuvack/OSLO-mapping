@@ -46,90 +46,117 @@ nav_order: 4
       "cl-access": "http://publications.europa.eu/resource/authority/access-right/"
     }
   ],
-  
+
   "@graph": [
     {
-      "@id": "_:tellusdata001",
-      "@type": "Dataset",
-      "Dataset.titel": {
-        "@language": "nl",
-        "@value": "Fietstellingen - Agentschap Wegen en Verkeer"
-      },
-      "Dataset.beschrijving": [
-        {
-          "@language": "nl",
-          "@value": "Deze dataset omvat zowel de automatische fietstellingen van AWV, als de locaties waar de tellingen plaatsvinden."
-        }
-      ],
-      "Dataset.toegankelijkheid": "cl-access:PUBLIC",
-      "Dataset.trefwoord": [
-        {
-          "@language": "nl",
-          "@value": "fietstellingen"
-        }
-      ]
+    "@id": "_:tellusdata001",
+    "@type": "Dataset",
+    "Dataset.titel": {
+      "@language": "nl",
+      "@value": "Fietstellingen - Agentschap Wegen en Verkeer"
     },
-    {
-      "@id": "_:vrm001",
-      "@type": "Verkeersmeting",
-      "Verkeersmeting.geobserveerdKenmerk": {
-        "@type": "Verkeerskenmerk",
-        "Verkeerskenmerk.type": "cl-vkt:aantal",
-        "Verkeerskenmerk.voertuigType": "cl-vrt:fiets"
+    "Dataset.beschrijving": [
+      {
+        "@language": "nl",
+        "@value": "Deze dataset omvat zowel de automatische fietstellingen van AWV, als de locaties waar de tellingen plaatsvinden."
+      }
+    ],
+    "Dataset.toegankelijkheid": "cl-access:PUBLIC",
+    "Dataset.trefwoord": [
+      {
+        "@language": "nl",
+        "@value": "fietstellingen"
+      }
+    ]
+  },
+  {
+    "@id": "_:vrm001",
+    "@type": "Verkeersmeting",
+    "Verkeersmeting.geobserveerdKenmerk": {
+      "@type": "Verkeerskenmerk",
+      "Verkeerskenmerk.type": "cl-vkt:aantal",
+      "Verkeerskenmerk.voertuigType": "cl-vrt:fiets"
+    },
+    "Verkeersmeting.resultaat": 60,
+    "Verkeersmeting.uitgevoerdDoor": "_:mti001",
+    "Verkeersmeting.geobserveerdObject": "_:mpt001",
+    "Verkeersmeting.fenomeenTijd": ":_fenomtime001"
+  },
+  {
+      "@id": ":_fenomtime001",
+      "@type": "time:ProperInterval",
+      "time:hasBeginning": {
+        "@type": "time:Instant",
+        "time:inXSDDateTime": {
+          "@type": "xml-schema:dateTime",
+          "@value": "20230601T00:00:00.000"
+        }
       },
-      "Verkeersmeting.resultaat": 60,
-      "Verkeersmeting.uitgevoerdDoor": "_:mti001",
-      "Verkeersmeting.geobserveerdObject": "_:mpt001",
-      "Verkeersmeting.fenomeenTijd": {
-        "@type": "time:ProperInterval",
-        "time:hasBeginning": {
-          "@type": "time:Instant",
-          "time:inXSDDateTime": {
-            "@type": "xml-schema:dateTime",
-            "@value": "20230601T00:00:00.000"
-          }
-        },
-        "time:hasEnd": {
-          "@type": "time:Instant",
-          "time:inXSDDateTime": {
-            "@type": "xml-schema:dateTime",
-            "@value": "20230601T00:00:15.000"
-          }
+      "time:hasEnd": {
+        "@type": "time:Instant",
+        "time:inXSDDateTime": {
+          "@type": "xml-schema:dateTime",
+          "@value": "20230601T00:00:15.000"
         }
       }
     },
     {
       "@id": "_:mpt001",
       "@type": "Verkeersmeetpunt",
-      "Verkeersmeetpunt.netwerkreferentie": {
-        "@type": "Puntreferentie",
-        "Puntreferentie.opPositie": {
-          "@type": "Lengte",
-          "KwantitatieveWaarde.waarde": "300",
-          "KwantitatieveWaarde.standaardEenheid": {
-            "@value": "m",
-            "@type": "ucum:ucumunit"
-          }
+      "Verkeersmeetpunt.rijrichting":"_:rri001",
+      "Verkeersmeetpunt.netwerkreferentie": "_:pr001",
+      "Verkeersmeetpunt.geometrie": "_:g001",
+      "Verkeersbemonsteringsobject.bemonsterdObject": "_:wgs001"
+    },
+    {
+          "@id": "_:mpt002",
+          "@type": "Verkeersmeetpunt",
+          "Verkeersmeetpunt.rijrichting":"_:rri002",
+          "Verkeersmeetpunt.netwerkreferentie": "_:pr001",
+          "Verkeersmeetpunt.geometrie": "_:g001",
+          "Verkeersbemonsteringsobject.bemonsterdObject": "_:wgs001"
+    },
+
+    {
+      "@id": "_:pr001",
+      "@type": "Puntreferentie",
+      "Puntreferentie.opPositie": {
+        "@type": "Lengte",
+        "KwantitatieveWaarde.waarde": "300",
+        "KwantitatieveWaarde.standaardEenheid": {
+          "@value": "m",
+          "@type": "ucum:ucumunit"
         }
-      },
-      "Verkeersmeetpunt.geometrie": {
+      }
+    },
+   
+    {
+        "@id": "_:g001",
         "@type": "Punt",
         "Geometrie.wkt": {
           "@value": "<http://www.opengis.net/def/crs/EPSG/0/4326> Point(50.91618331151478 4.456121776137429)",
           "@type": "geosparql:wktLiteral"
         }
-      },
-      "Verkeersbemonsteringsobject.bemonsterdObject": "_:wgs001"
-    },
-    {
+      }
+   {
       "@id": "_:rri001",
       "@type": "Rijrichting",
       "Rijrichting.netwerkreferentie": {
-        "@type": "LinkReferentie",
-        "Linkreferentie.toepassingsRichting": "cl-trt:bothDirections",
-        "Netwerkreferentie.element": "_:wgs001"
+        "@type": "Linkreferentie",
+        "Netwerkreferentie.element": "_:wgs001",
+        "Linkreferentie.toepassingsRichting": "cl-trt:inDirection"
       },
-      "Rijrichting.rijrichting": "cl-trt:bothDirections"
+      "Rijrichting.rijrichting": "cl-trt:inDirection"
+    },
+    {
+      "@id": "_:rri002",
+      "@type": "Rijrichting",
+      "Rijrichting.netwerkreferentie": {
+        "@type": "LineaireReferentie",
+        "Netwerkreferentie.element": "_:wgs001",
+        "Linkreferentie.toepassingsRichting": "cl-trt:inOppositeDirection"
+      },
+      "Rijrichting.rijrichting": "cl-trt:inOppositeDirection"
     },
     {
       "@id": "_:wgs001",
