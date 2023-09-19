@@ -6,13 +6,27 @@ nav_order: 5
 ---
 
 
-# Verkeersmeting type transportmiddel
+# Verkeersmeting
 
+De dataset beschrijft het aantal fietsers dat is gedetecteerd door een verkeerssensor _:mti001, uitgevoerd op een verkeersmeetpunt _:mpt001, gedurende een bepaalde periode :_fenomtime001. Het ´type´ veld geeft aan dat de sensor alleen fietsers meet, en het ´aantal´ veld geeft aan dat er geen fietsers zijn waargenomen.
 
 ```json
 "type": "FIETSERS",
-"aantal": 0
+"aantal": 60
 ```
+
+Aangezien er geen specifieke definities (a.d.h. van codelijsten) bestaan voor voertuitgtypes (bv. auto, fiets, enz.) en verkeerskenmerktype (bv. aantal, snelheid, enz.) dienen deze in codelijsten worden gedefinieerd.
+Deze werden hier uitgewerkt:
+[](https://data.vlaanderen.be/doc/conceptscheme/VkmVoertuigTypes/)
+[](https://data.vlaanderen.be/doc/concept/VkmVerkeersKenmerkType/)
+
+"Verkeerskenmerk.voertuigType": "cl-vrt:fiets" verwijst dus naar 
+[](https://data.vlaanderen.be/doc/concept/VkmVerkeersKenmerkType/fiets).
+
+Via het OSLO model verkeersmetingen, is het mogelijk om volgende klassen te gaan definiëren:
+![Alt text](image.png)
+
+Het teken '^' geeft aan, dat deze klassen zijn overgeërfd van een ander applciatieprofiel.
 
 ```json
 {
