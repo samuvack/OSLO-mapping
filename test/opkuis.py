@@ -1,51 +1,44 @@
-# Importeer de json module om met JSON bestanden te werken
+# import json library
 import json
 
-# Open het JSON-LD bestand in leesmodus en sla het op in een variabele
+# define a function to compact a json-ld object
+
+
+def compact_json_ld(obj):
+  # if the object is a list
+  if isinstance(obj, list):
+    # if the list has only one element
+    if len(obj) == 1:
+      # return the compacted element
+      return compact_json_ld(obj[0])
+    # else, return the list of compacted elements
+    else:
+      return [compact_json_ld(e) for e in obj]
+  # if the object is a dictionary
+  elif isinstance(obj, dict):
+    # create a new dictionary to store the compacted key-value pairs
+    new_obj = {}
+    # iterate over the key-value pairs in the object
+    for k, v in obj.items():
+      # if the key is "@id" and the value starts with "_:"
+        new_obj[k] = compact_json_ld(v)
+    # return the new dictionary
+    return new_obj
+  # else, return the object as it is
+  else:
+    return obj
+
+
+
+# read the input json-ld file as a python object
 with open("expanded.jsonld", "r") as f:
-    jsonld_data = f.read()
+  input_obj = json.load(f)
 
-# Converteer de JSON-LD data naar een Python dictionary
-jsonld_dict = json.loads(jsonld_data)
+# compact the input object using the function defined above
+output_obj = compact_json_ld(input_obj)
 
-# Definieer een functie die de onnodige haakjes verwijdert uit een dictionary
+flattend = flatten_jsonld(output_obj)
 
-print(type(jsonld_dict))
-
-
-def remove_brackets(d):
-    # Maak een lege dictionary aan om het resultaat op te slaan
-    result = {}
-    # Loop door alle sleutels en waarden in de dictionary
-    for key, value in d.items():
-        # Als de waarde een dictionary is, roep de functie recursief aan om de haakjes te verwijderen
-        if isinstance(value, dict):
-            value = remove_brackets(value)
-        # Als de waarde een lijst is, loop door de elementen in de lijst
-        elif isinstance(value, list):
-            # Maak een lege lijst aan om het resultaat op te slaan
-            new_list = []
-            # Loop door de elementen in de lijst
-            for item in value:
-                # Als het element een dictionary is, roep de functie recursief aan om de haakjes te verwijderen
-                if isinstance(item, dict):
-                    item = remove_brackets(item)
-                # Voeg het element toe aan de nieuwe lijst
-                new_list.append(item)
-            # Vervang de waarde door de nieuwe lijst
-            value = new_list
-        # Voeg de sleutel en waarde toe aan de resultaat dictionary
-        result[key] = value
-    # Geef de resultaat dictionary terug
-    return result
-
-
-# Roep de functie aan op de JSON-LD dictionary en sla het resultaat op in een variabele
-new_jsonld_dict = remove_brackets(jsonld_dict)
-
-# Converteer het resultaat terug naar een JSON-LD data string
-new_jsonld_data = json.dumps(new_jsonld_dict)
-
-# Open een nieuw bestand in schrijfmodus en schrijf het resultaat erin
-with open("new_jsonld_file.json", "w") as f:
-    f.write(new_jsonld_data)
+# write the output object as a json-ld file with indentation
+with open("output.json", "w") as f:
+  json.dump(flattend, f, indent=2)

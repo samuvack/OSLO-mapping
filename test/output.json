@@ -1,13 +1,3 @@
----
-layout: default
-parent: Geomobility
-title: extended OSLO mapping
-nav_order: 5
----
-
-# extended OSLO mapping
-
-```json
 [
   {
     "@id": "_:GM001",
@@ -143,4 +133,3 @@ nav_order: 5
     "http://purl.org/dc/terms/type": "https://data.vlaanderen.be/doc/concept/VkmMeetInstrumentType/rubberslang"
   }
 ]
-```
