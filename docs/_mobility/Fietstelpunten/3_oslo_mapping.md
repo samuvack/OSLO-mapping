@@ -46,6 +46,7 @@ nav_order: 4
       "cl-access": "http://publications.europa.eu/resource/authority/access-right/"
     }
   ],
+  
   "@graph": [
     {
       "@id": "_:tellusdata001",
@@ -120,7 +121,6 @@ nav_order: 4
       },
       "Verkeersbemonsteringsobject.bemonsterdObject": "_:wgs001"
     },
-
     {
       "@id": "_:rri001",
       "@type": "Rijrichting",

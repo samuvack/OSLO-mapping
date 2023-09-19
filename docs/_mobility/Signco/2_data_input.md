@@ -9,9 +9,6 @@ nav_order: 3
 
 Test data wordt opgehaald via de Signco Swagger API: https://devapi.signcoserv.be/swagger/index.html
 
-
-
-
 ## Site voorbeeld Signco 
 ![Alt text](image.png)
 Haalt alle meetpunten op. Uit deze gegevens kunt u de guid halen die u bij de andere dataopvragingen kunt gebruiken.

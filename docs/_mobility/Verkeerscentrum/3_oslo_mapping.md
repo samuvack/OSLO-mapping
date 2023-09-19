@@ -92,19 +92,18 @@ nav_order: 4
     {
       "@id": "_:rst001",
       "@type": "Rijstrook",
-      "adms:identifier": {
-        "@type": "adms:Identifier",
-        "skos:notation": {
-          "@type": "cl-rst:rechter_rijstrook",
-          "@value": "R10"
-        }
-      },
       "Rijstrook.netwerkreferentie": {
         "@type": "Linkreferentie",
         "Netwerkreferentie.element": "_:wgs001",
         "Linkreferentie.toepassingsRichting": "cl-trt:inDirection"
       },
-      "Rijstrook.rijstrook": "R10"
+      "Rijstrook.rijstrook": {
+       "@type": "Identificator",
+       "Identificator.identificator": {
+           "@value": "R10",
+           "@type": "cl-idt:rijstrooknummerVolgensDatex"
+       }
+      }
     },
     {
       "@id": "_:wgs001",
