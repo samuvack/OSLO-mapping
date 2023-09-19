@@ -20,12 +20,6 @@ for i in range(len(data["@graph"])):
         # Append the key to the keys list
         keys.append(key)
 
-# Print the keys list
-
-
-
-# Import the json module
-
 # Define the python list of words to check
 words = keys
 
