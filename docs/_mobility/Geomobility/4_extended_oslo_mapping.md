@@ -1,11 +1,11 @@
 ---
 layout: default
 parent: Geomobility
-title: extended OSLO mapping
+title: expanded OSLO mapping
 nav_order: 5
 ---
 
-# extended OSLO mapping
+# expanded OSLO mapping
 
 ```json
 [
