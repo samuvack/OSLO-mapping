@@ -126,7 +126,7 @@ nav_order: 5
     "@id": "_:rri002",
     "@type": "https://data.vlaanderen.be/ns/weg#Rijrichting",
     "https://data.vlaanderen.be/ns/weg#Rijrichting.netwerkreferentie": {
-      "@type": "https://data.vlaanderen.be/ns/netwerk/#LineaireReferentie",
+      "@type": "https://data.vlaanderen.be/ns/netwerk/#Linkreferentie",
       "https://data.vlaanderen.be/ns/netwerk/#toepassingsRichting": "https://inspire.ec.europa.eu/codelist/LinkDirectionValue/inOppositeDirection",
       "https://data.vlaanderen.be/ns/weg#NetwerkElement": "_:wgs001"
     },

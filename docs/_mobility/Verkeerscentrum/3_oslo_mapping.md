@@ -67,23 +67,7 @@ nav_order: 4
       "@id": "_:rri001",
       "@type": "Rijrichting",
       "Rijrichting.netwerkreferentie": {
-        "@type": "LineaireReferentie",
-        "LineaireReferentie.vanPositie": {
-          "@type": "Lengte",
-          "KwantitatieveWaarde.waarde": "0",
-          "KwantitatieveWaarde.standaardEenheid": {
-            "@value": "m",
-            "@type": "ucum:ucumunit"
-          }
-        },
-        "LineaireReferentie.totPositie": {
-          "@type": "Lengte",
-          "KwantitatieveWaarde.waarde": "600",
-          "KwantitatieveWaarde.standaardEenheid": {
-            "@value": "m",
-            "@type": "ucum:ucumunit"
-          }
-        },
+        "@type": "Linkreferentie",
         "Netwerkreferentie.element": "_:wgs001",
         "Linkreferentie.toepassingsRichting": "cl-trt:inDirection"
       },

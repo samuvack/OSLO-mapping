@@ -193,7 +193,7 @@ Fietstelpunt
             "@id": "_:rri001",
             "@type": "Rijrichting",
             "Rijrichting.netwerkreferentie": {
-                "@type": "LineaireReferentie",
+                "@type": "Linkreferentie",
                 "Netwerkreferentie.element": "_:wgs426009",
                 "Linkreferentie.toepassingsRichting": "cl-trt:tweerichting"
             },

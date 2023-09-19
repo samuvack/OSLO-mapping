@@ -20,23 +20,7 @@
     "@id": "_:rri001",
     "@type": "https://data.vlaanderen.be/ns/weg#Rijrichting",
     "https://fixme.com": {
-      "@type": "https://data.vlaanderen.be/ns/netwerk/#LineaireReferentie",
-      "https://data.vlaanderen.be/ns/weg#totPositie": {
-        "@type": "https://schema.org/Distance",
-        "https://schema.org/unitCode": {
-          "@type": "https://w3id.org/cdt/ucumunit",
-          "@value": "m"
-        },
-        "https://schema.org/value": "600"
-      },
-      "https://data.vlaanderen.be/ns/weg#vanPositie": {
-        "@type": "https://schema.org/Distance",
-        "https://schema.org/unitCode": {
-          "@type": "https://w3id.org/cdt/ucumunit",
-          "@value": "m"
-        },
-        "https://schema.org/value": "0"
-      },
+      "@type": "https://data.vlaanderen.be/ns/netwerk/#Linkreferentie",
       "https://data.vlaanderen.be/ns/netwerk/#toepassingsRichting": "https://inspire.ec.europa.eu/codelist/LinkDirectionValue/inDirection",
       "https://data.vlaanderen.be/ns/weg#NetwerkElement": "_:wgs001"
     },

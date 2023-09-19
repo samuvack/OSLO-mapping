@@ -36,43 +36,7 @@
     "https://fixme.com": [
       {
         "@type": [
-          "https://data.vlaanderen.be/ns/netwerk/#LineaireReferentie"
-        ],
-        "https://data.vlaanderen.be/ns/weg#totPositie": [
-          {
-            "@type": [
-              "https://schema.org/Distance"
-            ],
-            "https://schema.org/unitCode": [
-              {
-                "@type": "https://w3id.org/cdt/ucumunit",
-                "@value": "m"
-              }
-            ],
-            "https://schema.org/value": [
-              {
-                "@id": "600"
-              }
-            ]
-          }
-        ],
-        "https://data.vlaanderen.be/ns/weg#vanPositie": [
-          {
-            "@type": [
-              "https://schema.org/Distance"
-            ],
-            "https://schema.org/unitCode": [
-              {
-                "@type": "https://w3id.org/cdt/ucumunit",
-                "@value": "m"
-              }
-            ],
-            "https://schema.org/value": [
-              {
-                "@id": "0"
-              }
-            ]
-          }
+          "https://data.vlaanderen.be/ns/netwerk/#Linkreferentie"
         ],
         "https://data.vlaanderen.be/ns/netwerk/#toepassingsRichting": [
           {

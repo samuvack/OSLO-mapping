@@ -77,7 +77,7 @@ nav_order: 4
       "@id": "_:rri002",
       "@type": "Rijrichting",
       "Rijrichting.netwerkreferentie": {
-        "@type": "LineaireReferentie",
+        "@type": "Linkreferentie",
         "Netwerkreferentie.element": "_:wgs001",
         "Linkreferentie.toepassingsRichting": "cl-trt:inOppositeDirection"
       },
