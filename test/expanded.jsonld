@@ -57,42 +57,6 @@
     ]
   },
   {
-    "@id": "_:rst001",
-    "@type": [
-      "https://data.vlaanderen.be/ns/verkeersmetingen#Rijstrook"
-    ],
-    "https://fixme.com": [
-      {
-        "@type": [
-          "https://data.vlaanderen.be/ns/netwerk/#Linkreferentie"
-        ],
-        "https://data.vlaanderen.be/ns/netwerk/#toepassingsRichting": [
-          {
-            "@id": "https://inspire.ec.europa.eu/codelist/LinkDirectionValue/inDirection"
-          }
-        ],
-        "https://data.vlaanderen.be/ns/weg#NetwerkElement": [
-          {
-            "@id": "_:wgs001"
-          }
-        ]
-      }
-    ],
-    "https://data.vlaanderen.be/ns/verkeersmetingen#rijstrook": [
-      {
-        "@type": [
-          "http://www.w3.org/ns/adms#Identifier"
-        ],
-        "http://www.w3.org/2004/02/skos/core#notation": [
-          {
-            "@type": "cl-idt:rijstrooknummerVolgensDatex",
-            "@value": "R10"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "@id": "_:wgs001",
     "@type": [
       "https://data.vlaanderen.be/ns/weg#Wegsegment"

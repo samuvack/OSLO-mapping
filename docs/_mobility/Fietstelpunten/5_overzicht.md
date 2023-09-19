@@ -11,8 +11,10 @@ nav_order: 5
 De dataset beschrijft het aantal fietsers dat is gedetecteerd door een verkeerssensor _:mti001, uitgevoerd op een verkeersmeetpunt _:mpt001, gedurende een bepaalde periode :_fenomtime001. Het ´type´ veld geeft aan dat de sensor alleen fietsers meet, en het ´aantal´ veld geeft aan dat er geen fietsers zijn waargenomen.
 
 ```json
+{
 "type": "FIETSERS",
 "aantal": 60
+}
 ```
 
 Aangezien er geen specifieke definities (a.d.h. van codelijsten) bestaan voor voertuitgtypes (bv. auto, fiets, enz.) en verkeerskenmerktype (bv. aantal, snelheid, enz.) dienen deze in codelijsten worden gedefinieerd.
@@ -54,8 +56,18 @@ Het teken '^' geeft aan, dat deze klassen zijn overgeërfd van een ander applcia
 
 ```
 
+# Verkeersmeetpunt
 
-
+```json
+{
+  "@id": "_:mpt001",
+  "@type": "Verkeersmeetpunt",
+  "Verkeersmeetpunt.rijrichting":"_:rri001",
+  "Verkeersmeetpunt.netwerkreferentie": "_:pr001",
+  "Verkeersmeetpunt.geometrie": "_:g001",
+  "Verkeersbemonsteringsobject.bemonsterdObject": "_:wgs001"
+}
+```
 
 
 # Verkeersmeting.fenomeenTijd

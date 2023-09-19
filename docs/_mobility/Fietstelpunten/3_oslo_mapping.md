@@ -119,7 +119,7 @@ nav_order: 4
       "Verkeersmeetpunt.rijrichting":"_:rri001",
       "Verkeersmeetpunt.netwerkreferentie": "_:pr001",
       "Verkeersmeetpunt.geometrie": "_:g001",
-      "Verkeersbemonsteringsobject.bemonsterdObject": "_:wgs001"
+      "Verkeersbemonsteringsobject.bemonsterdObject": "_:rri001"
     },
     {
       "@id": "_:mpt002",
@@ -127,7 +127,7 @@ nav_order: 4
       "Verkeersmeetpunt.rijrichting":"_:rri002",
       "Verkeersmeetpunt.netwerkreferentie": "_:pr001",
       "Verkeersmeetpunt.geometrie": "_:g001",
-      "Verkeersbemonsteringsobject.bemonsterdObject": "_:wgs001"
+      "Verkeersbemonsteringsobject.bemonsterdObject": "_:rri002"
     },
 
     {

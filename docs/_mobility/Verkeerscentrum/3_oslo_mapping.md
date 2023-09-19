@@ -74,22 +74,6 @@ nav_order: 4
       "Rijrichting.rijrichting": "cl-trt:inDirection"
     },
     {
-      "@id": "_:rst001",
-      "@type": "Rijstrook",
-      "Rijstrook.netwerkreferentie": {
-        "@type": "Linkreferentie",
-        "Netwerkreferentie.element": "_:wgs001",
-        "Linkreferentie.toepassingsRichting": "cl-trt:inDirection"
-      },
-      "Rijstrook.rijstrook": {
-       "@type": "Identificator",
-       "Identificator.identificator": {
-           "@value": "R10",
-           "@type": "cl-idt:rijstrooknummerVolgensDatex"
-       }
-      }
-    },
-    {
       "@id": "_:wgs001",
       "@type": "Wegsegment",
       "Wegsegment.geometriemiddenlijn": {

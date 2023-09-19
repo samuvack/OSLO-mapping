@@ -79,7 +79,7 @@ nav_order: 5
   {
     "@id": "_:mpt001",
     "@type": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt",
-    "https://data.vlaanderen.be/ns/verkeersmetingen#bemonsterdObject": "_:wgs001",
+    "https://data.vlaanderen.be/ns/verkeersmetingen#bemonsterdObject": "_:rri001",
     "https://data.vlaanderen.be/ns/weg#geometrie": "_:g001",
     "https://data.vlaanderen.be/ns/verkeersmetingen#netwerkreferentie": "_:pr001",
     "https://data.vlaanderen.be/ns/weg#Rijrichting": "_:rri001"
@@ -87,7 +87,7 @@ nav_order: 5
   {
     "@id": "_:mpt002",
     "@type": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt",
-    "https://data.vlaanderen.be/ns/verkeersmetingen#bemonsterdObject": "_:wgs001",
+    "https://data.vlaanderen.be/ns/verkeersmetingen#bemonsterdObject": "_:rri002",
     "https://data.vlaanderen.be/ns/weg#geometrie": "_:g001",
     "https://data.vlaanderen.be/ns/verkeersmetingen#netwerkreferentie": "_:pr001",
     "https://data.vlaanderen.be/ns/weg#Rijrichting": "_:rri002"

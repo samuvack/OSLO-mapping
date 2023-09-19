@@ -168,7 +168,7 @@ nav_order: 4
           }
         }
       },
-      "Verkeersbemonsteringsobject.bemonsterdObject": "_:wgs001"
+      "Verkeersbemonsteringsobject.bemonsterdObject": "_:rri001"
     },
 
     {

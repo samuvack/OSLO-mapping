@@ -113,7 +113,7 @@ nav_order: 5
   {
     "@id": "_:mpt001",
     "@type": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt",
-    "https://data.vlaanderen.be/ns/verkeersmetingen#bemonsterdObject": "_:wgs001",
+    "https://data.vlaanderen.be/ns/verkeersmetingen#bemonsterdObject": "_:rri001",
     "https://data.vlaanderen.be/ns/weg#geometrie": {
       "@type": "http://www.opengis.net/ont/sf#Point",
       "http://www.opengis.net/ont/geosparql#asGML": {
