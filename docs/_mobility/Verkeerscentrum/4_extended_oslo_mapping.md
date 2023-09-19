@@ -56,17 +56,12 @@ nav_order: 5
     ],
     "https://data.vlaanderen.be/ns/verkeersmetingen#rijstrook": [
       {
-        "@id": "R10"
-      }
-    ],
-    "http://www.w3.org/ns/adms#identifier": [
-      {
         "@type": [
           "http://www.w3.org/ns/adms#Identifier"
         ],
-        "skos:notation": [
+        "http://www.w3.org/2004/02/skos/core#notation": [
           {
-            "@type": "https://data.vlaanderen.be/doc/concept/VkmRijstrookType/rechter_rijstrook",
+            "@type": "cl-idt:rijstrooknummerVolgensDatex",
             "@value": "R10"
           }
         ]
