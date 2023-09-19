@@ -82,6 +82,19 @@ nav_order: 4
     "Verkeersmeting.geobserveerdObject": "_:mpt001",
     "Verkeersmeting.fenomeenTijd": ":_fenomtime001"
   },
+    {
+    "@id": "_:vrm001",
+    "@type": "Verkeersmeting",
+    "Verkeersmeting.geobserveerdKenmerk": {
+      "@type": "Verkeerskenmerk",
+      "Verkeerskenmerk.type": "cl-vkt:aantal",
+      "Verkeerskenmerk.voertuigType": "cl-vrt:fiets"
+    },
+    "Verkeersmeting.resultaat": 100,
+    "Verkeersmeting.uitgevoerdDoor": "_:mti001",
+    "Verkeersmeting.geobserveerdObject": "_:mpt002",
+    "Verkeersmeting.fenomeenTijd": ":_fenomtime001"
+  },
   {
       "@id": ":_fenomtime001",
       "@type": "time:ProperInterval",
