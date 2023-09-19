@@ -5,14 +5,20 @@ title: Overview
 nav_order: 5
 ---
 
-# overview
 
-De bron data 
+
+
+
+# Verkeersmeting.fenomeenTijd
+
+De bron data geeft de tijdperiode met de velden `van` en `tot`:
 
 ```json
 "van":"2023-06-01 00:00:00.0",
 "tot": "2023-06-01 00:15:00.0",
 ```
+
+De data mapping hiervan is `Verkeersmeting.fenomeenTijd`. 
 
 ```json
 "Verkeersmeting.fenomeenTijd": {
