@@ -140,7 +140,8 @@ nav_order: 4
           "@value": "m",
           "@type": "ucum:ucumunit"
         }
-      }
+      },
+      "Linkreferentie.toepassingsrichting": "cl-tpr:bothDirections"
     },
    
     {

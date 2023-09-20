@@ -57,17 +57,39 @@ Het teken '^' geeft aan, dat deze klassen zijn overgeërfd van een ander applcia
 ```
 
 # Verkeersmeetpunt
+De dataset beschrijft de locatie(lengte- en breedtegraad) van het meetpunt waar de sensor de verkeersmetingen uitvoert. 
+
+```json
+{
+    "site ID" : "1",
+    "site nr" : "100046096",
+    "long": 4.456121776137429,
+    "lang": 50.91618331151478
+}
+´´´
 
 ```json
 {
   "@id": "_:mpt001",
   "@type": "Verkeersmeetpunt",
-  "Verkeersmeetpunt.rijrichting":"_:rri001",
-  "Verkeersmeetpunt.netwerkreferentie": "_:pr001",
   "Verkeersmeetpunt.geometrie": "_:g001",
-  "Verkeersbemonsteringsobject.bemonsterdObject": "_:wgs001"
-}
+},
+{
+    "@id": "_:g001",
+    "@type": "Punt",
+    "Geometrie.wkt": {
+      "@value": "<http://www.opengis.net/def/crs/EPSG/0/4326> Point(50.91618331151478 4.456121776137429)",
+      "@type": "geosparql:wktLiteral"
+    }
+  },
+
 ```
+## Wegsegment en offset van het meetpunt
+{: .note }
+Om OpenLR compliant te zijn, dient bij een verkeersmeting zowel de locatie van het meetpunt (coördinaten), het wegsegment (a.d.v. begin en eindknoop, en eventuele shape knopen) en de offset van het meetpunt (de afstand van het beginknooppunt en het middelpunt) beschreven te zijn.
+
+Aangezien deze 
+
 
 
 # Verkeersmeting.fenomeenTijd
