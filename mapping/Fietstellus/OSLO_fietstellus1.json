@@ -194,7 +194,7 @@ Fietstelpunt
             "@type": "Rijrichting",
             "Rijrichting.netwerkreferentie": {
                 "@type": "Linkreferentie",
-                "Netwerkreferentie.element": "_:wgs426009",
+                "Netwerkreferentie.element": "_:wgs001",
                 "Linkreferentie.toepassingsRichting": "cl-trt:tweerichting"
             },
             "Rijrichting.rijrichting": "cl-trt:tweerichting"

@@ -66,7 +66,7 @@ nav_order: 4
     },
 
     {
-      "@id": "_:wgs426009",
+      "@id": "_:wgs001",
       "@type": "Wegsegment",
       "Wegsegment.geometriemiddenlijn": {
         "Geometrie.gml": {

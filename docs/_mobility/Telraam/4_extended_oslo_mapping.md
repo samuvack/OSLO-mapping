@@ -33,7 +33,7 @@ nav_order: 5
     }
   },
   {
-    "@id": "_:wgs426009",
+    "@id": "_:wgs001",
     "@type": "https://data.vlaanderen.be/ns/weg#Wegsegment",
     "https://data.vlaanderen.be/ns/netwerk/#beginknoop": "_:wgkn001",
     "https://data.vlaanderen.be/ns/netwerk#eindknoop": "_:wgkn002",
