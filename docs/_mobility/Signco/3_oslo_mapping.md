@@ -189,7 +189,7 @@ nav_order: 4
             "@type": "ucum:ucumunit"
           }
         },
-        "Linkreferentie.toepassingsrichting": "cl-tpr:bothDirections"
+        "Linkreferentie.toepassingsRichting": "cl-trt:bothDirections"
       },
       "Verkeersbemonsteringsobject.bemonsterdObject": "_:rri001"
     },

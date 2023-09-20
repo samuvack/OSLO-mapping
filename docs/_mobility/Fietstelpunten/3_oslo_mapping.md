@@ -49,27 +49,27 @@ nav_order: 4
 
   "@graph": [
     {
-    "@id": "_:tellusdata001",
-    "@type": "Dataset",
-    "Dataset.titel": {
-      "@language": "nl",
-      "@value": "Fietstellingen - Agentschap Wegen en Verkeer"
+      "@id": "_:tellusdata001",
+      "@type": "Dataset",
+      "Dataset.titel": {
+        "@language": "nl",
+        "@value": "Fietstellingen - Agentschap Wegen en Verkeer"
+      },
+      "Dataset.beschrijving": [
+        {
+          "@language": "nl",
+          "@value": "Deze dataset omvat zowel de automatische fietstellingen van AWV, als de locaties waar de tellingen plaatsvinden."
+        }
+      ],
+      "Dataset.toegankelijkheid": "cl-access:PUBLIC",
+      "Dataset.trefwoord": [
+        {
+          "@language": "nl",
+          "@value": "fietstellingen"
+        }
+      ]
     },
-    "Dataset.beschrijving": [
-      {
-        "@language": "nl",
-        "@value": "Deze dataset omvat zowel de automatische fietstellingen van AWV, als de locaties waar de tellingen plaatsvinden."
-      }
-    ],
-    "Dataset.toegankelijkheid": "cl-access:PUBLIC",
-    "Dataset.trefwoord": [
-      {
-        "@language": "nl",
-        "@value": "fietstellingen"
-      }
-    ]
-  },
-  {
+    {
       "@id": "_:vrm001",
       "@type": "Verkeersmeting",
       "Verkeersmeting.geobserveerdKenmerk": {
@@ -81,7 +81,7 @@ nav_order: 4
       "Verkeersmeting.uitgevoerdDoor": "_:mti001",
       "Verkeersmeting.geobserveerdObject": "_:mpt001",
       "Verkeersmeting.fenomeenTijd": ":_fenomtime001"
-  },
+    },
     {
       "@id": "_:vrm002",
       "@type": "Verkeersmeting",
@@ -94,8 +94,8 @@ nav_order: 4
       "Verkeersmeting.uitgevoerdDoor": "_:mti001",
       "Verkeersmeting.geobserveerdObject": "_:mpt002",
       "Verkeersmeting.fenomeenTijd": ":_fenomtime001"
-  },
-  {
+    },
+    {
       "@id": ":_fenomtime001",
       "@type": "time:ProperInterval",
       "time:hasBeginning": {
@@ -116,7 +116,7 @@ nav_order: 4
     {
       "@id": "_:mpt001",
       "@type": "Verkeersmeetpunt",
-      "Verkeersmeetpunt.rijrichting":"_:rri001",
+      "Verkeersmeetpunt.rijrichting": "_:rri001",
       "Verkeersmeetpunt.netwerkreferentie": "_:pr001",
       "Verkeersmeetpunt.geometrie": "_:g001",
       "Verkeersbemonsteringsobject.bemonsterdObject": "_:rri001"
@@ -124,7 +124,7 @@ nav_order: 4
     {
       "@id": "_:mpt002",
       "@type": "Verkeersmeetpunt",
-      "Verkeersmeetpunt.rijrichting":"_:rri002",
+      "Verkeersmeetpunt.rijrichting": "_:rri002",
       "Verkeersmeetpunt.netwerkreferentie": "_:pr001",
       "Verkeersmeetpunt.geometrie": "_:g001",
       "Verkeersbemonsteringsobject.bemonsterdObject": "_:rri002"
@@ -141,18 +141,18 @@ nav_order: 4
           "@type": "ucum:ucumunit"
         }
       },
-      "Linkreferentie.toepassingsrichting": "cl-tpr:bothDirections"
+      "Linkreferentie.toepassingsRichting": "cl-trt:bothDirections"
     },
-   
+
     {
-        "@id": "_:g001",
-        "@type": "Punt",
-        "Geometrie.wkt": {
-          "@value": "<http://www.opengis.net/def/crs/EPSG/0/4326> Point(50.91618331151478 4.456121776137429)",
-          "@type": "geosparql:wktLiteral"
-        }
-      },
-   {
+      "@id": "_:g001",
+      "@type": "Punt",
+      "Geometrie.wkt": {
+        "@value": "<http://www.opengis.net/def/crs/EPSG/0/4326> Point(50.91618331151478 4.456121776137429)",
+        "@type": "geosparql:wktLiteral"
+      }
+    },
+    {
       "@id": "_:rri001",
       "@type": "Rijrichting",
       "Rijrichting.netwerkreferentie": {

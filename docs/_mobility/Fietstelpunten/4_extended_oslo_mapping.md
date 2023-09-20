@@ -95,6 +95,7 @@ nav_order: 5
   {
     "@id": "_:pr001",
     "@type": "https://data.vlaanderen.be/ns/netwerk/#Puntreferentie",
+    "https://data.vlaanderen.be/ns/netwerk/#toepassingsRichting": "https://inspire.ec.europa.eu/codelist/LinkDirectionValue/bothDirections",
     "https://data.vlaanderen.be/ns/netwerk/#opPositie": {
       "@type": "https://schema.org/Distance",
       "https://schema.org/unitCode": {

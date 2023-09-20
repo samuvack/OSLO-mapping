@@ -116,7 +116,7 @@ Fietstelpunt
 
             "cl-vrt":"https://example.com/concept/voertuigtype/",
             "cl-vkt": "https://example.com/concept/verkeerskenmerktype",
-            "cl-trt" : "https://example.com/concept/toepassingsrichtingtype",
+            "cl-trt" : "https://example.com/concept/toepassingsRichtingtype",
             "cl-mit": "https://example.com/concept/meetinstrumenttype",
             "cl-opt:type": "https://example.com/concept/observatieproceduret"
             

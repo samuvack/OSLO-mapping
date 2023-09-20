@@ -260,7 +260,7 @@
     "Taalcode": "http://www.w3.org/2004/02/skos/core#Concept",
     "Teken": "http://www.w3.org/2004/02/skos/core#Concept",
     "TemporeleEntiteit": "http://def.isotc211.org/iso19108/2006/TemporalObjects#TM_Object",
-    "Toepassingsrichtingtype": "https://data.vlaanderen.be/ns/netwerk/#Toepassingsrichtingtype",
+    "toepassingsRichtingtype": "https://data.vlaanderen.be/ns/netwerk/#toepassingsRichtingtype",
     "Toestel": "https://saref.etsi.org/core/Device",
     "Toestel.fabrikant": {
       "@id": "https://saref.etsi.org/core/hasManufacturer",
