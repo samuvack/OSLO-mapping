@@ -179,7 +179,11 @@ nav_order: 4
           "@type": "geosparql:gmlLiteral"
         }
       },
-      "Verkeersmeetpunt.netwerkreferentie": {
+      "Verkeersmeetpunt.netwerkreferentie": "_:pr001",
+      "Verkeersbemonsteringsobject.bemonsterdObject": "_:rri001"
+    },
+    {
+        "@id": "_:pr001",
         "@type": "Puntreferentie",
         "Puntreferentie.opPositie": {
           "@type": "Lengte",
@@ -191,8 +195,6 @@ nav_order: 4
         },
         "Linkreferentie.toepassingsRichting": "cl-trt:bothDirections"
       },
-      "Verkeersbemonsteringsobject.bemonsterdObject": "_:rri001"
-    },
 
     {
       "@id": "_:mti001",

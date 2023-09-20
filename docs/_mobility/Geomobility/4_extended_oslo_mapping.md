@@ -121,16 +121,19 @@ nav_order: 5
         "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>3.24177950620651, 51.2256331896095</gml:coordinates><gml:Point>"
       }
     },
-    "https://data.vlaanderen.be/ns/verkeersmetingen#netwerkreferentie": {
-      "@type": "https://data.vlaanderen.be/ns/netwerk/#Puntreferentie",
-      "https://data.vlaanderen.be/ns/netwerk/#opPositie": {
-        "@type": "https://schema.org/Distance",
-        "https://schema.org/unitCode": {
-          "@type": "https://w3id.org/cdt/ucumunit",
-          "@value": "m"
-        },
-        "https://schema.org/value": "300"
-      }
+    "https://data.vlaanderen.be/ns/verkeersmetingen#netwerkreferentie": "_:pr001"
+  },
+  {
+    "@id": "_:pr001",
+    "@type": "https://data.vlaanderen.be/ns/netwerk/#Puntreferentie",
+    "https://data.vlaanderen.be/ns/netwerk/#toepassingsRichting": "https://inspire.ec.europa.eu/codelist/LinkDirectionValue/bothDirections",
+    "https://data.vlaanderen.be/ns/netwerk/#opPositie": {
+      "@type": "https://schema.org/Distance",
+      "https://schema.org/unitCode": {
+        "@type": "https://w3id.org/cdt/ucumunit",
+        "@value": "m"
+      },
+      "https://schema.org/value": "300"
     }
   },
   {
