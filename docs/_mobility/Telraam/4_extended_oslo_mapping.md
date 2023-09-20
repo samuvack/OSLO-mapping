@@ -97,7 +97,7 @@ nav_order: 5
     "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdObject": "_:mpt001",
     "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result": {
       "@type": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
-      "@value": 33.3209922251018
+      "@value": 3.99851906701222
     },
     "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdDoor": "_:mti001",
     "http://purl.org/dc/terms/memberOf": {
@@ -145,13 +145,12 @@ nav_order: 5
     "https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime": ":_fenomtime001",
     "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdKenmerk": {
       "@type": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk",
-      "https://data.vlaanderen.be/ns/verkeersmetingen#type": "https://data.vlaanderen.be/doc/concept/VkmVerkeersKenmerkType/aantal",
-      "https://data.vlaanderen.be/ns/verkeersmetingen#voertuigType": "https://data.vlaanderen.be/doc/concept/VkmVoertuigType/auto"
+      "https://data.vlaanderen.be/ns/verkeersmetingen#type": "https://data.vlaanderen.be/doc/concept/VkmVerkeersKenmerkType/v85"
     },
     "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdObject": "_:mpt001",
     "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result": {
       "@type": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
-      "@value": 277.230655312846
+      "@value": 31
     },
     "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdDoor": "_:mti001"
   },

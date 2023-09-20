@@ -124,7 +124,7 @@ nav_order: 4
       },
       "Verkeersmeting.geobserveerdObject": "_:mpt001",
       "Verkeersmeting.fenomeenTijd": ":_fenomtime001",
-      "Verkeersmeting.resultaat": 33.3209922251018,
+      "Verkeersmeting.resultaat": 3.99851906701222,
       "Verkeersmeting.uitgevoerdDoor": "_:mti001",
       "dct:memberOf": "_:dataset001"
     },
@@ -160,12 +160,11 @@ nav_order: 4
       "@type": "Verkeersmeting",
       "Verkeersmeting.geobserveerdKenmerk": {
         "@type": "Verkeerskenmerk",
-        "Verkeerskenmerk.type": "cl-vkt:aantal",
-        "Verkeerskenmerk.voertuigType": "cl-vrt:auto"
+        "Verkeerskenmerk.type": "cl-vkt:v85"
       },
       "Verkeersmeting.geobserveerdObject": "_:mpt001",
       "Verkeersmeting.fenomeenTijd": ":_fenomtime001",
-      "Verkeersmeting.resultaat": 277.230655312846,
+      "Verkeersmeting.resultaat": 31,
       "Verkeersmeting.uitgevoerdDoor": "_:mti001"
     },
     {
