@@ -188,18 +188,8 @@ nav_order: 4
             "@value": "m",
             "@type": "ucum:ucumunit"
           }
-        }
-      },
-      "Verkeersmeetpunt.netwerkreferentie": {
-        "@type": "Puntreferentie",
-        "Puntreferentie.opPositie": {
-          "@type": "Lengte",
-          "KwantitatieveWaarde.waarde": "300",
-          "KwantitatieveWaarde.standaardEenheid": {
-            "@value": "m",
-            "@type": "ucum:ucumunit"
-          }
-        }
+        },
+        "Linkreferentie.toepassingsrichting": "cl-tpr:bothDirections"
       },
       "Verkeersbemonsteringsobject.bemonsterdObject": "_:rri001"
     },
