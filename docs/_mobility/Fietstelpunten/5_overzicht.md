@@ -53,6 +53,7 @@ Het teken '^' geeft aan, dat deze klassen zijn overgeërfd van een ander applcia
       "Verkeersmeting.fenomeenTijd": ":_fenomtime001"
     }
    ]
+}
 
 ```
 
@@ -66,7 +67,7 @@ De dataset beschrijft de locatie(lengte- en breedtegraad) van het meetpunt waar 
     "long": 4.456121776137429,
     "lang": 50.91618331151478
 }
-´´´
+```
 
 ```json
 {
@@ -84,7 +85,8 @@ De dataset beschrijft de locatie(lengte- en breedtegraad) van het meetpunt waar 
   },
 
 ```
-## Wegsegment en offset van het meetpunt
+# Wegsegment en offset van het meetpunt
+
 {: .note }
 Om OpenLR compliant te zijn, dient bij een verkeersmeting zowel de locatie van het meetpunt (coördinaten), het wegsegment (a.d.v. begin en eindknoop, en eventuele shape knopen) en de offset van het meetpunt (de afstand van het beginknooppunt en het middelpunt) beschreven te zijn.
 
