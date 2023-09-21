@@ -34,8 +34,10 @@ Het teken '^' geeft aan, dat deze klassen zijn overgeërfd van een ander applcia
 {
   "@context": [
  "https://data.vlaanderen.be/doc/applicatieprofiel/verkeersmetingen/ontwerpstandaard/2023-03-14/context/Verkeersmetingen-ap.jsonld",
+ {
  "cl-vrt": "https://data.vlaanderen.be/doc/concept/VkmVoertuigTypes/",
- "cl-vkt": "https://data.vlaanderen.be/doc/concept/VkmVerkeersKenmerkType/",
+ "cl-vkt": "https://data.vlaanderen.be/doc/concept/VkmVerkeersKenmerkType/"
+ }
 ],
 
    "@graph": [
