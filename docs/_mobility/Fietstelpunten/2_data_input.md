@@ -8,6 +8,10 @@ nav_order: 3
 
 # Data voorbeeld fietstellus
 
+Datasets worden in bulk gepubliceerd via [](https://opendata.apps.mow.vlaanderen.be/fietstellingen/index.html)
+
+Om de bron data overzichtelijk te maken, plaatsen we dit in een json structuur:
+
 ```json
 {
 "data":
@@ -44,8 +48,23 @@ nav_order: 3
     "interval":"15",
     "datum_van":"2019-08-22"
 
-}],
+},
+{
 
+,300024198,4.41497,50.91372,Vilvoorde,Vlaamse Overheid A. Wegen enVerkeer,N2600002,AWV212,Vilvoorde,15,2022-05-19
+
+    "site ID" : "47",
+    "site nr" : "300024198",
+    "long": 4.41497,
+    "lang": 50.913728,
+    "naam": "Vilvoorde",
+    "domein" : "Vlaamse Overheid A. Wegen enVerkeer",
+    "wegnr": "N2600002",
+    "district": "AWV212",
+    "gemeente" : "Vilvoorde",
+    "interval":"15",
+    "datum_van":"2022-05-19"
+}],
 
 "richtingen":[
     {
@@ -53,8 +72,8 @@ nav_order: 3
 "richting": "IN",
 "naam":"Machelen Cyclists rich. Brucargo"},
 {
-"site ID":21,
-"richting": "OUT",
+"site ID":47,
+"richting": "IN",
 "naam":"Bilzen Fietsers rich. Bilzen"}
 ]
 }
