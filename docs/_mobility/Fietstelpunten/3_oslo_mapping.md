@@ -77,7 +77,7 @@ nav_order: 4
         "Verkeerskenmerk.type": "cl-vkt:aantal",
         "Verkeerskenmerk.voertuigType": "cl-vrt:fiets"
       },
-      "Verkeersmeting.resultaat": 60,
+      "Verkeersmeting.resultaat": 1,
       "Verkeersmeting.uitgevoerdDoor": "_:mti001",
       "Verkeersmeting.geobserveerdObject": "_:mpt001",
       "Verkeersmeting.fenomeenTijd": ":_fenomtime001"
@@ -90,7 +90,7 @@ nav_order: 4
         "Verkeerskenmerk.type": "cl-vkt:aantal",
         "Verkeerskenmerk.voertuigType": "cl-vrt:fiets"
       },
-      "Verkeersmeting.resultaat": 100,
+      "Verkeersmeting.resultaat": 0,
       "Verkeersmeting.uitgevoerdDoor": "_:mti001",
       "Verkeersmeting.geobserveerdObject": "_:mpt002",
       "Verkeersmeting.fenomeenTijd": ":_fenomtime001"

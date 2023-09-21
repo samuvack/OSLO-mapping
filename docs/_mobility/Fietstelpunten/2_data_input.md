@@ -22,15 +22,15 @@ Om de bron data overzichtelijk te maken, plaatsen we dit in een json structuur:
 "type": "FIETSERS",
 "van":"2023-06-01 00:00:00.0",
 "tot": "2023-06-01 00:15:00.0",
-"aantal": 60
-}
+"aantal": 1
+},
 {
-"site ID": 47,
-"richting" : "IN",
+"site ID": 1,
+"richting" : "OUT",
 "type": "FIETSERS",
 "van":"2023-06-01 00:00:00.0",
 "tot": "2023-06-01 00:15:00.0",
-"aantal": 100
+"aantal": 0
 }],
 
 "sites":
@@ -48,22 +48,6 @@ Om de bron data overzichtelijk te maken, plaatsen we dit in een json structuur:
     "interval":"15",
     "datum_van":"2019-08-22"
 
-},
-{
-
-,300024198,4.41497,50.91372,Vilvoorde,Vlaamse Overheid A. Wegen enVerkeer,N2600002,AWV212,Vilvoorde,15,2022-05-19
-
-    "site ID" : "47",
-    "site nr" : "300024198",
-    "long": 4.41497,
-    "lang": 50.913728,
-    "naam": "Vilvoorde",
-    "domein" : "Vlaamse Overheid A. Wegen enVerkeer",
-    "wegnr": "N2600002",
-    "district": "AWV212",
-    "gemeente" : "Vilvoorde",
-    "interval":"15",
-    "datum_van":"2022-05-19"
 }],
 
 "richtingen":[
@@ -72,12 +56,16 @@ Om de bron data overzichtelijk te maken, plaatsen we dit in een json structuur:
 "richting": "IN",
 "naam":"Machelen Cyclists rich. Brucargo"},
 {
-"site ID":47,
-"richting": "IN",
-"naam":"Bilzen Fietsers rich. Bilzen"}
+"site ID":1,
+"richting": "Out",
+"naam":"Machelen Cyclists richting Machelen"}
 ]
 }
 
+
 ```
+
+
+
 
 
