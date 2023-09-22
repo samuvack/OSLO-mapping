@@ -1,0 +1,22 @@
+<<<<<<< HEAD
+=======
+    <script>
+        function displayFile() {
+            // Get the file input element
+            var fileInput = document.getElementById("fileInput");
+            // Get the selected file
+            var file = fileInput.files[0];
+            // Create a FileReader object
+            var reader = new FileReader();
+            // Define what to do when the file is read
+            reader.onload = function(e) {
+                // Get the textarea element
+                var textArea = document.getElementById("textArea");
+                // Set the value of the textarea to the file content
+                textArea.value = e.target.result;
+            };
+            // Read the file as text
+            reader.readAsText(file);
+        }
+    </script>
+>>>>>>> parent of 0661761 (update)
