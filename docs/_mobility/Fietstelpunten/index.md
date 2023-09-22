@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Fietstelpunten
-has_children: true
+has_children: false
 ---
 
 # Fietstelpunten

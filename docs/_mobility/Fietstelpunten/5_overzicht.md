@@ -1,15 +1,13 @@
 ---
 layout: default
 parent: Fietstelpunten
-title: Overview
+title: Documentatie OSLO mapping
 nav_order: 5
 ---
-
 
 # Documentatie OSLO mapping data fietstelpunten
 
 ## Input data
-
 
 Gegevens komen van een tellus van AWV. Datasets worden in bulk gepubliceerd via [](https://opendata.apps.mow.vlaanderen.be/fietstellingen/index.html)
 
@@ -27,11 +25,11 @@ Er rijden tussen 7u45 en 8u op 1/8/2019 dus 7 fietsers richting Machelen en 4 ri
 
 ## Aanpak
 
-We maakten 2 Verkeersmetingen, vrm001 en vrm002, één per Rijrichting.
+We maken twee Verkeersmetingen, vrm001 en vrm002, één per Rijrichting.
 Het geobserveerdKenmerk "_:mpt001" is voor beide metingen hetzelfde, nl het aantal fieters waarbij "Aantal" het type kenmerk is en "Fiets" het voertuigtype. Deze waarden komen uit codelijsten die worden opgesteld in het kader van de implementatie van de Mobility dataspace.
 
 Resultaat is in beide gevallen een integer.
-De meting is uitgevoerdMet mti001, we veronderstellen dat dit een Sensor is vh type "PneumatischeTelslang" en dat deze "Assentelling" als Observatieprocedure implementeert. 
+De meting is uitgevoerdMet mti001, we veronderstellen dat dit een Sensor is vh type "PneumatischeTelslang" en dat deze "Assentelling" als Observatieprocedure implementeert. Hier verwijzen we naar de codelijst: [](https://data.vlaanderen.be/doc/concept/VkmMeetInstrumentType/rubberslang)
 
 De fenomeentijd is voor beide metingen dezelfde, nl een periode op 1/8/2019 tussen 7u45 en 8u.
 We zouden de metingen rechtstreeks kunnen koppelen aan de Rijrichtingen waarop ze slaan (geobserveerdObject is Rijrichting x), maar we kiezen er hier voor om het 
