@@ -67,5 +67,8 @@ Om de bron data overzichtelijk te maken, plaatsen we dit in een json structuur:
 
 
 
+![Wegsegment](images/wegsegment_fietstellus.png.jpg)
+
+
 
 
