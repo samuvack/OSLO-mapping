@@ -57,7 +57,7 @@ print(folders)
 for folder in folders:
     # Get the path of the compact.jsonld file
     file_path = "../docs/_mobility/" +  str(folder) + "/compact.jsonld"
-    output_path = "../docs/_mobility/"  + str(folder) + "+expanded.jsonld"
+    output_path = "../docs/_mobility/"  + str(folder) + "/expanded.jsonld"
     print(file_path)
     # Load the JSON-LD document from a file
     with open(file_path) as f:

@@ -67,7 +67,7 @@
     },
     "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdObject": "_:mpt001",
     "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result": {
-      "@type": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
+      "@type": "http://www.w3.org/2001/XMLSchema#double",
       "@value": 33.3209922251018
     },
     "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdDoor": "_:mti001",
@@ -86,7 +86,7 @@
     },
     "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdObject": "_:mpt001",
     "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result": {
-      "@type": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
+      "@type": "http://www.w3.org/2001/XMLSchema#double",
       "@value": 3.99851906701222
     },
     "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdDoor": "_:mti001",
@@ -105,7 +105,7 @@
     },
     "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdObject": "_:mpt001",
     "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result": {
-      "@type": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
+      "@type": "http://www.w3.org/2001/XMLSchema#double",
       "@value": 26.6567937800814
     },
     "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdDoor": "_:mti001",
@@ -124,7 +124,7 @@
     },
     "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdObject": "_:mpt001",
     "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result": {
-      "@type": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
+      "@type": "http://www.w3.org/2001/XMLSchema#double",
       "@value": 277.230655312846
     },
     "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdDoor": "_:mti001"
@@ -139,7 +139,7 @@
     },
     "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdObject": "_:mpt001",
     "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result": {
-      "@type": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
+      "@type": "http://www.w3.org/2001/XMLSchema#double",
       "@value": 31
     },
     "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdDoor": "_:mti001"
