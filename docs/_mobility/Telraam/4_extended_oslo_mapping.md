@@ -37,7 +37,7 @@ nav_order: 5
     "@type": "https://data.vlaanderen.be/ns/weg#Wegsegment",
     "https://data.vlaanderen.be/ns/netwerk/#beginknoop": "_:wgkn001",
     "https://data.vlaanderen.be/ns/netwerk#eindknoop": "_:wgkn002",
-    "https://data.vlaanderen.be/ns/weg#middellijnGeometrie": {
+    "https://data.vlaanderen.be/ns/netwerk#geometriemiddellijn": {
       "http://www.opengis.net/ont/geosparql#asGML": {
         "@type": "http://www.opengis.net/ont/geosparql#gmlLiteral",
         "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>50.9346197016993 4.04451041920408,50.9346499094883 4.04468516398887,50.9346736897766 4.04476128017613, 50.9347048165154 4.04486091154096,50.9347897018035 4.0450104190652,50.9348297017355 4.04508041942127,50.9349798325647 4.04536795581668,50.9350979049717 4.04561050090522, 50.9351073291995 4.04563353497237,50.9351797011571 4.04581042002322</gml:coordinates><gml:Point>"
@@ -47,7 +47,7 @@ nav_order: 5
   {
     "@id": "_:wgkn001",
     "@type": "https://data.vlaanderen.be/ns/weg#Wegknoop",
-    "https://data.vlaanderen.be/ns/weg#geometrie": {
+    "https://data.vlaanderen.be/ns/netwerk#Knoop.geometrie": {
       "@type": "http://www.opengis.net/ont/sf#Point",
       "http://www.opengis.net/ont/geosparql#asGML": {
         "@type": "http://www.opengis.net/ont/geosparql#gmlLiteral",
@@ -58,7 +58,7 @@ nav_order: 5
   {
     "@id": "_:wgkn002",
     "@type": "https://data.vlaanderen.be/ns/weg#Wegknoop",
-    "https://data.vlaanderen.be/ns/weg#geometrie": {
+    "https://data.vlaanderen.be/ns/netwerk#Knoop.geometrie": {
       "@type": "http://www.opengis.net/ont/sf#Point",
       "http://www.opengis.net/ont/geosparql#asGML": {
         "@type": "http://www.opengis.net/ont/geosparql#gmlLiteral",
@@ -72,7 +72,7 @@ nav_order: 5
     "https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime": ":_fenomtime001",
     "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdKenmerk": {
       "@type": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk",
-      "https://data.vlaanderen.be/ns/verkeersmetingen#type": "https://data.vlaanderen.be/doc/concept/VkmVerkeersKenmerkType/aantal",
+      "http://purl.org/dc/elements/1.1/type": "https://data.vlaanderen.be/doc/concept/VkmVerkeersKenmerkType/aantal",
       "https://data.vlaanderen.be/ns/verkeersmetingen#voertuigType": "https://data.vlaanderen.be/doc/concept/VkmVoertuigType/fiets"
     },
     "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdObject": "_:mpt001",
@@ -91,7 +91,7 @@ nav_order: 5
     "https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime": ":_fenomtime001",
     "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdKenmerk": {
       "@type": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk",
-      "https://data.vlaanderen.be/ns/verkeersmetingen#type": "https://data.vlaanderen.be/doc/concept/VkmVerkeersKenmerkType/aantal",
+      "http://purl.org/dc/elements/1.1/type": "https://data.vlaanderen.be/doc/concept/VkmVerkeersKenmerkType/aantal",
       "https://data.vlaanderen.be/ns/verkeersmetingen#voertuigType": "https://data.vlaanderen.be/doc/concept/VkmVoertuigType/voetganger"
     },
     "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdObject": "_:mpt001",
@@ -110,7 +110,7 @@ nav_order: 5
     "https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime": ":_fenomtime001",
     "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdKenmerk": {
       "@type": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk",
-      "https://data.vlaanderen.be/ns/verkeersmetingen#type": "https://data.vlaanderen.be/doc/concept/VkmVerkeersKenmerkType/aantal",
+      "http://purl.org/dc/elements/1.1/type": "https://data.vlaanderen.be/doc/concept/VkmVerkeersKenmerkType/aantal",
       "https://data.vlaanderen.be/ns/verkeersmetingen#voertuigType": "https://data.vlaanderen.be/doc/concept/VkmVoertuigType/vrachtwagen"
     },
     "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdObject": "_:mpt001",
@@ -129,7 +129,7 @@ nav_order: 5
     "https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime": ":_fenomtime001",
     "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdKenmerk": {
       "@type": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk",
-      "https://data.vlaanderen.be/ns/verkeersmetingen#type": "https://data.vlaanderen.be/doc/concept/VkmVerkeersKenmerkType/aantal",
+      "http://purl.org/dc/elements/1.1/type": "https://data.vlaanderen.be/doc/concept/VkmVerkeersKenmerkType/aantal",
       "https://data.vlaanderen.be/ns/verkeersmetingen#voertuigType": "https://data.vlaanderen.be/doc/concept/VkmVoertuigType/auto"
     },
     "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdObject": "_:mpt001",
@@ -145,7 +145,7 @@ nav_order: 5
     "https://def.isotc211.org/iso19156/2011/Observation#OM_Observation.phenomenonTime": ":_fenomtime001",
     "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdKenmerk": {
       "@type": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeerskenmerk",
-      "https://data.vlaanderen.be/ns/verkeersmetingen#type": "https://data.vlaanderen.be/doc/concept/VkmVerkeersKenmerkType/v85"
+      "http://purl.org/dc/elements/1.1/type": "https://data.vlaanderen.be/doc/concept/VkmVerkeersKenmerkType/v85"
     },
     "https://data.vlaanderen.be/ns/verkeersmetingen#geobserveerdObject": "_:mpt001",
     "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result": {
@@ -158,17 +158,17 @@ nav_order: 5
     "@id": "_:mpt001",
     "@type": "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt",
     "https://data.vlaanderen.be/ns/verkeersmetingen#bemonsterdObject": "_:wgs001",
-    "https://data.vlaanderen.be/ns/weg#geometrie": {
+    "http://def.isotc211.org/iso19156/2011/SamplingPoint#SF_SamplingPoint.shape": {
       "@type": "http://www.opengis.net/ont/sf#Point",
       "http://www.opengis.net/ont/geosparql#asGML": {
         "@type": "http://www.opengis.net/ont/geosparql#gmlLiteral",
         "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>virtual_x,virtual_y</gml:coordinates><gml:Point>"
       }
     },
-    "https://data.vlaanderen.be/ns/verkeersmetingen#netwerkreferentie": {
-      "@type": "https://data.vlaanderen.be/ns/netwerk/#Puntreferentie",
-      "https://data.vlaanderen.be/ns/netwerk/#opPositie": {
-        "@type": "https://schema.org/Distance",
+    "https://data.vlaanderen.be/ns/verkeersmetingen#Verkeersmeetpunt.netwerkreferentie": {
+      "@type": "https://data.vlaanderen.be/ns/netwerk#Puntreferentie",
+      "https://data.vlaanderen.be/ns/netwerk#Puntreferentie.opPositie": {
+        "@type": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Length",
         "https://schema.org/unitCode": {
           "@type": "https://w3id.org/cdt/ucumunit",
           "@value": "m"
