@@ -22,7 +22,7 @@ collections:
   mobility:
     permalink: "/:collection/:path"
     output: true
-  fietstelpunten:
+  Fietstelpunten:
     permalink: "/:collection/:path"
     output: true
 
@@ -60,7 +60,7 @@ just_the_docs:
       name: Water Data Space
     mobility:
       name: Mobility Data Space
-    fietstelpunten:
+    Fietstelpunten:
       name: Fietstelpunten
 
 

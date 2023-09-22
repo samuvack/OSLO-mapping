@@ -1,7 +1,6 @@
 ---
 layout: default
-parent: fietstelpunten
-title: fietstelpunten
+parent: Fietstelpunten
+title: Fietstelpunten
+has_children: true
 ---
-
-

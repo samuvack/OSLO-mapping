@@ -2,7 +2,7 @@
 layout: default
 parent: Fietstelpunten
 title: Documentatie OSLO mapping
-nav_order: 5
+nav_order: 0
 ---
 
 # Documentatie OSLO mapping data fietstelpunten
