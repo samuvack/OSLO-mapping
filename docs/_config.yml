@@ -22,6 +22,9 @@ collections:
   mobility:
     permalink: "/:collection/:path"
     output: true
+  fietstelpunten:
+    permalink: "/:collection/:path"
+    output: true
 
 
 # Enable or disable the site search
@@ -57,6 +60,8 @@ just_the_docs:
       name: Water Data Space
     mobility:
       name: Mobility Data Space
+    fietstelpunten:
+      name: Fietstelpunten
 
 
 enable_copy_code_button: true
