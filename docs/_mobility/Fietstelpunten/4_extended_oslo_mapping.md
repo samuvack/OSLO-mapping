@@ -1,6 +1,6 @@
 ---
 layout: default
-#parent: Fietstelpunten
+parent: Fietstelpunten
 title: expanded OSLO mapping
 nav_order: 4
 ---

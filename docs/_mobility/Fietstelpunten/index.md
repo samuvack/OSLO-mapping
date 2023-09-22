@@ -1,9 +1,10 @@
 ---
 layout: default
-#parent: Fietstelpunten
-title: documentatie OSLO mapping
-nav_order: 0
+parent: Fietstelpunten
+title: Fietstelpunten
+has_children: true
 ---
+
 
 # Documentatie OSLO mapping data fietstelpunten
 

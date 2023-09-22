@@ -1,6 +1,6 @@
 ---
 layout: default
-#parent: Fietstelpunten
+parent: Fietstelpunten
 title: data voorbeeld
 nav_order: 2
 ---
