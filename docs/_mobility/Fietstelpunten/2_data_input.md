@@ -8,7 +8,7 @@ nav_order: 3
 
 # Data voorbeeld fietstellus
 
-Datasets worden in bulk gepubliceerd via [](https://opendata.apps.mow.vlaanderen.be/fietstellingen/index.html)
+
 
 Om de bron data overzichtelijk te maken, plaatsen we dit in een json structuur:
 
@@ -62,12 +62,8 @@ Om de bron data overzichtelijk te maken, plaatsen we dit in een json structuur:
 ]
 }
 
-
 ```
 
-
-
-![Wegsegment](images/wegsegment_fietstellus.png.jpg)
 
 
 
