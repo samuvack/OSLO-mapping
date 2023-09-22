@@ -27,7 +27,7 @@ nav_order: 4
       "ucum": "https://w3id.org/cdt/",
 
       "Verkeersmeting.resultaat": {
-        "@type": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
         "@id": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result"
       },
 

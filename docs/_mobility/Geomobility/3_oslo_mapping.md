@@ -28,6 +28,11 @@ nav_order: 4
       "adms": "http://www.w3.org/ns/adms#",
       "ucum": "https://w3id.org/cdt/",
 
+      "Verkeersmeting.resultaat": {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@id": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result"
+      },
+
       "cl-vrt": "https://data.vlaanderen.be/doc/concept/VkmVoertuigType/",
       "cl-vkt": "https://data.vlaanderen.be/doc/concept/VkmVerkeersKenmerkType/",
       "cl-trt": "https://inspire.ec.europa.eu/codelist/LinkDirectionValue/",

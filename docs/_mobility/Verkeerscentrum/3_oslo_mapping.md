@@ -10,7 +10,7 @@ nav_order: 4
 ```json
 {
   "@context": [
-    "https://raw.githubusercontent.com/samuvack/context/main/Verkeersmetingen-ap.jsonld",
+    "https://data.vlaanderen.be/doc/applicatieprofiel/verkeersmetingen/ontwerpstandaard/2023-03-14/context/Verkeersmetingen-ap.jsonld",
     "https://data.vlaanderen.be/doc/applicatieprofiel/sensoren-en-bemonstering/kandidaatstandaard/2022-04-28/context/ap-sensoren-en-bemonstering.jsonld",
     "https://data.vlaanderen.be/doc/applicatieprofiel/observaties-en-metingen/kandidaatstandaard/2022-04-28/context/ap-observaties-en-metingen.jsonld",
     "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21/context/geodcatap-vlaanderen.jsonld",
@@ -28,7 +28,7 @@ nav_order: 4
       "ucum": "https://w3id.org/cdt/",
 
       "Verkeersmeting.resultaat": {
-        "@type": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
         "@id": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result"
       },
 

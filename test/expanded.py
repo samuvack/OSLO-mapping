@@ -1,20 +1,13 @@
----
-layout: default
-parent: Signco
-title: OSLO mapping
-nav_order: 4
----
+from pyld import jsonld
+import json
 
-# OSLO mapping
-
-```json
+test = """
 {
   "@context": [
     "https://data.vlaanderen.be/doc/applicatieprofiel/verkeersmetingen/ontwerpstandaard/2023-03-14/context/Verkeersmetingen-ap.jsonld",
     "https://data.vlaanderen.be/doc/applicatieprofiel/sensoren-en-bemonstering/kandidaatstandaard/2022-04-28/context/ap-sensoren-en-bemonstering.jsonld",
     "https://data.vlaanderen.be/doc/applicatieprofiel/observaties-en-metingen/kandidaatstandaard/2022-04-28/context/ap-observaties-en-metingen.jsonld",
-    "https://raw.githubusercontent.com/samuvack/context/main/wegenregister.jsonld",
-    "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21/context/geodcatap-vlaanderen.jsonld",
+    "https://raw.githubusercontent.com/samuvack/context/main/DCAT_context.json",
     "https://data.vlaanderen.be/doc/applicatieprofiel/generiek-basis/zonderstatus/2019-07-01/context/generiek-basis.jsonld",
     {
       "schema": "http://schema.org/",
@@ -25,15 +18,13 @@ nav_order: 4
       "qudt-schema": "https://qudt.org/schema/qudt/",
       "dcterms": "http://purl.org/dc/terms/",
       "time": "http://www.w3.org/2006/time#",
-      "adms": "http://www.w3.org/ns/adms#",
-      "ucum": "https://w3id.org/cdt/",
 
       "Verkeersmeting.resultaat": {
         "@type": "http://www.w3.org/2001/XMLSchema#double",
         "@id": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result"
       },
 
-      "cl-vrt": "https://data.vlaanderen.be/doc/concept/VkmVoertuigType/",
+      "cl-vrt": "https://data.vlaanderen.be/doc/concept/VkmVoertuigTypes/",
       "cl-vkt": "https://data.vlaanderen.be/doc/concept/VkmVerkeersKenmerkType/",
       "cl-trt": "https://inspire.ec.europa.eu/codelist/LinkDirectionValue/",
       "cl-mit": "https://data.vlaanderen.be/doc/concept/VkmMeetInstrumentType/",
@@ -41,27 +32,111 @@ nav_order: 4
       "cl-access": "http://publications.europa.eu/resource/authority/access-right/"
     }
   ],
+
   "@graph": [
     {
-      "@id": "_:Signco001",
+      "@id": "_:tellusdata001",
       "@type": "Dataset",
       "Dataset.titel": {
         "@language": "nl",
-        "@value": "Signco."
+        "@value": "Fietstellingen - Agentschap Wegen en Verkeer"
       },
       "Dataset.beschrijving": [
         {
           "@language": "nl",
-          "@value": ""
+          "@value": "Deze dataset omvat zowel de automatische fietstellingen van AWV, als de locaties waar de tellingen plaatsvinden."
         }
       ],
       "Dataset.toegankelijkheid": "cl-access:PUBLIC",
       "Dataset.trefwoord": [
         {
           "@language": "nl",
-          "@value": "Signco"
+          "@value": "fietstellingen"
         }
       ]
+    },
+    {
+      "@id": "_:vrm001",
+      "@type": "Verkeersmeting",
+      "Verkeersmeting.geobserveerdKenmerk": {
+        "@type": "Verkeerskenmerk",
+        "Verkeerskenmerk.type": "cl-vkt:aantal",
+        "Verkeerskenmerk.voertuigType": "cl-vrt:fiets"
+      },
+      "Verkeersmeting.resultaat": 1,
+      "Verkeersmeting.uitgevoerdDoor": "_:mti001",
+      "Verkeersmeting.geobserveerdObject": "_:mpt001",
+      "Verkeersmeting.fenomeenTijd": ":_fenomtime001"
+    },
+    {
+      "@id": "_:vrm002",
+      "@type": "Verkeersmeting",
+      "Verkeersmeting.geobserveerdKenmerk": {
+        "@type": "Verkeerskenmerk",
+        "Verkeerskenmerk.type": "cl-vkt:aantal",
+        "Verkeerskenmerk.voertuigType": "cl-vrt:fiets"
+      },
+      "Verkeersmeting.resultaat": 0,
+      "Verkeersmeting.uitgevoerdDoor": "_:mti001",
+      "Verkeersmeting.geobserveerdObject": "_:mpt002",
+      "Verkeersmeting.fenomeenTijd": ":_fenomtime001"
+    },
+    {
+      "@id": ":_fenomtime001",
+      "@type": "time:ProperInterval",
+      "time:hasBeginning": {
+        "@type": "time:Instant",
+        "time:inXSDDateTime": {
+          "@type": "xml-schema:dateTime",
+          "@value": "20230601T00:00:00.000"
+        }
+      },
+      "time:hasEnd": {
+        "@type": "time:Instant",
+        "time:inXSDDateTime": {
+          "@type": "xml-schema:dateTime",
+          "@value": "20230601T00:00:15.000"
+        }
+      }
+    },
+    {
+      "@id": "_:mpt001",
+      "@type": "Verkeersmeetpunt",
+      "Verkeersmeetpunt.rijrichting": "_:rri001",
+      "Verkeersmeetpunt.netwerkreferentie": "_:pr001",
+      "Verkeersmeetpunt.geometrie": "_:g001",
+      "Verkeersbemonsteringsobject.bemonsterdObject": "_:rri001"
+    },
+    {
+      "@id": "_:mpt002",
+      "@type": "Verkeersmeetpunt",
+      "Verkeersmeetpunt.rijrichting": "_:rri002",
+      "Verkeersmeetpunt.netwerkreferentie": "_:pr001",
+      "Verkeersmeetpunt.geometrie": "_:g001",
+      "Verkeersbemonsteringsobject.bemonsterdObject": "_:rri002"
+    },
+
+    {
+      "@id": "_:pr001",
+      "@type": "Puntreferentie",
+      "Puntreferentie.opPositie": {
+        "@type": "Lengte",
+        "KwantitatieveWaarde.waarde": "300",
+        "KwantitatieveWaarde.standaardEenheid": {
+          "@value": "m",
+          "@type": "ucum:ucumunit"
+        }
+      },
+      "Linkreferentie.toepassingsRichting": "cl-trt:bothDirections"
+    },
+
+    {
+      "@id": "_:g001",
+      "@type": "Punt",
+      "Geometrie.wkt": {
+        "@value": "<http://www.opengis.net/def/crs/EPSG/0/4326> Point(50.91618331151478 4.456121776137429)",
+        "@type": "geosparql:wktLiteral"
+      }
     },
     {
       "@id": "_:rri001",
@@ -83,7 +158,6 @@ nav_order: 4
       },
       "Rijrichting.rijrichting": "cl-trt:inOppositeDirection"
     },
-
     {
       "@id": "_:wgs001",
       "@type": "Wegsegment",
@@ -103,7 +177,7 @@ nav_order: 4
       "Wegknoop.geometrie": {
         "@type": "Punt",
         "Geometrie.gml": {
-          "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates></gml:coordinates><gml:Point>",
+          "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>14.13421178,46.15023795</gml:coordinates><gml:Point>",
           "@type": "geosparql:gmlLiteral"
         }
       }
@@ -114,58 +188,8 @@ nav_order: 4
       "Wegknoop.geometrie": {
         "@type": "Punt",
         "Geometrie.gml": {
-          "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates></gml:coordinates><gml:Point>",
+          "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>17.13421178,49.15023795</gml:coordinates><gml:Point>",
           "@type": "geosparql:gmlLiteral"
-        }
-      }
-    },
-    {
-      "@id": "_:vkmauto001",
-      "@type": "Verkeersmeting",
-      "Verkeersmeting.geobserveerdKenmerk": {
-        "@type": "Verkeerskenmerk",
-        "Verkeerskenmerk.type": "cl-vkt:aantal",
-        "Verkeerskenmerk.voertuigType": "cl-vrt:auto"
-      },
-      "Verkeersmeting.geobserveerdObject": "_:mpt001",
-      "Verkeersmeting.fenomeenTijd": ":_fenomtime001",
-      "Verkeersmeting.resultaat": 30,
-      "Verkeersmeting.uitgevoerdDoor": "_:mti001",
-      "Verkeersmeetpunt": "_:mpt001",
-      "dct:memberOf": "_:Signco001"
-    },
-    {
-      "@id": "_:vkmauto001",
-      "@type": "Verkeersmeting",
-      "Verkeersmeting.geobserveerdKenmerk": {
-        "@type": "Verkeerskenmerk",
-        "Verkeerskenmerk.type": "cl-vkt:aantal",
-        "Verkeerskenmerk.voertuigType": "cl-vrt:auto"
-      },
-      "Verkeersmeting.geobserveerdObject": "_:mpt001",
-      "Verkeersmeting.fenomeenTijd": ":_fenomtime001",
-      "Verkeersmeting.resultaat": 210,
-      "Verkeersmeting.uitgevoerdDoor": "_:mti001",
-      "Verkeersmeetpunt": "_:mpt001",
-      "dct:memberOf": "_:Signco001"
-    },
-    {
-      "@id": "_:fenomtime001",
-      "Verkeersmeting.fenomeenTijd": {
-        "@type": "time:ProperInterval",
-        "time:hasBeginning": {
-          "@type": "time:Instant",
-          "time:inXSDDateTime": {
-            "@type": "xml-schema:dateTime",
-            "@value": "20161122T09:00:00.000Z"
-          }
-        },
-        "time:hasEnd": {
-          "@type": "time:Instant",
-          "time:inXSDDateTime": {
-            "@type": "xml-schema:dateTime",
-            "@value": "20161122T10:00:00.000Z"
-          }
         }
       }
     },
@@ -175,31 +199,15 @@ nav_order: 4
       "Verkeersmeetpunt.geometrie": {
         "@type": "Punt",
         "Geometrie.gml": {
-          "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>51.041935,4.35714</gml:coordinates><gml:Point>",
+          "@value": "<gml:Point srsName=\"http:\\//www.opengis.net/def/crs/EPSG/0/4326\"><gml:coordinates>4.456121776137429, 50.91618331151478</gml:coordinates><gml:Point>",
           "@type": "geosparql:gmlLiteral"
         }
-      },
-      "Verkeersmeetpunt.netwerkreferentie": "_:pr001",
-      "Verkeersbemonsteringsobject.bemonsterdObject": "_:rri001"
+      }
     },
-    {
-        "@id": "_:pr001",
-        "@type": "Puntreferentie",
-        "Puntreferentie.opPositie": {
-          "@type": "Lengte",
-          "KwantitatieveWaarde.waarde": "300",
-          "KwantitatieveWaarde.standaardEenheid": {
-            "@value": "m",
-            "@type": "ucum:ucumunit"
-          }
-        },
-        "Linkreferentie.toepassingsRichting": "cl-trt:bothDirections"
-      },
-
     {
       "@id": "_:mti001",
       "@type": "Sensor",
-      "Systeem.type": "cl-mit:atc",
+      "Systeem.type": "cl-mit:rubberslang",
       "Sensor.implementeert": {
         "@type": "Observatieproceduretype",
         "Observatieprocedure.type": "cl-op:type"
@@ -207,4 +215,8 @@ nav_order: 4
     }
   ]
 }
-```
+"""
+
+compacted = jsonld.compact(test)
+
+

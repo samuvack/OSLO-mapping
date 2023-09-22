@@ -7,6 +7,8 @@ nav_order: 3
 
 # OSLO mapping
 
+{% include test.html %}
+
 ```json
 {
   "@context": [
@@ -24,6 +26,11 @@ nav_order: 3
       "qudt-schema": "https://qudt.org/schema/qudt/",
       "dcterms": "http://purl.org/dc/terms/",
       "time": "http://www.w3.org/2006/time#",
+
+      "Verkeersmeting.resultaat": {
+        "@type": "http://www.w3.org/2001/XMLSchema#double",
+        "@id": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.result"
+      },
 
       "cl-vrt": "https://data.vlaanderen.be/doc/concept/VkmVoertuigTypes/",
       "cl-vkt": "https://data.vlaanderen.be/doc/concept/VkmVerkeersKenmerkType/",
