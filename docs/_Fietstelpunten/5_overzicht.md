@@ -1,6 +1,6 @@
 ---
 layout: default
-parent: Fietstelpunten
+#parent: Fietstelpunten
 title: Documentatie OSLO mapping
 nav_order: 0
 ---
