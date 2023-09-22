@@ -1,7 +1,7 @@
 ---
 layout: default
 #parent: Fietstelpunten
-title: Vereenvoudigd implementatie model
+title: implementatie model
 nav_order: 1
 ---
 

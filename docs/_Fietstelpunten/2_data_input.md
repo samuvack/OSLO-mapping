@@ -1,7 +1,7 @@
 ---
 layout: default
 #parent: Fietstelpunten
-title: Data voorbeeld fietstellus
+title: data voorbeeld
 nav_order: 2
 ---
 

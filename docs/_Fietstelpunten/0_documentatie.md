@@ -1,14 +1,14 @@
 ---
 layout: default
 #parent: Fietstelpunten
-title: Documentatie OSLO mapping
+title: documentatie OSLO mapping
 nav_order: 0
 ---
 
 # Documentatie OSLO mapping data fietstelpunten
 
 
-# Introductie fietstelpunten
+## Introductie fietstelpunten
 
 <div style="text-align: left;">
 
