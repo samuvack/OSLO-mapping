@@ -68,7 +68,7 @@
         "Verkeerskenmerk.voertuigType": "cl-vrt:fiets"
       },
       "Verkeersmeting.resultaat": 60,
-      "Verkeersmeting.uitgevoerdDoor": "_:mti001",
+      "Verkeersmeting.uitgevoerdMet": "_:mti001",
       "Verkeersmeting.geobserveerdObject": "_:mpt001",
       "Verkeersmeting.fenomeenTijd": ":_fenomtime001"
   },
@@ -81,7 +81,7 @@
         "Verkeerskenmerk.voertuigType": "cl-vrt:fiets"
       },
       "Verkeersmeting.resultaat": 100,
-      "Verkeersmeting.uitgevoerdDoor": "_:mti001",
+      "Verkeersmeting.uitgevoerdMet": "_:mti001",
       "Verkeersmeting.geobserveerdObject": "_:mpt002",
       "Verkeersmeting.fenomeenTijd": ":_fenomtime001"
   },

@@ -30,7 +30,7 @@
       "@type": "http://www.w3.org/2001/XMLSchema#double",
       "@value": 1
     },
-    "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdDoor": "_:mti001"
+    "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdMet": "_:mti001"
   },
   {
     "@id": "_:vrm002",
@@ -46,7 +46,7 @@
       "@type": "http://www.w3.org/2001/XMLSchema#double",
       "@value": 0
     },
-    "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdDoor": "_:mti001"
+    "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdMet": "_:mti001"
   },
   {
     "@id": ":_fenomtime001",

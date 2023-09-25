@@ -11,13 +11,13 @@ from webdriver_manager.chrome import ChromeDriverManager
 driver = webdriver.Chrome(ChromeDriverManager().install())
 
 
-context_url = "https://raw.githubusercontent.com/samuvack/context/main/wegenregister.jsonld"
+context_url = "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21/context/geodcatap-vlaanderen.jsonld"
 response = requests.get(context_url)
 
 data = response.json()
 
 # Geef de url van de website die je wilt scrapen
-url = "https://data.vlaanderen.be/doc/applicatieprofiel/wegenregister/"
+url = "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL"
 
 # Laad de website in de webdriver
 driver.get(url)
@@ -40,8 +40,9 @@ for row in rows:
     d = {}
     
     id = row["id"]
-    print(id)
-    id = id.replace('%3A', '.')
+    id = id.replace('%20', ' ').replace('%3A', '.')
+    #print(id)
+
     list.append(id)
     
     # Zoek naar de tweede td element in de rij
@@ -50,8 +51,10 @@ for row in rows:
     a = td.find("a")
     # Haal de href attribuut van het a element op
     href = a["href"]
+    #print(href)
+    
     # Voeg de href toe aan de lijst
-
+    #print(href)
     hrefs.append(href)
 
 lower = [s.replace(' ','').lower() for s in list]
@@ -66,9 +69,35 @@ def find_element(list, element):
   # If the loop ends without finding the element, return -1 to indicate not found
   return -1
 
+# Define a function that takes an HTML document and an id as parameters
+def find_h3_href(id, soup):
+    # Create a BeautifulSoup object from the HTML document
+    soup = soup
+    # Find the h3 element with the given id
+    h3 = soup.find("h3", id=id)
+    # If the h3 element exists, return the href attribute of its child a element
+    if h3:
+        return h3.a["href"]
+    # Otherwise, return None
+    else:
+        return None
+
+
+def find_h3_href_by_resource(resource, soup):
+    # Create a BeautifulSoup object from the HTML document
+    soup = soup
+    # Find the h3 element with the given id
+    h3 = soup.find("h3", resource=resource)
+    # If the h3 element exists, return the href attribute of its child a element
+    if h3:
+        return h3.a["href"]
+    # Otherwise, return None
+    else:
+        return None
+    
 
 # Print de lijst van hrefs
-print(hrefs[0])
+#print(hrefs[0])
 
 
 # Importeer de json module om de jsonld file te verwerken
@@ -91,34 +120,57 @@ for key, value in context.items():
         if value.get("@type") == "@id":
             # Voeg de eigenschap toe aan de lijst met het formaat "Eigenschap: <key>"
             result = find_element(list, key)
+            print(key)
+            if (key == 'Dataset.toegankelijkheid'):
+                print('result: ', result)
             #print(context[key])
             #print(result)
             if(result>0):
                 #print(hrefs[result][key])
                 if ('http' in hrefs[result]):
                     context[key]['@type'] = str(hrefs[result])
+                    
                 else:
-                    context[key]['@type'] = 'https://data.vlaanderen.be/doc/applicatieprofiel/verkeersmetingen' + \
-                        str(hrefs[result])
+                    href_better = find_h3_href(
+                        str(hrefs[result]).replace('#', ''), soup)
+                    #print(href_better)
+                    if (href_better is None):
+                        search = str(hrefs[result]).replace('#','')
+                        #print(url + '#' + search)
+                        #print(context[search])
+                        context[key]['@type'] = str(context[search])
+                    else:
+                        context[key]['@type'] = href_better
+                    
+                    
             else:
-                test = key.replace(' ','').lower()
+                test = key.replace(' ', '').lower()
                 result = find_element(lower, test)
-                #print(result)
+                if (result<0):
+                        print('nu :', key)
+                        #href_by_resource = find_h3_href_by_resource(
+                        #value.get("@id"), soup)
+                        #print('href :', href_by_resource)
+                        #context[key]['@type'] = str(href_by_resource)
+                        break
                 if ('http' in hrefs[result]):
+
                     context[key]['@type'] = str(hrefs[result])
                 else:
-                    print(hrefs[result])
-                    context[key]['@type'] = 'https://data.vlaanderen.be/doc/applicatieprofiel/verkeersmetingen' + \
-                        str(hrefs[result])
+                    href_better = find_h3_href(
+                        str(hrefs[result]).replace('#', ''), soup)
+                    context[key]['@type'] = href_better
                 
+print(len(lower))
+print(len(hrefs))
 
 #print(context)
 data["@context"] = context
 
 # Open the file in write mode
-with open('output.jsonld', "w") as f:
+with open('output.jsonld', "w", encoding="utf-8") as f:
     # Write the jsonld object to the file with indent 2
-    json.dump(data, f, indent=2)
+    json.dump(data, f, ensure_ascii=False, indent=2)
 
 # Sluit de webdriver
 driver.close()

@@ -10,67 +10,67 @@ response = openai.Completion.create(
 
 JSON bestand 1:
 
-"1-Aalst Station" : {
-"Locatie" : {
-"CRS" : "EPSG:31370",
-"Geometrie" : "POLYGON ((126966 181444))"
+"1-Aalst Station": {
+"Locatie": {
+"CRS": "EPSG:31370",
+"Geometrie": "POLYGON ((126966 181444))"
 },
-"Attributen" : {
-"ID" : "1",
-"Naam" : "Aalst Station",
-"Provincie" : "Oost-Vlaanderen",
-"VVR" : "Aalst",
-"Gemeente" : "Aalst",
-"Status" : "Goedgekeurd",
-"Categorie BVR" : "Interregionaal",
-"Beheer" : [ "Lokaal bestuur" ],
-"Mobiliteitsaanbod" : {
-"Deelsystemen" : [
+"Attributen": {
+"ID": "1",
+"Naam": "Aalst Station",
+"Provincie": "Oost-Vlaanderen",
+"VVR": "Aalst",
+"Gemeente": "Aalst",
+"Status": "Goedgekeurd",
+"Categorie BVR": "Interregionaal",
+"Beheer": ["Lokaal bestuur"],
+"Mobiliteitsaanbod": {
+"Deelsystemen": [
 {
-"Naam" : "VOM deelmobiliteit",
-"Aanbod" : [ "Deelwagens, Deelfietsen" ]
+"Naam": "VOM deelmobiliteit",
+"Aanbod": ["Deelwagens, Deelfietsen"]
 }
 ],
-"Lijnbus halte" : "true",
-"Tramhalte" : "true",
-"Kernnet" : "true",
-"Aanvullend net" : "true",
-"Functioneel net" : "true",
-"Metrohalte" : "true",
-"Treinstation" : "true",
-"VOM flex halte" : "true",
-"Deelwagen VOM" : "true",
-"Deelfiets VOM" : "true",
-"Fietslockers" : "true",
-"Deelsteps" : "true",
-"Fietspomp" : "true",
-"Park and ride" : "true",
-"Kiss and ride" : "false"
+"Lijnbus halte": "true",
+"Tramhalte": "true",
+"Kernnet": "true",
+"Aanvullend net": "true",
+"Functioneel net": "true",
+"Metrohalte": "true",
+"Treinstation": "true",
+"VOM flex halte": "true",
+"Deelwagen VOM": "true",
+"Deelfiets VOM": "true",
+"Fietslockers": "true",
+"Deelsteps": "true",
+"Fietspomp": "true",
+"Park and ride": "true",
+"Kiss and ride": "false"
 },
-"Aanvullend aanbod" : {
-"Wachtaccomodatie" : "true",
-"Vuilnisbak" : "true",
-"Pakketautomaat" : "true",
-"Bagagelocker" : "true",
-"Fietshersteldienst" : "true",
-"Sanitair" : "false",
-"Rode brievenbus" : "true",
-"AED" : "false",
-"Geld automaat" : "true",
-"Wifi" : "false",
-"Oplaadpunt smartphones" : "true",
-"Drinkerwatervoorziening" : "true",
-"Vergaderruimte" : "true",
-"Voedings-en krantenwinkel" : "true",
-"Eet- en drankgelegenheid" : "true",
-"Uitleenpunt kinderwagens" : "true",
-"Spin-off centrumdiensten" : "true"
+"Aanvullend aanbod": {
+"Wachtaccomodatie": "true",
+"Vuilnisbak": "true",
+"Pakketautomaat": "true",
+"Bagagelocker": "true",
+"Fietshersteldienst": "true",
+"Sanitair": "false",
+"Rode brievenbus": "true",
+"AED": "false",
+"Geld automaat": "true",
+"Wifi": "false",
+"Oplaadpunt smartphones": "true",
+"Drinkerwatervoorziening": "true",
+"Vergaderruimte": "true",
+"Voedings-en krantenwinkel": "true",
+"Eet- en drankgelegenheid": "true",
+"Uitleenpunt kinderwagens": "true",
+"Spin-off centrumdiensten": "true"
 }
 }
 }
 
 output json-ld bestand:
-  
+
   {
 "@context": [
     "https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/vervoersknooppunten/erkendestandaard/2022-12-01/context/OSLO-Vervoersknooppunten-ap.jsonld",
@@ -237,7 +237,7 @@ output json-ld bestand:
 "@language": "nl"
 }
 },
-"Mobiliteitsdienst.uitgevoerdDoor": {
+"Mobiliteitsdienst.uitgevoerdMet": {
 "@type": "Uitvoerder",
 "Uitvoerder.contactinfo": {
 "@type": "Contactinfo",
@@ -253,20 +253,20 @@ output json-ld bestand:
 },
 "huisnummer": "65",
 "busnummer": "b",
-"postcode" : "9000"
+"postcode": "9000"
 
 },
-"Contactinfo.telefoon":"093884565"
+"Contactinfo.telefoon": "093884565"
 
 },
-"Uitvoerder.registratie":{
+"Uitvoerder.registratie": {
 "@type": "Identificator",
 "Identificator.identificator": {
 "@value": "0479.561.664",
 "@type": "cl-idt:kbonummer"
 }
 },
-"Uitvoerder.voorkeursnaam":{
+"Uitvoerder.voorkeursnaam": {
 "@value": "Cambio Vlaanderen",
 "@language": "nl"
 }
@@ -291,21 +291,21 @@ output json-ld bestand:
 "@value": "Blue bike",
 "@language": "nl"
 },
-"Mobiliteitsdienst.uitgevoerdDoor": {
+"Mobiliteitsdienst.uitgevoerdMet": {
 "@type": "Uitvoerder",
 "Uitvoerder.contactinfo": {
 "@type": "Contactinfo",
-"Contactinfo.telefoon":"0000000000"
+"Contactinfo.telefoon": "0000000000"
 
 },
-"Uitvoerder.registratie":{
+"Uitvoerder.registratie": {
 "@type": "Identificator",
 "Identificator.identificator": {
 "@value": "0656.746.814",
 "@type": "cl-idt:kbonummer"
 }
 },
-"Uitvoerder.voorkeursnaam":{
+"Uitvoerder.voorkeursnaam": {
 "@value": "Blue bike",
 "@language": "nl"
 }
@@ -329,21 +329,21 @@ output json-ld bestand:
 "@value": "deelwagenvervoeropmaat",
 "@language": "nl"
 },
-"Mobiliteitsdienst.uitgevoerdDoor": {
+"Mobiliteitsdienst.uitgevoerdMet": {
 "@type": "Uitvoerder",
 "Uitvoerder.contactinfo": {
 "@type": "Contactinfo",
-"Contactinfo.telefoon":"0000000000"
+"Contactinfo.telefoon": "0000000000"
 
 },
-"Uitvoerder.registratie":{
+"Uitvoerder.registratie": {
 "@type": "Identificator",
 "Identificator.identificator": {
 "@value": "0000.000.000",
 "@type": "cl-idt:kbonummer"
 }
 },
-"Uitvoerder.voorkeursnaam":{
+"Uitvoerder.voorkeursnaam": {
 "@value": "deelwagenvervoeropmaat",
 "@language": "nl"
 }
@@ -365,21 +365,21 @@ output json-ld bestand:
 "@language": "nl"
 }
 },
-"Mobiliteitsdienst.uitgevoerdDoor": {
+"Mobiliteitsdienst.uitgevoerdMet": {
 "@type": "Uitvoerder",
 "Uitvoerder.contactinfo": {
 "@type": "Contactinfo",
-"Contactinfo.telefoon":"0000000000"
+"Contactinfo.telefoon": "0000000000"
 
 },
-"Uitvoerder.registratie":{
+"Uitvoerder.registratie": {
 "@type": "Identificator",
 "Identificator.identificator": {
 "@value": "0203.430.576",
 "@type": "cl-idt:kbonummer"
 }
 },
-"Uitvoerder.voorkeursnaam":{
+"Uitvoerder.voorkeursnaam": {
 "@value": "NMBS",
 "@language": "nl"
 }
@@ -403,21 +403,21 @@ output json-ld bestand:
 "@language": "nl"
 }
 },
-"Mobiliteitsdienst.uitgevoerdDoor": {
+"Mobiliteitsdienst.uitgevoerdMet": {
 "@type": "Uitvoerder",
 "Uitvoerder.contactinfo": {
 "@type": "Contactinfo",
-"Contactinfo.telefoon":"0000000000"
+"Contactinfo.telefoon": "0000000000"
 
 },
-"Uitvoerder.registratie":{
+"Uitvoerder.registratie": {
 "@type": "Identificator",
 "Identificator.identificator": {
 "@value": "0000.000.000",
 "@type": "cl-idt:kbonummer"
 }
 },
-"Uitvoerder.voorkeursnaam":{
+"Uitvoerder.voorkeursnaam": {
 "@value": "e.g. Vervoer Op Maat bvba",
 "@language": "nl"
 }
@@ -441,21 +441,21 @@ output json-ld bestand:
 }
 },
 
-"Mobiliteitsdienst.uitgevoerdDoor": {
+"Mobiliteitsdienst.uitgevoerdMet": {
 "@type": "Uitvoerder",
 "Uitvoerder.contactinfo": {
 "@type": "Contactinfo",
-"Contactinfo.telefoon":"0000000000"
+"Contactinfo.telefoon": "0000000000"
 
 },
-"Uitvoerder.registratie":{
+"Uitvoerder.registratie": {
 "@type": "Identificator",
 "Identificator.identificator": {
 "@value": "0000.000.000",
 "@type": "cl-idt:kbonummer"
 }
 },
-"Uitvoerder.voorkeursnaam":{
+"Uitvoerder.voorkeursnaam": {
 "@value": "e.g. Vervoer Op Maat bvba",
 "@language": "nl"
 }
@@ -479,21 +479,21 @@ output json-ld bestand:
 "@language": "nl"
 }
 },
-"Mobiliteitsdienst.uitgevoerdDoor": {
+"Mobiliteitsdienst.uitgevoerdMet": {
 "@type": "Uitvoerder",
 "Uitvoerder.contactinfo": {
 "@type": "Contactinfo",
-"Contactinfo.telefoon":"0000000000"
+"Contactinfo.telefoon": "0000000000"
 
 },
-"Uitvoerder.registratie":{
+"Uitvoerder.registratie": {
 "@type": "Identificator",
 "Identificator.identificator": {
 "@value": "0203.430.576",
 "@type": "cl-idt:kbonummer"
 }
 },
-"Uitvoerder.voorkeursnaam":{
+"Uitvoerder.voorkeursnaam": {
 "@value": "NMBS",
 "@language": "nl"
 }
@@ -536,21 +536,21 @@ output json-ld bestand:
 }
 },
 
-"Mobiliteitsdienst.uitgevoerdDoor": {
+"Mobiliteitsdienst.uitgevoerdMet": {
 "@type": "Uitvoerder",
 "Uitvoerder.contactinfo": {
 "@type": "Contactinfo",
-"Contactinfo.telefoon":"0000000000"
+"Contactinfo.telefoon": "0000000000"
 
 },
-"Uitvoerder.registratie":{
+"Uitvoerder.registratie": {
 "@type": "Identificator",
 "Identificator.identificator": {
 "@value": "0203.430.576",
 "@type": "cl-idt:kbonummer"
 }
 },
-"Uitvoerder.voorkeursnaam":{
+"Uitvoerder.voorkeursnaam": {
 "@value": "NMBS",
 "@language": "nl"
 }
@@ -560,10 +560,10 @@ output json-ld bestand:
 {
 "@type": "AanvullendeDienst",
 "AanvullendeDienst.type": "cl-mdt:Fietspomp",
-"AanvullendeDienst.beschikbaarOpInfrastructuurelement": 
+"AanvullendeDienst.beschikbaarOpInfrastructuurelement":
 {
 "@type": "Infrastructuurelement",
-"Infrastructuurelement.type":"cl-ine:Fietspomp"
+"Infrastructuurelement.type": "cl-ine:Fietspomp"
 }
 
 },
@@ -584,21 +584,21 @@ output json-ld bestand:
 "@language": "nl"
 }
 },
-"Mobiliteitsdienst.uitgevoerdDoor": {
+"Mobiliteitsdienst.uitgevoerdMet": {
 "@type": "Uitvoerder",
 "Uitvoerder.contactinfo": {
 "@type": "Contactinfo",
-"Contactinfo.telefoon":"0000000000"
+"Contactinfo.telefoon": "0000000000"
 
 },
-"Uitvoerder.registratie":{
+"Uitvoerder.registratie": {
 "@type": "Identificator",
 "Identificator.identificator": {
 "@value": "0207.437.468",
 "@type": "cl-idt:kbonummer"
 }
 },
-"Uitvoerder.voorkeursnaam":{
+"Uitvoerder.voorkeursnaam": {
 "@value": "stad Aalst",
 "@language": "nl"
 }
@@ -689,7 +689,7 @@ output json-ld bestand:
 "AanvullendeDienst.beschikbaarOpInfrastructuurelement": [
 {
 "@type": "Infrastructuurelement",
-"Infrastructuurelement.type":"cl-ine:pakketautomaat"
+"Infrastructuurelement.type": "cl-ine:pakketautomaat"
 }
 ]
 },
@@ -701,7 +701,7 @@ output json-ld bestand:
 "AanvullendeDienst.beschikbaarOpInfrastructuurelement": [
 {
 "@type": "Infrastructuurelement",
-"Infrastructuurelement.type":"cl-ine:lockers"
+"Infrastructuurelement.type": "cl-ine:lockers"
 }
 ]
 },
@@ -713,7 +713,7 @@ output json-ld bestand:
 "AanvullendeDienst.beschikbaarOpInfrastructuurelement": [
 {
 "@type": "Infrastructuurelement",
-"Infrastructuurelement.type":"cl-ine:fietsherstelplaats"
+"Infrastructuurelement.type": "cl-ine:fietsherstelplaats"
 }
 ]
 },
@@ -725,10 +725,10 @@ output json-ld bestand:
 "AanvullendeDienst.beschikbaarOpInfrastructuurelement": [
 {
 "@type": "Infrastructuurelement",
-"Infrastructuurelement.type":"cl-ine:sanitair"
+"Infrastructuurelement.type": "cl-ine:sanitair"
 }
 ]
-},{
+}, {
 "@id": "_:av007",
 "@type": "AanvullendeDienst",
 "AanvullendeDienst.aanbieder": "_:aan099",
@@ -736,7 +736,7 @@ output json-ld bestand:
 "AanvullendeDienst.beschikbaarOpInfrastructuurelement": [
 {
 "@type": "Infrastructuurelement",
-"Infrastructuurelement.type":"cl-ine:Rode_brievenbus"
+"Infrastructuurelement.type": "cl-ine:Rode_brievenbus"
 }
 ]
 
@@ -746,10 +746,10 @@ output json-ld bestand:
 "@type": "AanvullendeDienst",
 "AanvullendeDienst.aanbieder": "_:aan099",
 "AanvullendeDienst.type": "cl-avd:AED",
-"AanvullendeDienst.beschikbaarOpInfrastructuurelement": 
+"AanvullendeDienst.beschikbaarOpInfrastructuurelement":
 {
 "@type": "Infrastructuurelement",
-"Infrastructuurelement.type":"cl-ine:AED"
+"Infrastructuurelement.type": "cl-ine:AED"
 }
 },
 {
@@ -757,10 +757,10 @@ output json-ld bestand:
 "@type": "AanvullendeDienst",
 "AanvullendeDienst.aanbieder": "_:aan099",
 "AanvullendeDienst.type": "cl-avd:Geld_automaat",
-"AanvullendeDienst.beschikbaarOpInfrastructuurelement": 
+"AanvullendeDienst.beschikbaarOpInfrastructuurelement":
 {
 "@type": "Infrastructuurelement",
-"Infrastructuurelement.type":"cl-ine:Geld_automaat"
+"Infrastructuurelement.type": "cl-ine:Geld_automaat"
 }
 },
 {
@@ -768,10 +768,10 @@ output json-ld bestand:
 "@type": "AanvullendeDienst",
 "AanvullendeDienst.aanbieder": "_:aan099",
 "AanvullendeDienst.type": "cl-avd:Wifi",
-"AanvullendeDienst.beschikbaarOpInfrastructuurelement": 
+"AanvullendeDienst.beschikbaarOpInfrastructuurelement":
 {
 "@type": "Infrastructuurelement",
-"Infrastructuurelement.type":"cl-ine:bagagelockers"
+"Infrastructuurelement.type": "cl-ine:bagagelockers"
 }
 },
 {
@@ -779,10 +779,10 @@ output json-ld bestand:
 "@type": "AanvullendeDienst",
 "AanvullendeDienst.aanbieder": "_:aan099",
 "AanvullendeDienst.type": "cl-avd:Oplaadpunt_smartphones",
-"AanvullendeDienst.beschikbaarOpInfrastructuurelement": 
+"AanvullendeDienst.beschikbaarOpInfrastructuurelement":
 {
 "@type": "Infrastructuurelement",
-"Infrastructuurelement.type":"cl-ine:Oplaadpunt_smartphones"
+"Infrastructuurelement.type": "cl-ine:Oplaadpunt_smartphones"
 }
 
 },
@@ -791,10 +791,10 @@ output json-ld bestand:
 "@type": "AanvullendeDienst",
 "AanvullendeDienst.aanbieder": "_:aan099",
 "AanvullendeDienst.type": "cl-avd:Drinkwatervoorziening",
-"AanvullendeDienst.beschikbaarOpInfrastructuurelement": 
+"AanvullendeDienst.beschikbaarOpInfrastructuurelement":
 {
 "@type": "Infrastructuurelement",
-"Infrastructuurelement.type":"cl-ine:Drinkwatervoorziening"
+"Infrastructuurelement.type": "cl-ine:Drinkwatervoorziening"
 }
 },
 {
@@ -802,10 +802,10 @@ output json-ld bestand:
 "@type": "AanvullendeDienst",
 "AanvullendeDienst.aanbieder": "_:aan099",
 "AanvullendeDienst.type": "cl-avd:Vergaderruimte",
-"AanvullendeDienst.beschikbaarOpInfrastructuurelement": 
+"AanvullendeDienst.beschikbaarOpInfrastructuurelement":
 {
 "@type": "Infrastructuurelement",
-"Infrastructuurelement.type":"cl-ine:Vergaderruimte"
+"Infrastructuurelement.type": "cl-ine:Vergaderruimte"
 }
 },
 {
@@ -813,10 +813,10 @@ output json-ld bestand:
 "@type": "AanvullendeDienst",
 "AanvullendeDienst.aanbieder": "_:aan099",
 "AanvullendeDienst.type": "cl-avd:Voedings-en_krantenwinkel",
-"AanvullendeDienst.beschikbaarOpInfrastructuurelement": 
+"AanvullendeDienst.beschikbaarOpInfrastructuurelement":
 {
 "@type": "Infrastructuurelement",
-"Infrastructuurelement.type":"cl-ine:Voedings-en_krantenwinkel"
+"Infrastructuurelement.type": "cl-ine:Voedings-en_krantenwinkel"
 }
 },
 {
@@ -824,30 +824,30 @@ output json-ld bestand:
 "@type": "AanvullendeDienst",
 "AanvullendeDienst.aanbieder": "_:aan099",
 "AanvullendeDienst.type": "cl-avd:Eet-en_drankgelegenheid",
-"AanvullendeDienst.beschikbaarOpInfrastructuurelement": 
+"AanvullendeDienst.beschikbaarOpInfrastructuurelement":
 {
 "@type": "Infrastructuurelement",
-"Infrastructuurelement.type":"cl-ine:Eet-en_drankgelegenheid"
+"Infrastructuurelement.type": "cl-ine:Eet-en_drankgelegenheid"
 }
 },
 {
 "@id": "_:av016",
 "@type": "AanvullendeDienst",
 "AanvullendeDienst.type": "cl-avd:Uitleenpunt_kinderwagens",
-"AanvullendeDienst.beschikbaarOpInfrastructuurelement": 
+"AanvullendeDienst.beschikbaarOpInfrastructuurelement":
 {
 "@type": "Infrastructuurelement",
-"Infrastructuurelement.type":"cl-ine:Uitleenpunt_kinderwagens"
+"Infrastructuurelement.type": "cl-ine:Uitleenpunt_kinderwagens"
 }
 },
 {
 "@id": "_:av017",
 "@type": "AanvullendeDienst",
 "AanvullendeDienst.type": "cl-avd:Spin-off_centrumdiensten",
-"AanvullendeDienst.beschikbaarOpInfrastructuurelement": 
+"AanvullendeDienst.beschikbaarOpInfrastructuurelement":
 {
 "@type": "Infrastructuurelement",
-"Infrastructuurelement.type":"cl-ine:Spin-off_centrumdiensten"
+"Infrastructuurelement.type": "cl-ine:Spin-off_centrumdiensten"
 }
 }
 ]
@@ -858,68 +858,68 @@ output json-ld bestand:
 
 JSON bestand 2:
 
-"2-Erembodegem Station" : {
-  "Locatie" : {
- "CRS" : "EPSG:31370",
- "Geometrie" : "POLYGON ((128068 178856))"
+"2-Erembodegem Station": {
+  "Locatie": {
+ "CRS": "EPSG:31370",
+ "Geometrie": "POLYGON ((128068 178856))"
   },
-  "Attributen" : {
- "ID" : "2",
- "Naam" : "Erembodegem Station",
- "Provincie" : "Oost-Vlaanderen",
- "VVR" : "Aalst",
- "Gemeente" : "Aalst",
- "Status" : "Goedgekeurd",
- "Categorie BVR" : "Regionaal",
- "Beheer" : [ "Lokaal bestuur" ],
- "Mobiliteitsaanbod" : {
-"Deelsystemen" : [
+  "Attributen": {
+ "ID": "2",
+ "Naam": "Erembodegem Station",
+ "Provincie": "Oost-Vlaanderen",
+ "VVR": "Aalst",
+ "Gemeente": "Aalst",
+ "Status": "Goedgekeurd",
+ "Categorie BVR": "Regionaal",
+ "Beheer": ["Lokaal bestuur"],
+ "Mobiliteitsaanbod": {
+"Deelsystemen": [
    {
-  "Naam" : "VOM deelmobiliteit",
-  "Aanbod" : [ "Deelfietsen, Deelwagens" ]
+  "Naam": "VOM deelmobiliteit",
+  "Aanbod": ["Deelfietsen, Deelwagens"]
    }
 ],
-"Lijnbus halte" : "false",
-"Tramhalte" : "false",
-"Kernnet" : "false",
-"Aanvullend net" : "false",
-"Functioneel net" : "true",
-"Metrohalte" : "false",
-"Treinstation" : "true",
-"VOM flex halte" : "true",
-"Deelwagen VOM" : "false",
-"Deelfiets VOM" : "false",
-"Fietslockers" : "false",
-"Deelsteps" : "false",
-"Fietspomp" : "false",
-"Park and ride" : "false",
-"Kiss and ride" : "false"
+"Lijnbus halte": "false",
+"Tramhalte": "false",
+"Kernnet": "false",
+"Aanvullend net": "false",
+"Functioneel net": "true",
+"Metrohalte": "false",
+"Treinstation": "true",
+"VOM flex halte": "true",
+"Deelwagen VOM": "false",
+"Deelfiets VOM": "false",
+"Fietslockers": "false",
+"Deelsteps": "false",
+"Fietspomp": "false",
+"Park and ride": "false",
+"Kiss and ride": "false"
  },
- "Aanvullend aanbod" : {
-"Wachtaccomodatie" : "false",
-"Vuilnisbak" : "false",
-"Pakketautomaat" : "false",
-"Bagagelocker" : "false",
-"Fietshersteldienst" : "false",
-"Sanitair" : "false",
-"Rode brievenbus" : "false",
-"AED" : "false",
-"Geld automaat" : "false",
-"Wifi" : "false",
-"Oplaadpunt smartphones" : "false",
-"Drinkerwatervoorziening" : "false",
-"Vergaderruimte" : "false",
-"Voedings-en krantenwinkel" : "false",
-"Eet- en drankgelegenheid" : "false",
-"Uitleenpunt kinderwagens" : "false",
-"Spin-off centrumdiensten" : "false"
+ "Aanvullend aanbod": {
+"Wachtaccomodatie": "false",
+"Vuilnisbak": "false",
+"Pakketautomaat": "false",
+"Bagagelocker": "false",
+"Fietshersteldienst": "false",
+"Sanitair": "false",
+"Rode brievenbus": "false",
+"AED": "false",
+"Geld automaat": "false",
+"Wifi": "false",
+"Oplaadpunt smartphones": "false",
+"Drinkerwatervoorziening": "false",
+"Vergaderruimte": "false",
+"Voedings-en krantenwinkel": "false",
+"Eet- en drankgelegenheid": "false",
+"Uitleenpunt kinderwagens": "false",
+"Spin-off centrumdiensten": "false"
  }
 }
 }
 
 output json-ld bestand:
-  
-  
+
+
   """
   temperature=0,
   max_tokens=10000,

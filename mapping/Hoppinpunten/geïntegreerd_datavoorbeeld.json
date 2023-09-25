@@ -138,7 +138,7 @@
             },
             "Mobiliteitsdienst.type": "cl-mdt:deelwagen",
             "Mobiliteitsdienst.aanbieder": "_:organisatie001",
-            "Mobiliteitsdienst.uitgevoerdDoor": "_:organisatie001"
+            "Mobiliteitsdienst.uitgevoerdMet": "_:organisatie001"
         },
         {
             "@id": "_:fietsstalling001",

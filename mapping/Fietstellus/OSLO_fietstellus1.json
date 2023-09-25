@@ -187,7 +187,7 @@ Fietstelpunt
                 }
             },
             "Telling.resultaat": 60,
-            "Observatie.uitgevoerdDoor": "_:mti001"
+            "Observatie.uitgevoerdMet": "_:mti001"
         },
         {
             "@id": "_:rri001",

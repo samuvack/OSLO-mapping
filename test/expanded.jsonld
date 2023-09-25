@@ -160,7 +160,7 @@
         "@value": 5
       }
     ],
-    "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdDoor": [
+    "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdMet": [
       {
         "@id": "_:mti001"
       }

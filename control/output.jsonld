@@ -1,274 +1,531 @@
 {
   "@context": {
-    "EuropeseWeg": "https://data.vlaanderen.be/ns/weg#EuropeseWeg",
-    "Gemeentenaam": "https://data.vlaanderen.be/ns/adres#Gemeentenaam",
-    "GenummerdeWeg": "https://data.vlaanderen.be/ns/weg#GenummerdeWeg",
-    "NationaleWeg": "https://data.vlaanderen.be/ns/weg#NationaleWeg",
-    "OngelijkgrondseKruising": "https://data.vlaanderen.be/ns/weg#OngelijkgrondseKruising",
-    "Organisatie": "http://www.w3.org/ns/org#Organization",
-    "Positie": "https://data.vlaanderen.be/ns/weg#Positie",
-    "Straatnaam": "https://data.vlaanderen.be/ns/adres#Straatnaam",
-    "Wegknoop": "https://data.vlaanderen.be/ns/weg#Wegknoop",
-    "Wegsegment": "https://data.vlaanderen.be/ns/weg#Wegsegment",
-    "Positie.behoortTotSet": {
-      "@id": "https://data.vlaanderen.be/ns/weg#behoortTotSet",
-      "@type": "https://data.vlaanderen.be/ns/weg#GenummerdeWeg"
+    "Agent": "http://purl.org/dc/terms/Agent",
+    "Agent.naam": {
+      "@container": "@set",
+      "@id": "http://xmlns.com/foaf/0.1/name",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
-    "aantal": {
-      "@id": "https://data.vlaanderen.be/ns/weg#aantal",
-      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    "Catalogus": "http://www.w3.org/ns/dcat#Catalog",
+    "Catalogus.alternatieveIdentificator": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/adms#identifier",
+      "@type": "http://www.w3.org/ns/adms#Identifier"
     },
-    "aantalRijstroken": {
-      "@id": "https://data.vlaanderen.be/ns/weg#aantalRijstroken",
-      "@type": "https://data.vlaanderen.be/ns/weg#AantalRijstroken",
-      "@container": "@set"
+    "Catalogus.beschrijving": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/description",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
-    "alternatieveStraatnaam": {
-      "@id": "https://data.vlaanderen.be/ns/weg#alternatieveStraatnaam",
-      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    "Catalogus.contactinformatie": {
+      "@id": "http://www.w3.org/ns/dcat#contactPoint",
+      "@type": "http://www.w3.org/2006/vcard/ns#Kind"
     },
-    "begin": {
-      "@id": "https://data.vlaanderen.be/ns/generiek#Tijdsinterval.begin",
+    "Catalogus.heeftDataService": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#service",
+      "@type": "http://www.w3.org/ns/dcat#DataService"
+    },
+    "Catalogus.heeftDataset": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#dataset",
+      "@type": "http://www.w3.org/ns/dcat#Dataset"
+    },
+    "Catalogus.identificator": {
+      "@id": "http://purl.org/dc/terms/identifier",
       "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "beginknoop": {
-      "@id": "https://data.vlaanderen.be/ns/weg#beginknoop",
-      "@type": "https://data.vlaanderen.be/ns/weg#Wegknoop"
+    "Catalogus.licentie": {
+      "@id": "http://purl.org/dc/terms/license",
+      "@type": "http://purl.org/dc/terms/LicenseDocument"
     },
-    "behoortTot": {
-      "@id": "https://data.vlaanderen.be/ns/weg#behoortTot",
-      "@type": "https://data.vlaanderen.be/ns/weg#EuropeseWeg",
-      "@container": "@set"
+    "Catalogus.record": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#record",
+      "@type": "http://www.w3.org/ns/dcat#CatalogRecord"
     },
-    "behoortTotSet": {
-      "@id": "https://data.vlaanderen.be/ns/weg#behoortTotSetOpPositie",
-      "@type": "https://data.vlaanderen.be/ns/weg#Positie",
-      "@container": "@set"
+    "Catalogus.titel": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/title",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
-    "beperking": {
-      "@id": "https://data.vlaanderen.be/ns/weg#beperking",
-      "@type": "http://www.w3.org/2004/02/skos/core#Concept"
-    },
-    "bovenliggendWegsegment": {
-      "@id": "https://data.vlaanderen.be/ns/weg#bovenliggendWegsegment",
-      "@type": "https://data.vlaanderen.be/ns/weg#Wegsegment"
-    },
-    "breedte": {
-      "@id": "https://data.vlaanderen.be/ns/weg#breedte",
-      "@type": "http://www.w3.org/2001/XMLSchema#double"
-    },
-    "einde": {
-      "@id": "https://data.vlaanderen.be/ns/generiek#Tijdsinterval.einde",
-      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
-    },
-    "eindknoop": {
-      "@id": "https://data.vlaanderen.be/ns/weg#eindknoop",
-      "@type": "https://data.vlaanderen.be/ns/weg#Wegknoop"
-    },
-    "europeesWegnummer": {
-      "@id": "https://data.vlaanderen.be/ns/weg#europeesWegnummer",
-      "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "geldigheidsperiode": {
-      "@id": "https://data.vlaanderen.be/ns/weg#geldigheidsperiode",
-      "@type": "http://purl.org/dc/terms/PeriodOfTime",
-      "@container": "@set"
-    },
-    "genummerdeWegnummer": {
-      "@id": "https://data.vlaanderen.be/ns/weg#genummerdeWegnummer",
-      "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "geometrie": {
-      "@id": "https://data.vlaanderen.be/ns/weg#geometrie",
-      "@type": "http://www.opengis.net/ont/sf#Point"
-    },
-    "gestructureerdedentificator": {
-      "@id": "https://data.vlaanderen.be/ns/generiek#gestructureerdeIdentificator",
-      "@type": "https://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator"
-    },
-    "gml": {
-      "@id": "http://www.opengis.net/ont/geosparql#asGML",
-      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
-    },
-    "heeftRijrichting": {
-      "@id": "https://data.vlaanderen.be/ns/weg#heeftRijrichting",
-      "@type": "https://data.vlaanderen.be/ns/weg#Rijrichting",
-      "@container": "@set"
-    },
-    "heeftSnelheidsbeperking": {
-      "@id": "https://data.vlaanderen.be/ns/weg#heeftSnelheidsbeperking",
-      "@type": "https://data.vlaanderen.be/ns/weg#Snelheidsbeperking",
-      "@container": "@set"
-    },
-    "heeftVoertuigbeperking": {
-      "@id": "https://data.vlaanderen.be/ns/weg#heeftVoertuigbeperking",
-      "@type": "https://data.vlaanderen.be/ns/weg#Voertuigbeperking",
-      "@container": "@set"
-    },
-    "identificator": {
-      "@id": "http://www.w3.org/2004/02/skos/core#notation",
-      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
-    },
-    "linkergemeentenaam": {
-      "@id": "https://data.vlaanderen.be/ns/weg#linkergemeentenaam",
-      "@type": "https://data.vlaanderen.be/ns/adres#Gemeentenaam"
-    },
-    "linkerstraatnaam": {
-      "@id": "https://data.vlaanderen.be/ns/weg#linkerstraatnaam",
-      "@type": "https://data.vlaanderen.be/ns/adres#Straatnaam"
-    },
-    "linkerwegbeheerder": {
-      "@id": "https://data.vlaanderen.be/ns/weg#linkerwegbeheerder",
-      "@type": "http://www.w3.org/ns/org#Organization"
-    },
-    "lokaleIdentificator": {
-      "@id": "https://data.vlaanderen.be/ns/generiek#lokaleIdentificator",
-      "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "meeteenheid": {
-      "@id": "https://data.vlaanderen.be/ns/weg#meeteenheid",
-      "@type": "http://www.w3.org/2004/02/skos/core#Concept"
-    },
-    "methodeWegsegmentgeometrie": {
-      "@id": "https://data.vlaanderen.be/ns/weg#methodeWegsegmentgeometrie",
-      "@type": "http://www.w3.org/2004/02/skos/core#Concept"
-    },
-    "middellijnGeometrie": {
-      "@id": "https://data.vlaanderen.be/ns/weg#middellijnGeometrie",
-      "@type": "http://www.opengis.net/ont/sf#LineString"
-    },
-    "morfologischeWegklasse": {
-      "@id": "https://data.vlaanderen.be/ns/weg#morfologischeWegklasse",
-      "@type": "http://www.w3.org/2004/02/skos/core#Concept"
-    },
-    "naamruimte": {
-      "@id": "https://data.vlaanderen.be/ns/generiek#naamruimte",
-      "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "nationaleWegnummer": {
-      "@id": "https://data.vlaanderen.be/ns/weg#nationaleWegnummer",
-      "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "nauwkeurigheidVanOpmeting": {
-      "@id": "https://data.vlaanderen.be/ns/weg#nauwkeurigheidVanOpmeting",
-      "@type": "http://www.w3.org/2001/XMLSchema#decimal"
-    },
-    "omgeving": {
-      "@id": "https://data.vlaanderen.be/ns/weg#omgeving",
-      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
-      "@container": "@set"
-    },
-    "onderliggendWegsegment": {
-      "@id": "https://data.vlaanderen.be/ns/weg#onderliggendWegsegment",
-      "@type": "https://data.vlaanderen.be/ns/weg#Wegsegment"
-    },
-    "opmeting": {
-      "@id": "https://data.vlaanderen.be/ns/weg#opmeting",
-      "@type": "https://data.vlaanderen.be/ns/weg#Meting"
-    },
-    "rechtergemeentenaam": {
-      "@id": "https://data.vlaanderen.be/ns/weg#rechtergemeentenaam",
-      "@type": "https://data.vlaanderen.be/ns/adres#Gemeentenaam"
-    },
-    "rechterstraatnaam": {
-      "@id": "https://data.vlaanderen.be/ns/weg#rechterstraatnaam",
-      "@type": "https://data.vlaanderen.be/ns/adres#Straatnaam"
-    },
-    "rechterwegbeheerder": {
-      "@id": "https://data.vlaanderen.be/ns/weg#rechterwegbeheerder",
-      "@type": "http://www.w3.org/ns/org#Organization"
-    },
-    "richting": {
-      "@id": "https://data.vlaanderen.be/ns/weg#richting",
-      "@type": "http://www.w3.org/2004/02/skos/core#Concept"
-    },
-    "rijrichting": {
-      "@id": "https://data.vlaanderen.be/ns/weg#rijrichting",
-      "@type": "http://www.w3.org/2004/02/skos/core#Concept"
-    },
-    "snelheidsbeperkingWaarde": {
-      "@id": "https://data.vlaanderen.be/ns/weg#snelheidsbeperkingWaarde",
-      "@type": "https://data.vlaanderen.be/ns/weg#Snelheid"
-    },
-    "snelheidslimietBron": {
-      "@id": "https://data.vlaanderen.be/ns/weg#snelheidslimietBron",
-      "@type": "http://www.w3.org/2004/02/skos/core#Concept"
-    },
-    "snelheidszone": {
-      "@id": "https://data.vlaanderen.be/ns/weg#snelheidszone",
-      "@type": "https://data.vlaanderen.be/ns/weg#Snelheid",
-      "@container": "@set"
-    },
-    "toegangsbeperking": {
-      "@id": "https://data.vlaanderen.be/ns/weg#toegangsbeperking",
-      "@type": "http://www.w3.org/2004/02/skos/core#Concept"
-    },
-    "toegekendDoor": {
-      "@id": "http://purl.org/dc/terms/creator",
+    "Catalogus.uitgever": {
+      "@id": "http://purl.org/dc/terms/publisher",
       "@type": "http://purl.org/dc/terms/Agent"
     },
-    "toegekendDoorString": {
-      "@id": "http://www.w3.org/ns/adms#schemaAgency",
-      "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "toegekendOp": {
+    "CatalogusRecord": "http://www.w3.org/ns/dcat#CatalogRecord",
+    "CatalogusRecord.aanmaakdatum": {
       "@id": "http://purl.org/dc/terms/issued",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
-    "totPositie": {
-      "@id": "https://data.vlaanderen.be/ns/weg#totPositie",
-      "@type": "https://data.vlaanderen.be/ns/weg#Lengte"
+    "CatalogusRecord.alternatieveIdentificator": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/adms#identifier",
+      "@type": "http://www.w3.org/ns/adms#Identifier"
     },
-    "type": {
-      "@id": "http://purl.org/dc/terms/type",
-      "@type": "http://www.w3.org/2004/02/skos/core#Concept"
+    "CatalogusRecord.bronMetadataRecordLandingspagina": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#bronMetadataRecordLandingspagina",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Resource"
     },
-    "vanPositie": {
-      "@id": "https://data.vlaanderen.be/ns/weg#vanPositie",
-      "@type": "https://data.vlaanderen.be/ns/weg#Lengte"
+    "CatalogusRecord.bronMetadatarecord": {
+      "@id": "http://purl.org/dc/terms/source",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Resource"
     },
-    "verharding": {
-      "@id": "https://data.vlaanderen.be/ns/weg#verharding",
-      "@type": "http://www.w3.org/2004/02/skos/core#Concept"
+    "CatalogusRecord.conform": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/conformsTo",
+      "@type": "http://purl.org/dc/terms/Standard"
     },
-    "versieIdentificator": {
-      "@id": "https://data.vlaanderen.be/ns/generiek#versieIdentificator",
+    "CatalogusRecord.hoofdonderwerp": {
+      "@id": "http://xmlns.com/foaf/0.1/primaryTopic",
+      "@type": "http://www.w3.org/ns/dcat#Resource"
+    },
+    "CatalogusRecord.identificator": {
+      "@id": "http://purl.org/dc/terms/identifier",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "CatalogusRecord.titel": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/title",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "CatalogusRecord.wijzigingsdatum": {
+      "@id": "http://purl.org/dc/terms/modified",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "CatalogusResource": "http://www.w3.org/ns/dcat#Resource",
+    "CatalogusResource.relatie": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/relation",
+      "@type": "http://www.w3.org/ns/dcat#Resource"
+    },
+    "CatalogusResource.uitgever": {
+      "@id": "http://purl.org/dc/terms/publisher",
+      "@type": "http://purl.org/dc/terms/Agent"
+    },
+    "Contactinfo": "http://www.w3.org/2006/vcard/ns#Kind",
+    "Contactinfo.contactpagina": {
+      "@id": "http://xmlns.com/foaf/0.1/page",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Resource"
+    },
+    "Contactinfo.eMail": {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasEmail",
+      "@type": "@id"
+    },
+    "Contactpunt": "http://schema.org/ContactPoint",
+    "Dataservice": "http://www.w3.org/ns/dcat#DataService",
+    "Dataservice.alternatieveIdentificator": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/adms#identifier",
+      "@type": "@id"
+    },
+    "Dataservice.beschrijving": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/description",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "Dataservice.biedtInformatieAanOver": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#servesdataset",
+      "@type": "@id"
+    },
+    "Dataservice.conformAanProtocol": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/conformsTo",
+      "@type": "@id"
+    },
+    "Dataservice.contactinformatie": {
+      "@id": "http://www.w3.org/ns/dcat#contactPoint",
+      "@type": "@id"
+    },
+    "Dataservice.creatiedatum": {
+      "@id": "http://purl.org/dc/terms/created",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Dataservice.endpointUrl": {
+      "@id": "http://www.w3.org/ns/dcat#endpointURL",
+      "@type": "@id"
+    },
+    "Dataservice.endpointbeschrijving": {
+      "@id": "http://www.w3.org/ns/dcat#endpointDescription",
+      "@type": "@id"
+    },
+    "Dataservice.geografischeDekking": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/spatial",
+      "@type": "@id"
+    },
+    "Dataservice.identificator": {
+      "@id": "http://purl.org/dc/terms/identifier",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "Dataservice.landingspagina": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#landingPage",
+      "@type": "@id"
+    },
+    "Dataservice.landingspaginaVoorAuthenticatie": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorAuthenticatie",
+      "@type": "@id"
+    },
+    "Dataservice.landingspaginaVoorGebruiksinformatie": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorGebruiksinformatie",
+      "@type": "@id"
+    },
+    "Dataservice.landingspaginaVoorStatusinformatie": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorStatusinformatie",
+      "@type": "@id"
+    },
+    "Dataservice.levensfase": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#levensfase",
+      "@type": "@id"
+    },
+    "Dataservice.licentie": {
+      "@id": "http://purl.org/dc/terms/license",
+      "@type": "@id"
+    },
+    "Dataservice.ontwikkelingstoestand": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand",
+      "@type": "@id"
+    },
+    "Dataservice.publicatiedatum": {
+      "@id": "http://purl.org/dc/terms/issued",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Dataservice.rechten": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/rights",
+      "@type": "@id"
+    },
+    "Dataservice.serviceCategorie": {
+      "@container": "@set",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#servicecategorie",
+      "@type": "@id"
+    },
+    "Dataservice.serviceType": {
+      "@container": "@set",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#servicetype",
+      "@type": "@id"
+    },
+    "Dataservice.statuut": {
+      "@container": "@set",
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#statuut",
+      "@type": "@id"
+    },
+    "Dataservice.thema": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#theme",
+      "@type": "@id"
+    },
+    "Dataservice.titel": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/title",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "Dataservice.toegankelijkheid": {
+      "@id": "http://purl.org/dc/terms/accessRights",
+      "@type": "@id"
+    },
+    "Dataservice.trefwoord": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#keyword",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "Dataservice.versie": {
+      "@id": "http://www.w3.org/2002/07/owl#versionInfo",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
-    "voertuigtype": {
-      "@id": "https://data.vlaanderen.be/ns/weg#voertuigtype",
-      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
-      "@container": "@set"
+    "Dataservice.wijzigingsdatum": {
+      "@id": "http://purl.org/dc/terms/modified",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
-    "volgnummer": {
-      "@id": "https://data.vlaanderen.be/ns/weg#volgnummer",
-      "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+    "Dataset": "http://www.w3.org/ns/dcat#Dataset",
+    "Dataset.alternatieveIdentificator": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/adms#identifier",
+      "@type": "@id"
     },
-    "waarde": {
-      "@id": "https://data.vlaanderen.be/ns/weg#waarde",
-      "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+    "Dataset.beschrijving": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/description",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
-    "wegbreedte": {
-      "@id": "https://data.vlaanderen.be/ns/weg#wegbreedte",
-      "@type": "https://data.vlaanderen.be/ns/weg#Wegbreedte",
-      "@container": "@set"
+    "Dataset.conform": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/conformsTo",
+      "@type": "@id"
     },
-    "wegcategorie": {
-      "@id": "https://data.vlaanderen.be/ns/weg#wegcategorie",
-      "@type": "http://www.w3.org/2004/02/skos/core#Concept"
+    "Dataset.contactinformatie": {
+      "@id": "http://www.w3.org/ns/dcat#contactPoint",
+      "@type": "@id"
     },
-    "wegsegmentstatus": {
-      "@id": "https://data.vlaanderen.be/ns/weg#wegsegmentstatus",
-      "@type": "http://www.w3.org/2004/02/skos/core#Concept"
+    "Dataset.creatiedatum": {
+      "@id": "http://purl.org/dc/terms/created",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
-    "wegverharding": {
-      "@id": "https://data.vlaanderen.be/ns/weg#wegverharding",
-      "@type": "https://data.vlaanderen.be/ns/weg#Wegverharding",
-      "@container": "@set"
+    "Dataset.distributie": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#distribution",
+      "@type": "@id"
     },
-    "wkt": {
-      "@id": "http://www.opengis.net/ont/geosparql#asWKT",
+    "Dataset.eigenaar": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/rightsHolder",
+      "@type": "@id"
+    },
+    "Dataset.gemetConcept": {
+      "@container": "@set",
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#GEMETconcept",
+      "@type": "@id"
+    },
+    "Dataset.geografischeDekking": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/spatial",
+      "@type": "@id"
+    },
+    "Dataset.herkomst": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/provenance",
+      "@type": "@id"
+    },
+    "Dataset.identificator": {
+      "@id": "http://purl.org/dc/terms/identifier",
       "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "Dataset.inspireThema": {
+      "@container": "@set",
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#INSPIREthema",
+      "@type": "@id"
+    },
+    "Dataset.isoCategorie": {
+      "@container": "@set",
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#ISOcategorie",
+      "@type": "@id"
+    },
+    "Dataset.landingspagina": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#landingPage",
+      "@type": "@id"
+    },
+    "Dataset.publicatiedatum": {
+      "@id": "http://purl.org/dc/terms/issued",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Dataset.ruimtelijkVoorstellingstype": {
+      "@id": "http://www.w3.org/ns/adms#representionTechnique",
+      "@type": "@id"
+    },
+    "Dataset.ruimtelijkeResolutie": {
+      "@id": "http://www.w3.org/ns/dqv#hasQualityMeasurement",
+      "@type": "@id"
+    },
+    "Dataset.status": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#status",
+      "@type": "@id"
+    },
+    "Dataset.statuut": {
+      "@container": "@set",
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#statuut",
+      "@type": "@id"
+    },
+    "Dataset.thema": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#theme",
+      "@type": "@id"
+    },
+    "Dataset.titel": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/title",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "Dataset.toegankelijkheid": {
+      "@id": "http://purl.org/dc/terms/accessRights",
+      "@type": "@id"
+    },
+    "Dataset.trefwoord": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#keyword",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "Dataset.versie": {
+      "@id": "http://www.w3.org/2002/07/owl#versionInfo",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Dataset.voorbeeldweergave": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/adms#sample",
+      "@type": "@id"
+    },
+    "Dataset.wijzigingsdatum": {
+      "@id": "http://purl.org/dc/terms/modified",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Distributie": "http://www.w3.org/ns/dcat#Distribution",
+    "Distributie.alternatieveIdentificator": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/adms#identifier",
+      "@type": "@id"
+    },
+    "Distributie.conform": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/conformsTo",
+      "@type": "@id"
+    },
+    "Distributie.downloadUrl": {
+      "@id": "http://www.w3.org/ns/dcat#downloadURL",
+      "@type": "@id"
+    },
+    "Distributie.formaat": {
+      "@id": "http://purl.org/dc/terms/format",
+      "@type": "@id"
+    },
+    "Distributie.identificator": {
+      "@id": "http://purl.org/dc/terms/identifier",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "Distributie.licentie": {
+      "@id": "http://purl.org/dc/terms/license",
+      "@type": "@id"
+    },
+    "Distributie.rechten": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/rights",
+      "@type": "@id"
+    },
+    "Distributie.titel": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/title",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "Distributie.toegangsUrl": {
+      "@id": "http://www.w3.org/ns/dcat#accessURL",
+      "@type": "@id"
+    },
+    "Distributie.verdeler": {
+      "@id": "http://data.europa.eu/930/distributor",
+      "@type": "@id"
+    },
+    "Distributie.wordtAangebodenDoor": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#accessService",
+      "@type": "@id"
+    },
+    "HerkomstVerklaring": "http://purl.org/dc/terms/ProvenanceStatement",
+    "Identificator": "http://www.w3.org/ns/adms#Identifier",
+    "Identificator.gestructureerdeIdentificator": {
+      "@id": "http://data.vlaanderen.be/ns/generiek#gestructureerdeIdentificator",
+      "@type": "@id"
+    },
+    "Identificator.notatie": {
+      "@id": "http://www.w3.org/2004/02/skos/core#notation",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "Identificator.toegekendDoor": {
+      "@id": "http://purl.org/dc/terms/creator",
+      "@type": "@id"
+    },
+    "Identificator.toegekendDoor (string)": {
+      "@id": "http://www.w3.org/ns/adms#schemaAgency",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Identificator.toegekendOp": {
+      "@id": "http://purl.org/dc/terms/issued",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "JuridischeBepaling": "http://purl.org/dc/terms/RightsStatement",
+    "LicentieDocument": "http://purl.org/dc/terms/LicenseDocument",
+    "Plaats": "http://purl.org/dc/terms/Location",
+    "Plaats.boundingBox": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#bbox",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "Plaats.centroïde": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#centroid",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "Plaats.geometrie": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/locn#geometry",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "Plaats.plaatsnaam": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "RelatieQualificatie": "http://www.w3.org/ns/dcat#Relationship",
+    "RelatieQualificatie.catalogusResource(source)": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.source",
+      "@type": "@id"
+    },
+    "RelatieQualificatie.catalogusResource(target)": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.target",
+      "@type": "@id"
+    },
+    "RelatieQualificatie.rol": {
+      "@id": "http://www.w3.org/ns/dcat#hadRole",
+      "@type": "@id"
+    },
+    "Resolutie": "http://www.w3.org/ns/dqv#QualityMeasurement",
+    "Resolutie.resolutieMethode": {
+      "@id": "http://www.w3.org/ns/dqv#isMeasurementOf",
+      "@type": "@id"
+    },
+    "Resolutie.waarde": {
+      "@id": "http://www.w3.org/ns/dqv#value",
+      "@type": "http://www.w3.org/2001/XMLSchema#Decimal"
+    },
+    "Standaard": "http://purl.org/dc/terms/Standard",
+    "Standaard.beschrijving": {
+      "@id": "http://purl.org/dc/terms/description",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "Standaard.publicatiedatum": {
+      "@id": "http://purl.org/dc/terms/issued",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Standaard.specificatieUrl": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+      "@type": "@id"
+    },
+    "Standaard.titel": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/title",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "Standaard.type": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/type",
+      "@type": "@id"
+    },
+    "Standaard.versie": {
+      "@id": "http://www.w3.org/2002/07/owl#versionInfo",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Standaard.voorkeurslabel": {
+      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Voorbeeldweergave": "http://www.w3.org/ns/dcat#Distribution",
+    "Voorbeeldweergave.beschrijving": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/description",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "Voorbeeldweergave.downloadUrl": {
+      "@id": "http://www.w3.org/ns/dcat#downloadURL",
+      "@type": "@id"
+    },
+    "Voorbeeldweergave.mediatype": {
+      "@id": "http://www.w3.org/ns/dcat#mediatype",
+      "@type": "@id"
+    },
+    "Voorbeeldweergave.titel": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/title",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     }
   }
 }

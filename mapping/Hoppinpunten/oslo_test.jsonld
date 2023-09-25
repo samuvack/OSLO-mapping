@@ -164,7 +164,7 @@
 "@language": "nl"
 }
 },
-"Mobiliteitsdienst.uitgevoerdDoor": {
+"Mobiliteitsdienst.uitgevoerdMet": {
 "@type": "Uitvoerder",
 "Uitvoerder.contactinfo": {
 "@type": "Contactinfo",
@@ -218,7 +218,7 @@
 "@value": "Blue bike",
 "@language": "nl"
 },
-"Mobiliteitsdienst.uitgevoerdDoor": {
+"Mobiliteitsdienst.uitgevoerdMet": {
 "@type": "Uitvoerder",
 "Uitvoerder.contactinfo": {
 "@type": "Contactinfo",
@@ -256,7 +256,7 @@
 "@value": "deelwagenvervoeropmaat",
 "@language": "nl"
 },
-"Mobiliteitsdienst.uitgevoerdDoor": {
+"Mobiliteitsdienst.uitgevoerdMet": {
 "@type": "Uitvoerder",
 "Uitvoerder.contactinfo": {
 "@type": "Contactinfo",
@@ -294,7 +294,7 @@
 "@language": "nl"
 }
 },
-"Mobiliteitsdienst.uitgevoerdDoor": {
+"Mobiliteitsdienst.uitgevoerdMet": {
 "@type": "Uitvoerder",
 "Uitvoerder.contactinfo": {
 "@type": "Contactinfo",
@@ -332,7 +332,7 @@
 "@language": "nl"
 }
 },
-"Mobiliteitsdienst.uitgevoerdDoor": {
+"Mobiliteitsdienst.uitgevoerdMet": {
 "@type": "Uitvoerder",
 "Uitvoerder.contactinfo": {
 "@type": "Contactinfo",
@@ -370,7 +370,7 @@
 }
 },
 
-"Mobiliteitsdienst.uitgevoerdDoor": {
+"Mobiliteitsdienst.uitgevoerdMet": {
 "@type": "Uitvoerder",
 "Uitvoerder.contactinfo": {
 "@type": "Contactinfo",
@@ -408,7 +408,7 @@
 "@language": "nl"
 }
 },
-"Mobiliteitsdienst.uitgevoerdDoor": {
+"Mobiliteitsdienst.uitgevoerdMet": {
 "@type": "Uitvoerder",
 "Uitvoerder.contactinfo": {
 "@type": "Contactinfo",
@@ -465,7 +465,7 @@
 }
 },
 
-"Mobiliteitsdienst.uitgevoerdDoor": {
+"Mobiliteitsdienst.uitgevoerdMet": {
 "@type": "Uitvoerder",
 "Uitvoerder.contactinfo": {
 "@type": "Contactinfo",
@@ -513,7 +513,7 @@
 "@language": "nl"
 }
 },
-"Mobiliteitsdienst.uitgevoerdDoor": {
+"Mobiliteitsdienst.uitgevoerdMet": {
 "@type": "Uitvoerder",
 "Uitvoerder.contactinfo": {
 "@type": "Contactinfo",

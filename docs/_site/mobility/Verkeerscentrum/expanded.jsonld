@@ -74,7 +74,7 @@
       "@type": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
       "@value": 0
     },
-    "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdDoor": "_:mti001",
+    "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdMet": "_:mti001",
     "http://purl.org/dc/terms/memberOf": {
       "@value": "_:MIV001"
     }
@@ -96,7 +96,7 @@
       "@type": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
       "@value": 0
     },
-    "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdDoor": "_:mti001",
+    "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdMet": "_:mti001",
     "http://purl.org/dc/terms/memberOf": {
       "@value": "_:MIV001"
     }
@@ -118,7 +118,7 @@
       "@type": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
       "@value": 0
     },
-    "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdDoor": "_:mti001",
+    "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdMet": "_:mti001",
     "http://purl.org/dc/terms/memberOf": {
       "@value": "_:MIV001"
     }
@@ -140,7 +140,7 @@
       "@type": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
       "@value": 0
     },
-    "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdDoor": "_:mti001",
+    "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdMet": "_:mti001",
     "http://purl.org/dc/terms/memberOf": {
       "@value": "_:MIV001"
     }
@@ -162,7 +162,7 @@
       "@type": "http://def.isotc211.org/iso19103/2005/RecordsAndClassMetadata#Any",
       "@value": 0
     },
-    "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdDoor": "_:mti001",
+    "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdMet": "_:mti001",
     "http://purl.org/dc/terms/memberOf": {
       "@value": "_:MIV001"
     }

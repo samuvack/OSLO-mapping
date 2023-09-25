@@ -210,7 +210,7 @@
         "@id": "https://example.com/concept/mobiliteitsdiensttype/deelwagen"
       }
     ],
-    "https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#uitgevoerdDoor": [
+    "https://data.vlaanderen.be/ns/mobiliteit/trips-en-aanbod#uitgevoerdMet": [
       {
         "@id": "_:organisatie001"
       }

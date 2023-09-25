@@ -395,9 +395,9 @@
       "@id": "http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.resultTime",
       "@type": "@id"
     },
-    "Verkeersmeting.uitgevoerdDoor": {
+    "Verkeersmeting.uitgevoerdMet": {
       "@container": "@set",
-      "@id": "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdDoor",
+      "@id": "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdMet",
       "@type": "@id"
     },
     "Verkeersmeting.uitgevoerdMet": {

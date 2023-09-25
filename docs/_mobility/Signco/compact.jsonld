@@ -129,7 +129,7 @@
       "Verkeersmeting.geobserveerdObject": "_:mpt001",
       "Verkeersmeting.fenomeenTijd": ":_fenomtime001",
       "Verkeersmeting.resultaat": 30,
-      "Verkeersmeting.uitgevoerdDoor": "_:mti001",
+      "Verkeersmeting.uitgevoerdMet": "_:mti001",
       "Verkeersmeetpunt": "_:mpt001",
       "dct:memberOf": "_:Signco001"
     },
@@ -144,7 +144,7 @@
       "Verkeersmeting.geobserveerdObject": "_:mpt001",
       "Verkeersmeting.fenomeenTijd": ":_fenomtime001",
       "Verkeersmeting.resultaat": 210,
-      "Verkeersmeting.uitgevoerdDoor": "_:mti001",
+      "Verkeersmeting.uitgevoerdMet": "_:mti001",
       "Verkeersmeetpunt": "_:mpt001",
       "dct:memberOf": "_:Signco001"
     },

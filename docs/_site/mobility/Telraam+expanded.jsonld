@@ -70,7 +70,7 @@
       "@type": "http://www.w3.org/2001/XMLSchema#double",
       "@value": 33.3209922251018
     },
-    "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdDoor": "_:mti001",
+    "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdMet": "_:mti001",
     "http://purl.org/dc/terms/memberOf": {
       "@value": "_:dataset001"
     }
@@ -89,7 +89,7 @@
       "@type": "http://www.w3.org/2001/XMLSchema#double",
       "@value": 3.99851906701222
     },
-    "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdDoor": "_:mti001",
+    "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdMet": "_:mti001",
     "http://purl.org/dc/terms/memberOf": {
       "@value": "_:dataset001"
     }
@@ -108,7 +108,7 @@
       "@type": "http://www.w3.org/2001/XMLSchema#double",
       "@value": 26.6567937800814
     },
-    "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdDoor": "_:mti001",
+    "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdMet": "_:mti001",
     "http://purl.org/dc/terms/memberOf": {
       "@value": "_:dataset001"
     }
@@ -127,7 +127,7 @@
       "@type": "http://www.w3.org/2001/XMLSchema#double",
       "@value": 277.230655312846
     },
-    "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdDoor": "_:mti001"
+    "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdMet": "_:mti001"
   },
   {
     "@id": "_:vmtauto001",
@@ -142,7 +142,7 @@
       "@type": "http://www.w3.org/2001/XMLSchema#double",
       "@value": 31
     },
-    "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdDoor": "_:mti001"
+    "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdMet": "_:mti001"
   },
   {
     "@id": "_:mpt001",

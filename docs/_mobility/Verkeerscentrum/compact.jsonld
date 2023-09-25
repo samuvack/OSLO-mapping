@@ -117,7 +117,7 @@
       "Verkeersmeting.geobserveerdObject": "_:mpt001",
       "Verkeersmeting.fenomeenTijd": ":_fenomtime001",
       "Verkeersmeting.resultaat": 0,
-      "Verkeersmeting.uitgevoerdDoor": "_:mti001",
+      "Verkeersmeting.uitgevoerdMet": "_:mti001",
       "dct:memberOf": "_:MIV001"
     },
     {
@@ -131,7 +131,7 @@
       "Verkeersmeting.geobserveerdObject": "_:mpt001",
       "Verkeersmeting.fenomeenTijd": ":_fenomtime001",
       "Verkeersmeting.resultaat": 0,
-      "Verkeersmeting.uitgevoerdDoor": "_:mti001",
+      "Verkeersmeting.uitgevoerdMet": "_:mti001",
       "Verkeersmeetpunt": "_:mpt001",
       "dct:memberOf": "_:MIV001"
     },
@@ -146,7 +146,7 @@
       "Verkeersmeting.geobserveerdObject": "_:mpt001",
       "Verkeersmeting.fenomeenTijd": ":_fenomtime001",
       "Verkeersmeting.resultaat": 0,
-      "Verkeersmeting.uitgevoerdDoor": "_:mti001",
+      "Verkeersmeting.uitgevoerdMet": "_:mti001",
       "Verkeersmeetpunt": "_:mpt001",
       "dct:memberOf": "_:MIV001"
     },
@@ -161,7 +161,7 @@
       "Verkeersmeting.geobserveerdObject": "_:mpt001",
       "Verkeersmeting.fenomeenTijd": ":_fenomtime001",
       "Verkeersmeting.resultaat": 0,
-      "Verkeersmeting.uitgevoerdDoor": "_:mti001",
+      "Verkeersmeting.uitgevoerdMet": "_:mti001",
       "Verkeersmeetpunt": "_:mpt001",
       "dct:memberOf": "_:MIV001"
     },
@@ -176,7 +176,7 @@
       "Verkeersmeting.geobserveerdObject": "_:mpt001",
       "Verkeersmeting.fenomeenTijd": ":_fenomtime001",
       "Verkeersmeting.resultaat": 0,
-      "Verkeersmeting.uitgevoerdDoor": "_:mti001",
+      "Verkeersmeting.uitgevoerdMet": "_:mti001",
       "Verkeersmeetpunt": "_:mpt001",
       "dct:memberOf": "_:MIV001"
     },
