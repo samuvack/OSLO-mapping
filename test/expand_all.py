@@ -47,3 +47,4 @@ for folder in folders:
     # Write the output object to a new file in the same folder
     with open(os.path.join("../docs/_mobility/", folder, "expanded.jsonld"), "w") as f:
       json.dump(output_obj, f, indent=2)
+    print(folder)
