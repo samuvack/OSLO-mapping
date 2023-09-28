@@ -1,8 +1,10 @@
 ---
 layout: default
-title: Documentatie
+title: Input data
+parent: Documentatie
+grand_parent: Brugge
+nav_order: 0
 ---
-
 ## Input data
 
 Gegevens komen van een tellus van AWV. Datasets worden in bulk gepubliceerd via [](https://opendata.apps.mow.vlaanderen.be/fietstellingen/index.html)

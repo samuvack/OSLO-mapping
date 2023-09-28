@@ -1,7 +1,7 @@
 ---
 layout: default
-parent: Fietstelpunten
-title: OSLO mapping
+parent: Brugge
+title: OSLO mapping (JSON-ld)
 nav_order: 3
 ---
 

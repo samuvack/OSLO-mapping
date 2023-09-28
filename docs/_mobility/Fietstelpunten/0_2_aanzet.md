@@ -1,10 +1,13 @@
 ---
 layout: default
-title: Documentatie
+title: Aanzet
+parent: Documentatie
+grand_parent: Fietstelpunten
+nav_order: 1
 ---
 
 
-## Aanpak
+# Aanpak
 
 We maken twee Verkeersmetingen, vrm001 en vrm002, één per Rijrichting.
 Het geobserveerdKenmerk "\_:mpt001" is voor beide metingen hetzelfde, nl het aantal fieters waarbij "Aantal" het type kenmerk is en "Fiets" het voertuigtype. Deze waarden komen uit codelijsten die worden opgesteld in het kader van de implementatie van de Mobility dataspace.

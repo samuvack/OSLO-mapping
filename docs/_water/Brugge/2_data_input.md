@@ -1,7 +1,7 @@
 ---
 layout: default
-parent: Fietstelpunten
-title: data voorbeeld
+parent: Brugge
+title: Data voorbeeld
 nav_order: 2
 ---
 
