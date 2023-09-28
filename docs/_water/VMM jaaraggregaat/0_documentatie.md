@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Documentatie
-parent: Brugge
+parent: VMM
 has_children: true
 nav_order: 0
 ---

@@ -2,7 +2,7 @@
 layout: default
 title: Stap voor stap
 parent: Documentatie
-grand_parent: Brugge
+grand_parent: VMM
 nav_order: 2
 ---
 

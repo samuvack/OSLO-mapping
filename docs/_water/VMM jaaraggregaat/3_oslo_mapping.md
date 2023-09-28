@@ -1,6 +1,6 @@
 ---
 layout: default
-parent: Brugge
+parent: VMM
 title: OSLO mapping (JSON-ld)
 nav_order: 3
 ---

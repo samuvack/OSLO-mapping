@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Brugge
+title: VMM
 has_children: true
 ---
 

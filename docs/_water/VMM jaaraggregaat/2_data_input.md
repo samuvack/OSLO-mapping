@@ -1,6 +1,6 @@
 ---
 layout: default
-parent: Brugge
+parent: VMM
 title: Data voorbeeld
 nav_order: 2
 ---

@@ -2,7 +2,7 @@
 layout: default
 title: Implementatie model
 parent: Documentatie
-grand_parent: Brugge
+grand_parent: VMM
 nav_order: 4
 ---
 

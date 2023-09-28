@@ -1,6 +1,6 @@
 ---
 layout: default
-parent: Brugge
+parent: VMM
 title: Expanded OSLO mapping
 nav_order: 4
 ---
