@@ -10,14 +10,13 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
 
-
-context_url = "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21/context/geodcatap-vlaanderen.jsonld"
+context_url = "https://raw.githubusercontent.com/samuvack/context/main/wegenregister.jsonld"
 response = requests.get(context_url)
 
 data = response.json()
 
 # Geef de url van de website die je wilt scrapen
-url = "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL"
+url = "https://data.vlaanderen.be/doc/applicatieprofiel/wegenregister"
 
 # Laad de website in de webdriver
 driver.get(url)
@@ -34,6 +33,7 @@ rows = soup.find_all("tr", id=lambda x: x and "%3A" in x)
 # Maak een lege lijst om de gevonden hrefs op te slaan
 hrefs = []
 list=[]
+resource_list=[]
 
 # Loop over elke rij
 for row in rows:
@@ -42,6 +42,8 @@ for row in rows:
     id = row["id"]
     id = id.replace('%20', ' ').replace('%3A', '.')
     #print(id)
+    resource = row["resource"]
+
 
     list.append(id)
     
@@ -56,6 +58,7 @@ for row in rows:
     # Voeg de href toe aan de lijst
     #print(href)
     hrefs.append(href)
+    resource_list.append(resource)
 
 lower = [s.replace(' ','').lower() for s in list]
 
@@ -83,11 +86,11 @@ def find_h3_href(id, soup):
         return None
 
 
-def find_h3_href_by_resource(resource, soup):
+def find_h3_href_by_resource(test, soup):
     # Create a BeautifulSoup object from the HTML document
     soup = soup
-    # Find the h3 element with the given id
-    h3 = soup.find("h3", resource=resource)
+    # Find the h3 element with the given resource
+    h3 = soup.find("h3", resource=test)
     # If the h3 element exists, return the href attribute of its child a element
     if h3:
         return h3.a["href"]
@@ -120,11 +123,8 @@ for key, value in context.items():
         if value.get("@type") == "@id":
             # Voeg de eigenschap toe aan de lijst met het formaat "Eigenschap: <key>"
             result = find_element(list, key)
-            print(key)
-            if (key == 'Dataset.toegankelijkheid'):
-                print('result: ', result)
-            #print(context[key])
-            #print(result)
+
+
             if(result>0):
                 #print(hrefs[result][key])
                 if ('http' in hrefs[result]):
@@ -147,12 +147,15 @@ for key, value in context.items():
                 test = key.replace(' ', '').lower()
                 result = find_element(lower, test)
                 if (result<0):
-                        print('nu :', key)
-                        #href_by_resource = find_h3_href_by_resource(
-                        #value.get("@id"), soup)
-                        #print('href :', href_by_resource)
-                        #context[key]['@type'] = str(href_by_resource)
-                        break
+                        print(url + '#' + key)
+                        print(value.get("@id"))
+                        result = find_element(resource_list, value.get("@id"))
+                        print(result)
+                        print(str(hrefs[result]))
+                        if(result >0):
+                            context[key]['@type'] = str(hrefs[result])
+                        else:
+                            continue
                 if ('http' in hrefs[result]):
 
                     context[key]['@type'] = str(hrefs[result])
