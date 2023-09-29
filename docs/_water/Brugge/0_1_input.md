@@ -1,20 +1,23 @@
 ---
 layout: default
 title: Input data
-parent: Documentatie
-grand_parent: Brugge
+parent: Brugge
 nav_order: 0
 ---
 
 # Input data
 
-[](https://raw.githubusercontent.com/samuvack/OSLO-mapping/main/docs/images/Beproevingsverslag.png)
 
-[](https://raw.githubusercontent.com/samuvack/OSLO-mapping/main/docs/images/Jaaroverzicht.png)
+We baseren ons voor dit voorbeeld op volgend staalnameformulier schepstaal oppervlaktewateren:
 
-[](https://raw.githubusercontent.com/samuvack/OSLO-mapping/main/docs/images/Staalafname.png)
 
-[](https://raw.githubusercontent.com/samuvack/OSLO-mapping/main/docs/images/Staalafname2.png)
+![](https://raw.githubusercontent.com/samuvack/OSLO-mapping/main/docs/images/Staalafname2.png)
+
+
+
+
+![](https://raw.githubusercontent.com/samuvack/OSLO-mapping/main/docs/images/Staalafname.png)
+
 
 [](https://raw.githubusercontent.com/samuvack/OSLO-mapping/main/docs/images/Staalafname3.png)
 

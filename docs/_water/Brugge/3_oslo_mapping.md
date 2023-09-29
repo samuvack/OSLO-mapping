@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: Brugge
-title: OSLO mapping (JSON-ld)
+title: Output json-ld
 nav_order: 3
 ---
 

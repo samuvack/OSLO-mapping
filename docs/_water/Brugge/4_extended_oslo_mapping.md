@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: Brugge
-title: Expanded OSLO mapping
+title: Expanded output
 nav_order: 4
 ---
 
