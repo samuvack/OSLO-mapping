@@ -138,7 +138,7 @@ Het bemonsteringsgebeurtenis bevat details zoals het tijdstip van bemonstering:
 {"datum staalname":"11/01/2021"}
 ```
 
-Het [Oslo model observaties en metingen](https://data.vlaanderen.be/doc/applicatieprofiel/observaties-en-metingen/kandidaatstandaard/2022-04-28/context/ap-observaties-en-metingen.jsonld) definieert termen zoals Bemonstering, bemonsteringstijdstip, time:Instant en time:inXSDDateTime om de concepten en relaties rond bemonstering uit te drukken. Het "Bemonstering.bemonsteringstijdstip" is hierbij van het type "time:Instant":
+Het [OSLO model observaties en metingen](https://data.vlaanderen.be/doc/applicatieprofiel/observaties-en-metingen/kandidaatstandaard/2022-04-28/context/ap-observaties-en-metingen.jsonld) definieert termen zoals Bemonstering, bemonsteringstijdstip, time:Instant en time:inXSDDateTime om de concepten en relaties rond bemonstering uit te drukken. Het "Bemonstering.bemonsteringstijdstip" is hierbij van het type "time:Instant":
 
 ```json
 "Bemonstering.bemonsteringstijdstip":
