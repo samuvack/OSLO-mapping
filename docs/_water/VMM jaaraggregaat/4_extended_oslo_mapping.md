@@ -2,6 +2,7 @@
 layout: default
 parent: VMM
 title: Expanded OSLO mapping
+nav_exclude: true
 nav_order: 4
 ---
 
