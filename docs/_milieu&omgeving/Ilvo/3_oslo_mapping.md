@@ -1,7 +1,7 @@
 ---
 layout: default
-parent: Internet of Water
-title: OSLO mapping (NGSI-ld)
+parent: ILVO
+title: OSLO mapping (JSON-ld)
 nav_order: 3
 ---
 
