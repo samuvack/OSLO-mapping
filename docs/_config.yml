@@ -25,6 +25,9 @@ collections:
   mobility:
     permalink: "/:collection/:path"
     output: true
+  milieu:
+    permalink: "/:collection/:path"
+    output: true
 
 
 
@@ -62,6 +65,8 @@ just_the_docs:
       name: Water Data Space
     mobility:
       name: Mobility Data Space
+    milieu:
+      name:  Environmental Data Space
 
 
 enable_copy_code_button: true
