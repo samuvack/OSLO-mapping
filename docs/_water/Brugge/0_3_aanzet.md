@@ -9,7 +9,6 @@ nav_order: 2
 # Methodologie
 
 
-
 {: .note }
 Deze dataset beschrijft een individuele staalname, ttz het nemen van een schepstaal uit de Langerei op 
 11/1/2021 voor laboanalyse.
@@ -17,6 +16,8 @@ Deze dataset beschrijft een individuele staalname, ttz het nemen van een schepst
 ## Bemonstering van Meetpunt
 We beschrijven de activiteit van de staalname als Bemonstering met als bemonsterdObject het 
 Meetpunt mpt001 aan de Ter Duinenbrug.
+
+
 
 ## Tijdstip
 Bemonsteringstijdstip is 11/1/2021 om 12u05 door Organisatie BVP/KD, uitgevoerd met een 
