@@ -2,6 +2,7 @@
 layout: default
 parent: ILVO
 title: OSLO mapping (JSON-ld)
+nav_exclude: true
 nav_order: 3
 ---
 

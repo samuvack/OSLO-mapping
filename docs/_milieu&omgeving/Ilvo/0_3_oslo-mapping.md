@@ -2,6 +2,7 @@
 layout: default
 title: Stap voor stap
 parent: ILVO
+nav_exclude: true
 nav_order: 2
 ---
 
