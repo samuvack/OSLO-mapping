@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Stap voor stap
-parent: Documentatie
-grand_parent: VMM
+parent: VMM
 nav_exclude: true
 nav_order: 2
 ---

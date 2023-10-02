@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Input data
-parent: Documentatie
-grand_parent: VMM
+parent: VMM
 nav_exclude: true
 nav_order: 0
 ---
