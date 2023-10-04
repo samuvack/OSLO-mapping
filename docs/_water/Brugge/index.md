@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Brugge
+title: Waterkwaliteit Brugge
 has_children: true
 ---
 

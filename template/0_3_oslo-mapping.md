@@ -2,7 +2,7 @@
 layout: default
 title: Stap voor stap
 parent: Documentatie
-grand_parent: Brugge
+grand_parent: Waterkwaliteit Brugge
 nav_order: 2
 ---
 
@@ -14,6 +14,6 @@ Externe contexten: De eerste twee URL's verwijzen naar applicatieprofielen die s
 
 Codelijsten: Dit is een lijst van prefixen die worden gebruikt om termen in het document korter en leesbaarder te maken. Bijvoorbeeld, time verwijst naar het W3C Time Ontology, en qudt-schema verwijst naar het QUDT schema voor eenheden en dimensies.
 
-# Graph 
+# Graph
 
 De @graph sleutel bevat een lijst van objecten die de daadwerkelijke data van het document vertegenwoordigen. Elk object heeft een @type dat het type van het object aangeeft.

@@ -1,6 +1,6 @@
 ---
 layout: default
-parent: Brugge
+parent: Waterkwaliteit Brugge
 title: Expanded OSLO mapping
 nav_order: 4
 ---

@@ -12,10 +12,10 @@ De telpunten langs belangrijke fietsverbindingen verzamelen heel wat nuttige inf
 
 De fietstelpunten zijn fietstelpalen met display, maar ook onzichtbare fietstellussen. Hiermee kunnen we op een eenvoudige manier belangrijke info verzamelen:
 
-<li>hoeveel fietsers rijden er per jaar?</li>
-<li>Wat is het aantal op piekmomenten?</li>
-<li>Wanneer zijn die piekmomenten?</li>
-<li>Wordt de route ook ‘s nachts gebruikt?</li>
+* hoeveel fietsers rijden er per jaar?
+* Wat is het aantal op piekmomenten?
+* Wanneer zijn die piekmomenten?
+* Wordt de route ook ‘s nachts gebruikt?
 
 <img src="https://raw.githubusercontent.com/samuvack/OSLO-mapping/main/docs/images/Fietstelpunt.jpg" width="200" alt="My Image" id="hp"/>
 

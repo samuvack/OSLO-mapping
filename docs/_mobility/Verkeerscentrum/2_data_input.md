@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: Verkeerscentrum
-title: Data voorbeeld fietstellus
+title: Data voorbeeld
 nav_order: 3
 ---
 

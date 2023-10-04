@@ -75,7 +75,7 @@
       "@type": "http://www.w3.org/2001/XMLSchema#double",
       "@value": 5
     },
-    "https://data.vlaanderen.be/ns/observaties-en-metingen/#Observatie.uitgevoerdMet": "_:mti001",
+    "http://www.w3.org/ns/sosa/madeBySensor": "_:mti001",
     "http://purl.org/dc/terms/memberOf": {
       "@value": "_:GM001"
     }

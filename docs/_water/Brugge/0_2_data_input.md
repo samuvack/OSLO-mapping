@@ -1,10 +1,9 @@
 ---
 layout: default
 title: Data voorbeeld
-parent: Brugge
+parent: Waterkwaliteit Brugge
 nav_order: 1
 ---
-
 
 # Data voorbeeld
 
@@ -18,7 +17,7 @@ Om alles overzichtelijk te maken, gieten we de input data (staalname documenten)
     "Opgeloste_zuurstof": 65.1,
     "Temperatuur(water)": 3.6,
     "Temperatuur(pH)": 4.2,
-}, 
+},
 "Locatie":{
     "lat":"51°13'4.2126",
     "lon":"3°13'45.1626"

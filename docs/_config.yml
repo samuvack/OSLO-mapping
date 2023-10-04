@@ -66,7 +66,7 @@ just_the_docs:
     mobility:
       name: Mobility Data Space
     milieu:
-      name:  Environmental Data Space
+      name:  Agriculture Data Space
 
 
 enable_copy_code_button: true

@@ -29,7 +29,7 @@ nav_order: 2
 | relative_humidity | Relatieve vochtigheid in de stal (%) |
 | temperature | Temperatuur in de stal (°C) |
 
-# Synthetische dataset
+# Data voorbeeld
 
 |  | 2023-09-01 12:00:00 |
 | Direction_21 | 219,47 |
@@ -180,3 +180,5 @@ nav_order: 2
 | H2O_1 | 2,1312 |
 | N2O_1 | 0,32835 |
 | NH3_1 | 359,8357 |
+
+

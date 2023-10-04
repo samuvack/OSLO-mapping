@@ -1,12 +1,11 @@
 ---
 layout: default
 title: Input data
-parent: Brugge
+parent: Waterkwaliteit Brugge
 nav_order: 0
 ---
 
 # Input data
-
 
 We baseren ons voor dit voorbeeld op volgend staalnameformulier schepstaal oppervlaktewateren:
 
@@ -15,4 +14,3 @@ We baseren ons voor dit voorbeeld op volgend staalnameformulier schepstaal opper
 ![](https://raw.githubusercontent.com/samuvack/OSLO-mapping/main/docs/images/Staalafname.png)
 
 [](https://raw.githubusercontent.com/samuvack/OSLO-mapping/main/docs/images/Staalafname3.png)
-

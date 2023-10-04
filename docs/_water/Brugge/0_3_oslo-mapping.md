@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Stap voor stap
-parent: Brugge
+parent: Waterkwaliteit Brugge
 nav_order: 2
 ---
 
@@ -37,7 +37,7 @@ Codelijsten: Dit is een lijst van prefixen die worden gebruikt om termen in het 
 "qudt-unit": "https://qudt.org/vocab/unit/"
 ```
 
-# Graph 
+# Graph
 
 De @graph sleutel bevat een lijst van objecten die de daadwerkelijke data van het document vertegenwoordigen. Elk object heeft een @type dat het type van het object aangeeft.
 
@@ -47,7 +47,7 @@ De bemonstering kan beschouwd worden als de hoofdactiviteit waaraan alles gelink
 
 ![Alt text](image-1.png)
 
-We beschrijven de <b>activiteit van de staalname</b> als Bemonstering met als bemonsterdObject het 
+We beschrijven de <b>activiteit van de staalname</b> als Bemonstering met als bemonsterdObject het
 Meetpunt mpt001 aan de Ter Duinenbrug. Er kunnen bijvoorbeeld verschillende Bemonsteringsobjecten
 ontstaan uit deze bemonstering.
 
@@ -55,27 +55,27 @@ De bemonstering vond plaats op 11 januari 2021 om 12:05:51, dit wordt beschreven
 
 ```json
 {
-    "@type": "Bemonstering",
-    "Bemonstering.bemonsteringstijdstip": {
-        "@type": "time:Instant",
-        "time:inXSDDateTime": {
-            "@type": "xml-schema:dateTime",
-            "@value": "20210111T12:05:51.000"
-        }
-    },
-    "Bemonstering.bemonsterdObject": "_:mpt001"
+  "@type": "Bemonstering",
+  "Bemonstering.bemonsteringstijdstip": {
+    "@type": "time:Instant",
+    "time:inXSDDateTime": {
+      "@type": "xml-schema:dateTime",
+      "@value": "20210111T12:05:51.000"
+    }
+  },
+  "Bemonstering.bemonsterdObject": "_:mpt001"
 }
 ```
 
-Voor het bemonsterdObject kiezen we om te verwijzen naar een blanknode "_:mpt001". Dit maakt het mogelijk om alles los van elkaar overzichtelijk te omschrijven, maar toch de link te behouden tussen bemonsterdObject en de bemonstering.
+Voor het bemonsterdObject kiezen we om te verwijzen naar een blanknode "\_:mpt001". Dit maakt het mogelijk om alles los van elkaar overzichtelijk te omschrijven, maar toch de link te behouden tussen bemonsterdObject en de bemonstering.
 
 ### Uitgevoerd door
 
-De Bemonstering werd uitgevoerd door organisatie BVP/KD, wat direct via "Bemonstering.uitgevoerdDoor" kan omschreven worden. Hier is het verwachte type "Agent", dat overgeërfd werd van het [OSLO model Generiek basis](https://data.vlaanderen.be/doc/applicatieprofiel/generiek-basis/). 
+De Bemonstering werd uitgevoerd door organisatie BVP/KD, wat direct via "Bemonstering.uitgevoerdDoor" kan omschreven worden. Hier is het verwachte type "Agent", dat overgeërfd werd van het [OSLO model Generiek basis](https://data.vlaanderen.be/doc/applicatieprofiel/generiek-basis/).
 
-| Eigenschap | Verwacht Type | Kardinaliteit | Beschrijving |
-| ----------- | ----------- | ----------- | ----------- |
-| uitgevoerdDoor |	Agent |	0..* |	Agent die de Bemonstering heeft uitgevoerd.	|
+| Eigenschap     | Verwacht Type | Kardinaliteit | Beschrijving                                |
+| -------------- | ------------- | ------------- | ------------------------------------------- |
+| uitgevoerdDoor | Agent         | 0..\*         | Agent die de Bemonstering heeft uitgevoerd. |
 
 Aangezien het gaat om een organisatie, is het mogelijk om gebruik te maken van het OSLO model [Organisatie basis](https://data.vlaanderen.be/doc/applicatieprofiel/organisatie-basis/#jsonld).
 
@@ -93,7 +93,7 @@ Hierbij is het mogelijk om de naam van de organisatie te omschrijven via voorkeu
 ### Gebruikte procedure
 
 De gebruikteProcedure is een Bemonsteringsprocedure met het type cl-bpt:indirect
-```"cl-bpt": "https://example.com/concept/bemonsteringsproceduretype/"```, wat betekent dat de Bemonstering niet direct op het bemonsterdObject werd uitgevoerd, maar op een ander object dat ermee in verband staat. De specificatie van de Bemonsteringsprocedure is te vinden op de volgende URL: [](https://reflabos.vito.be/2022/WAC_I_A_003.pdf).
+`"cl-bpt": "https://example.com/concept/bemonsteringsproceduretype/"`, wat betekent dat de Bemonstering niet direct op het bemonsterdObject werd uitgevoerd, maar op een ander object dat ermee in verband staat. De specificatie van de Bemonsteringsprocedure is te vinden op de volgende URL: [](https://reflabos.vito.be/2022/WAC_I_A_003.pdf).
 
 ```json
 "gebruikteProcedure": {
@@ -117,10 +117,9 @@ De Bemonstering werd uitgevoerdMet een [Bemonsteraar](https://data.vlaanderen.be
 }
 ```
 
-| Eigenschap | Verwacht Type | Kardinaliteit | Beschrijving |
-| ----------- | ----------- | ----------- | ----------- |
-| uitgevoerdMet |	Bemonsteraar |	1 |	Bemonsteraar waarmee de Bemonstering is uitgevoerd	|
-
+| Eigenschap    | Verwacht Type | Kardinaliteit | Beschrijving                                       |
+| ------------- | ------------- | ------------- | -------------------------------------------------- |
+| uitgevoerdMet | Bemonsteraar  | 1             | Bemonsteraar waarmee de Bemonstering is uitgevoerd |
 
 ### Resultaat
 
@@ -128,14 +127,12 @@ De Bemonstering werd uitgevoerdMet een [Bemonsteraar](https://data.vlaanderen.be
 "Bemonstering.resultaat": "_:mon001"
 ```
 
-
-
-
 ### Tijdstip
 
 Het bemonsteringsgebeurtenis bevat details zoals het tijdstip van bemonstering:
+
 ```json
-{"datum staalname":"11/01/2021"}
+{ "datum staalname": "11/01/2021" }
 ```
 
 Het [OSLO model observaties en metingen](https://data.vlaanderen.be/doc/applicatieprofiel/observaties-en-metingen/kandidaatstandaard/2022-04-28/context/ap-observaties-en-metingen.jsonld) definieert termen zoals Bemonstering, bemonsteringstijdstip, time:Instant en time:inXSDDateTime om de concepten en relaties rond bemonstering uit te drukken. Het "Bemonstering.bemonsteringstijdstip" is hierbij van het type "time:Instant":
@@ -150,20 +147,18 @@ Het [OSLO model observaties en metingen](https://data.vlaanderen.be/doc/applicat
 }
 }
 ```
+
 ## Observatieverzameling
 
 Dit object groepeert meerdere observaties. Er zijn twee soorten observatieverzamelingen in dit document: één voor metingen ter plaatse en één voor weerobservaties.
 
 ```json
 {
-    "@id": "_:obv001",
-    "@type": "Observatieverzameling",
-    "dcterms:type": "cl-ovt:metingenterplaatse",
-    "Observatieverzameling.geobserveerdObject": "_:mon001",
-    "Observatieverzameling.heeftLid": [
-        "_:obs001",
-        ""
-    ]
+  "@id": "_:obv001",
+  "@type": "Observatieverzameling",
+  "dcterms:type": "cl-ovt:metingenterplaatse",
+  "Observatieverzameling.geobserveerdObject": "_:mon001",
+  "Observatieverzameling.heeftLid": ["_:obs001", ""]
 }
 ```
 
@@ -190,56 +185,50 @@ Uiteindelijk dient nog het resultaat van de observatie toegevoegd te worden met 
 
 ```json
 {
-    "@id": "_:obs001",
-    "@type": "Observatie",
-    "Observatie.type": "cl-obt:metingterplaatse",
-    "Observatie.kenmerktype": "cl-fch:0030",
-    "Observatie.resultaat": {
-        "@type": "Maat",
-        "Maat.maat": {
-            "@type": "KwantitatieveWaarde",
-            "KwantitatieveWaarde.waarde": 3.6,
-            "KwantitatieveWaarde.standaardEenheid": {
-                "@type": "qudt-schema:Unit",
-                "@id": "qudt-unit:DEG_C"
-            }
-        }
+  "@id": "_:obs001",
+  "@type": "Observatie",
+  "Observatie.type": "cl-obt:metingterplaatse",
+  "Observatie.kenmerktype": "cl-fch:0030",
+  "Observatie.resultaat": {
+    "@type": "Maat",
+    "Maat.maat": {
+      "@type": "KwantitatieveWaarde",
+      "KwantitatieveWaarde.waarde": 3.6,
+      "KwantitatieveWaarde.standaardEenheid": {
+        "@type": "qudt-schema:Unit",
+        "@id": "qudt-unit:DEG_C"
+      }
     }
+  }
 }
 ```
-
 
 ## Monster
 
 Dit object vertegenwoordigt een fysiek monster dat is genomen tijdens de bemonstering. Het bevat details zoals het type materiaal en het tijdstip van bemonstering.
 
-
-
 ```json
 {
-    "@id": "_:mon001",
-    "@type": "Monster",
-    "Monster.materiaalklasse": "cl-mat:water",
-    "Monster.bemonsteringstijdstip": {
-        "@type": "time:Instant",
-        "time:inXSDDateTime": {
-            "@type": "xml-schema:dateTime",
-            "@value": "20210111T12:05:51.000"
-        }
-    },
-    "Monster.bemonsterdObject": "_:mpt001",
-    "Bemonsteringsobject.identificator": {
-        "@type": "Identificator",
-        "Identificator.identificator": {
-            "@value": "2021000015",
-            "@type": "cl-idt:monstercode"
-        }
-    },
-    "Monster.monstertype": "cl-mot:schepstaal",
-    "Bemonsteringsobject.geassocieerdeObservatie": [
-        "_:obs001",
-        ""
-    ]
+  "@id": "_:mon001",
+  "@type": "Monster",
+  "Monster.materiaalklasse": "cl-mat:water",
+  "Monster.bemonsteringstijdstip": {
+    "@type": "time:Instant",
+    "time:inXSDDateTime": {
+      "@type": "xml-schema:dateTime",
+      "@value": "20210111T12:05:51.000"
+    }
+  },
+  "Monster.bemonsterdObject": "_:mpt001",
+  "Bemonsteringsobject.identificator": {
+    "@type": "Identificator",
+    "Identificator.identificator": {
+      "@value": "2021000015",
+      "@type": "cl-idt:monstercode"
+    }
+  },
+  "Monster.monstertype": "cl-mot:schepstaal",
+  "Bemonsteringsobject.geassocieerdeObservatie": ["_:obs001", ""]
 }
 ```
 
@@ -249,58 +238,50 @@ Dit object beschrijft een specifiek geografisch punt waar metingen of bemonsteri
 
 ```json
 {
-    "@id": "_:mpt001",
-    "@type": [
-        "Meetpunt",
-        "Bemonsteringspunt"
-    ],
-    "Bemonsteringsobject.identificator": {
-        "@type": "Identificator",
-        "Identificator.identificator": {
-            "@value": "R4",
-            "@type": "cl-idt:meetplaatsnummer"
-        }
-    },
-    "Bemonsteringspunt.geometrie": {
-        "@type": "Punt",
-        "Geometrie.gml": {
-            "Geometrie.gml": {
-                "@value": "<gml:Point srsName=\"http: \\//www.opengis.net/def/crs/EPSG/0/4326\"> <gml:coordinates>51.2178744,3.229362</gml:coordinates><gml:Point>",
-                "@type": "geosparql:gmlliteral"
-            }
-        },
-        "dcterms:spatial": {
-            "@value": "Ter Duinenbrug",
-            "@language": "nl"
-        },
-        "Bemonsteringsobject.bemonsterdObject": {
-            "@type": "WaterObject",
-            "WaterObject.type": "cl-wat:waterloop",
-            "dcterms:description": {
-                "@value": "Langerei",
-                "@language": "nl"
-            }
-        }
+  "@id": "_:mpt001",
+  "@type": ["Meetpunt", "Bemonsteringspunt"],
+  "Bemonsteringsobject.identificator": {
+    "@type": "Identificator",
+    "Identificator.identificator": {
+      "@value": "R4",
+      "@type": "cl-idt:meetplaatsnummer"
     }
+  },
+  "Bemonsteringspunt.geometrie": {
+    "@type": "Punt",
+    "Geometrie.gml": {
+      "Geometrie.gml": {
+        "@value": "<gml:Point srsName=\"http: \\//www.opengis.net/def/crs/EPSG/0/4326\"> <gml:coordinates>51.2178744,3.229362</gml:coordinates><gml:Point>",
+        "@type": "geosparql:gmlliteral"
+      }
+    },
+    "dcterms:spatial": {
+      "@value": "Ter Duinenbrug",
+      "@language": "nl"
+    },
+    "Bemonsteringsobject.bemonsterdObject": {
+      "@type": "WaterObject",
+      "WaterObject.type": "cl-wat:waterloop",
+      "dcterms:description": {
+        "@value": "Langerei",
+        "@language": "nl"
+      }
+    }
+  }
 }
 ```
 
-
-
 ## Conditie
 
-Een conditie is een omstandigheid of factor die invloed heeft op de Bemonstering of het resultaat ervan. Er wordt vanuit Bemonstering verwezen naar de blanknode conditie "_:wra001". Op deze manier wordt het mogelijk om deze conditie apart op een overzichtelijke manier te beschrijven, maar blijft de link bewaart tussen Bemonstering en conditie.
+Een conditie is een omstandigheid of factor die invloed heeft op de Bemonstering of het resultaat ervan. Er wordt vanuit Bemonstering verwezen naar de blanknode conditie "\_:wra001". Op deze manier wordt het mogelijk om deze conditie apart op een overzichtelijke manier te beschrijven, maar blijft de link bewaart tussen Bemonstering en conditie.
 
 ```json
 {
-"Bemonstering.conditie": [
-    "_:wra001",
-    ""
-]}
+  "Bemonstering.conditie": ["_:wra001", ""]
+}
 ```
 
 Om de weercondities te beschrijven werd hier gekozen om dit te beschrijven in de vorm van een Observatieverzameling van meerdere observaties. Om duidelijk te maken dat het om een weerrapport gaat, wordt deze informatie toegevoegd via Observatieverzameling.type. Door de informatie van het geobserveerdObject toe te voegen aan de "Observatieverzameling", dient dit niet meer vermeld te worden bij elke Observatie. De verzameling wordt opgezet door alle observaties te groeperen via de eigenschap "Observatieverzameling.heeftLid".
-
 
 ```json
 {
