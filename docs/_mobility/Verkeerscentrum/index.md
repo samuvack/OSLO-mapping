@@ -18,4 +18,3 @@ has_children: true
 Data set meetpunten: [Meetpunten Verkeerscentrum](https://raw.githubusercontent.com/samuvack/OSLO-mapping/main/docs/%C2%B4meetpunten_verkeerscentrum.json)
 Data set verkeersmeting: [Verkeersmeting Verkeerscentrum](https://raw.githubusercontent.com/samuvack/OSLO-mapping/main/docs/verkeerscentrum.json)
 
-<p align="center"><img src="https://raw.githubusercontent.com/samuvack/OSLO-mapping/main/docs/images/Verkeerscentrum_schets.jpg" width="60%" text-align="center"></p>
