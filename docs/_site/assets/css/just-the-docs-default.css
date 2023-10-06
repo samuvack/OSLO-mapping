@@ -2005,6 +2005,8 @@ td {
   th,
   td {
     font-size: 0.875rem !important;
+    max-width: 150px;
+    word-wrap: break-word;
   }
 }
 th:first-of-type,
