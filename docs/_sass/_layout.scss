@@ -55,7 +55,7 @@
 
     .sidebar {
       // 20px for scroll
-      width: $theme-menu-width + 20px;
+      width: 0;//$theme-menu-width + 20px;
 
       .header,
       .toctree {

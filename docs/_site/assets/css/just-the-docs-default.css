@@ -707,7 +707,7 @@ blockquote {
 }
 @media (min-width: 66.5rem) {
   .side-bar {
-    width: calc((100% - 66.5rem) / 2 + 16.5rem);
+    width: 0; /*calc((100% - 66.5rem) / 2 + 16.5rem);*/
     min-width: 16.5rem;
   }
 }
@@ -715,13 +715,13 @@ blockquote {
 @media (min-width: 50rem) {
   .main {
     position: relative;
-    max-width: 50rem;
+    max-width: 200rem;
     margin-left: 15.5rem;
   }
 }
 @media (min-width: 66.5rem) {
   .main {
-    margin-left: max(16.5rem, (100% - 66.5rem) / 2 + 16.5rem);
+    margin-left: 16.5rem;
   }
 }
 

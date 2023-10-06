@@ -2,7 +2,6 @@
 layout: default
 title: Stap voor stap
 parent: VMM
-nav_exclude: true
 nav_order: 2
 ---
 
@@ -17,3 +16,25 @@ Codelijsten: Dit is een lijst van prefixen die worden gebruikt om termen in het 
 # Graph 
 
 De @graph sleutel bevat een lijst van objecten die de daadwerkelijke data van het document vertegenwoordigen. Elk object heeft een @type dat het type van het object aangeeft.
+
+
+<table border="0">
+ <tr>
+<td>input</td>
+<td>output</td>
+
+ </tr>
+ <tr>
+ <td>
+{% highlight json %}
+{% include_relative  compact.jsonld %}
+{% endhighlight %}
+</td>
+ <td>
+{% highlight json %}
+{% include_relative  compact.jsonld %}
+{% endhighlight %}
+</td>
+
+ </tr>
+</table>
