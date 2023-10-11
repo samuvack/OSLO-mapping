@@ -242,5 +242,5 @@ a:link a:visited a:hover a:active {
 
 .main{
     max-width:200rem;
-    margin-left:16.5rem;
+    margin-left:Max(16.5rem, calc((100% - 66.5rem) / 2));
 }
