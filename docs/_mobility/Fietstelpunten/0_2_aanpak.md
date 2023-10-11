@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Aanzet
+title: Aanpak
 parent: Documentatie
 grand_parent: Fietstelpunten
 nav_order: 1
