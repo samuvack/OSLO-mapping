@@ -61,8 +61,8 @@
 }
 
 .side-bar {
-    background-color: white;
-    margin-top: 23px;
+    background-color: white !important;
+    margin-top: 23px !important;
 }
 
 /*.site-header{
@@ -220,9 +220,9 @@ a:link a:visited a:hover a:active {
 }
 
 .main-header {
-    margin-top: 23px;
-    position: fixed;
-    width: 100%;
-    background: white;
-    z-index: 100;
+    margin-top: 23px !important;
+    position: fixed !important;
+    width: 100% !important;
+    background: white !important;
+    z-index: 100 !important;
 }
