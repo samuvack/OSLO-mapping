@@ -63,7 +63,12 @@
 .side-bar {
     background-color: white !important;
     margin-top: 23px !important;
+    width: 0;
+    /*calc((100% - 66.5rem) / 2 + 16.5rem);*/
+    min-width: 16.5rem;
 }
+
+
 
 /*.site-header{
         background-color: #ffe615;

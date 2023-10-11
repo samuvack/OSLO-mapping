@@ -690,11 +690,10 @@ blockquote {
 }
 
 .side-bar {
-  margin-top:23px;
   z-index: 0;
   display: flex;
   flex-wrap: wrap;
-  background-color: white;
+  background-color: #f5f6fa;
 }
 @media (min-width: 50rem) {
   .side-bar {
@@ -708,7 +707,7 @@ blockquote {
 }
 @media (min-width: 66.5rem) {
   .side-bar {
-    width: 0; /*calc((100% - 66.5rem) / 2 + 16.5rem);*/
+    width: calc((100% - 66.5rem) / 2 + 16.5rem);
     min-width: 16.5rem;
   }
 }
@@ -716,13 +715,13 @@ blockquote {
 @media (min-width: 50rem) {
   .main {
     position: relative;
-    max-width: 200rem;
+    max-width: 50rem;
     margin-left: 15.5rem;
   }
 }
 @media (min-width: 66.5rem) {
   .main {
-    margin-left: 16.5rem;
+    margin-left: max(16.5rem, (100% - 66.5rem) / 2 + 16.5rem);
   }
 }
 
@@ -1648,9 +1647,9 @@ h6,
 }
 @media (min-width: 50rem) {
   .search {
-    position: relative;
-    width: auto ;
-    height: 100%;
+    position: relative !important;
+    width: auto !important;
+    height: 100% !important;
     padding: 0;
     transition: none;
   }
@@ -2006,8 +2005,6 @@ td {
   th,
   td {
     font-size: 0.875rem !important;
-    max-width: 150px;
-    word-wrap: break-word;
   }
 }
 th:first-of-type,
