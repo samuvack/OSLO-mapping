@@ -1,8 +1,9 @@
 ---
 layout: default
-parent: Telraam
-title: Vereenvoudigd implementatie model
-nav_order: 2
+title: Implementatie model
+parent: Documentatie
+grand_parent: Signco
+nav_order: 4
 ---
 
 ## Vereenvoudigd implementatie model

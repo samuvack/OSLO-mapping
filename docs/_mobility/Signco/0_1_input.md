@@ -1,9 +1,11 @@
 ---
 layout: default
-parent: Signco
-title: Data voorbeeld
-nav_order: 3
+title: Input data
+parent: Documentatie
+grand_parent: Signco
+nav_order: 0
 ---
+
 
 # Data input
 
