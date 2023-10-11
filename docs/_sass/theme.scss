@@ -73,6 +73,10 @@
     margin-top: 23px;
 }
 
+.main {
+    margin-left: Max(16.5rem, calc((100% - 66.5rem) / 2));
+}
+
 /*.site-header{
         background-color: #ffe615;
         color: #666;
