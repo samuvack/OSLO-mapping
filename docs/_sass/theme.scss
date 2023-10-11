@@ -75,7 +75,7 @@
 
 .main {
     margin-left: Max(16.5rem, calc((100% - 66.5rem) / 2));
-    
+
 }
 
 /*.site-header{
@@ -238,4 +238,9 @@ a:link a:visited a:hover a:active {
     width: 100% !important;
     background: white !important;
     z-index: 100 !important;
+}
+
+.main{
+    max-width:100%;
+    margin-left:0px;
 }
