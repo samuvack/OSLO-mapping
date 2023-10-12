@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Implementatie model
-parent: Documentatie
-grand_parent: Signco
+parent: Signco
 nav_order: 4
 ---
 
