@@ -2,6 +2,7 @@
 layout: default
 title: LUCAS
 has_children: true
+has_toc: false
 ---
 
 # LUCAS
