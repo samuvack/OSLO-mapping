@@ -7,4 +7,4 @@ has_children: true
 # ILVO
 
 {: .note}
-This OSLO mapping is in progress
+De documentatie van deze OSLO mapping wordt momenteel uitgewerkt.

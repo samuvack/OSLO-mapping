@@ -7,4 +7,4 @@ has_children: true
 # LUCAS
 
 {: .note}
-We are currently working on the documentation of the LUCAS dataset
+De documentatie van deze OSLO mapping wordt momenteel uitgewerkt.
