@@ -59,7 +59,6 @@ search:
   button: false
 
 just_the_docs:
-  toc_levels: 1..5
   collections:
     water:
       name: Water Data Space
