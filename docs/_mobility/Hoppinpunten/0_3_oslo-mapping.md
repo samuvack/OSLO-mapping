@@ -7,10 +7,16 @@ nav_order: 2
 
 # Hoppinpunten
 
+
+
 ## Id en naam
 
-```json
+Eerst en vooral wordt een Hoppinpunt gedefinieerd:
+![Alt text](image-4.png)
 
+Een Hoppinpunt is een subklasse van GeregistreerdVervoersknooppunt, wat op zich ook een subklasse is van een Vervoersknooppunt.
+
+```json
 {
     "@id": "_:vkn001",
     "@type": "Hoppinpunt",
@@ -29,6 +35,11 @@ nav_order: 2
 ```
 
 ## Locatie
+
+Om de locatie van het Hoppinpunt te omschrijven, wordt dit mogelijk om gebruik te maken van "Vervoersknooppunt.locatie".
+
+Het [OSLO model](https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/vervoersknooppunten) geeft aan dat het mogelijk is om [polygonen](https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/vervoersknooppunten/#Polygoon) te omschrijven:
+![Alt text](image-5.png)
 
 ```json
 
@@ -60,6 +71,7 @@ nav_order: 2
 ```
 
 ## Wegbeheerder
+
 
 
 ```json
@@ -165,6 +177,9 @@ nav_order: 2
 
 ### Fietsstalling
 
+De OSLO klasse [fietsstalling](https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/vervoersknooppunten/#Fietsstalling) is een subklasse van Parkeerfaciliteit. Deze klassen laten het toe om openingsuren, eigenschappen zoals overdekt/afsluitbaar al dan niet, aanwezigheid van fietsdeelfaciliteiten, kenmerk, e.d. te omschrijven:
+![Alt text](image-8.png)
+
 ```json
 {
     "@id": "_:fietsstalling001",
@@ -204,9 +219,12 @@ nav_order: 2
 }
 ```
 
-
-
 ### Hoppinzuil
+
+Het OSLO model omschrijft hoe een [Hoppinzuil](https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/vervoersknooppunten/#Hoppinzuil) kan omschreven worden:
+![Alt text](image-6.png)
+
+Basisinformatie zoals zuilnaam als zuilnummer zitten reeds vervat onder de klasse Hoppinzuil. Om de locatie te omschrijven van dit Hoppinzuil, kan dit via "Infrastructuurelement". "Hoppinzuil" is namelijk een subklasse van "Infrastructuurelement".
 
 ```json
 
@@ -228,6 +246,11 @@ nav_order: 2
 
 ## Toegankelijkheid Hoppinpunt
 
+De [toegankelijkheid](https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/vervoersknooppunten/#Toegankelijkheid) beschrijven van een Hoppinpunt, kan via de klasse "Vervoersknooppunt" wat de eigenschap "toegankelijkheid" bevat.
+
+Het OSLO model maakt het mogelijk om zowel niveau, onderdeel als type te omschrijven:
+![Alt text](image-7.png)
+
 ```json
 "Vervoersknooppunt.toegankelijkheid": [
     {
@@ -244,6 +267,9 @@ nav_order: 2
 
 
 ## Mobiliteitsdienstverlening
+
+
+
 
 ```json
 
