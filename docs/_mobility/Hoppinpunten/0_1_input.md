@@ -7,7 +7,7 @@ nav_order: 0
 
 ## Input data
 
-Een synthetische dataset werd gecreëerd voor een hoppinpunt wat de combinatie is van alle bestaande hoppinpunten. Op die manier is de OSLO mapping toepasbaar voor alle bestaande Hoppinpunten. Op die manier bevat dit synthetische Hoppinpunt alle gebruikte datavelden.
+Een synthetische dataset werd gecreëerd voor een hoppinpunt wat de combinatie is van alle bestaande hoppinpunten. Op die manier is de OSLO mapping toepasbaar voor alle bestaande Hoppinpunten, doordat dit synthetische Hoppinpunt alle gebruikte datavelden bevat.
 
 ```json
 "1-Aalst Station" : {
