@@ -72,7 +72,10 @@ Het [OSLO model](https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/ver
 
 ## Wegbeheerder
 
+Informatie rond de wegbeheerder kunnen worden beschreven worden (zoals classificatie).
+![Alt text](image-14.png)
 
+Om een organisatie toe te wijzen als wegbeheerder, kan dit gebruikmakend van het OSLO model [organisatie-basis](https://data.vlaanderen.be/doc/applicatieprofiel/organisatie-basis/).
 
 ```json
 "Vervoersknooppunt.classificatie": "cl-hcl:interregionaal",
@@ -90,6 +93,8 @@ Het [OSLO model](https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/ver
 
 ## Transportobject
 
+Het treinstation als [transportknoop](https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/vervoersknooppunten/#Transportknoop) wordt mogelijk ook te omschrijven via het Hoppin OSLO model:
+![Alt text](image-11.png)
 
 ```json
     "Vervoersknooppunt.transportobject": {
@@ -124,6 +129,10 @@ Het [OSLO model](https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/ver
 
 
 ## Dienstverlening
+
+Via de klasse [AanvullendeDienst](https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/vervoersknooppunten/#AanvullendeDienst) wordt het mogelijk om bijvoorbeeld een krantenwinkel, postdienst of restaurant in een station. De Diensten die daarmee worden aangevuld of ondersteund zijn bv Mobiliteitsdiensten.
+
+![Alt text](image-12.png)
 
 ```json
 "Vervoersknooppunt.dienst": [
@@ -163,6 +172,9 @@ Het [OSLO model](https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/ver
 ```
 
 ### Lader
+
+Laadpalen kunnen worden beschreven via de klasse [lader](https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/vervoersknooppunten/#Lader):
+![Alt text](image-13.png)
 
 ```json
 {
@@ -268,7 +280,8 @@ Het OSLO model maakt het mogelijk om zowel niveau, onderdeel als type te omschri
 
 ## Mobiliteitsdienstverlening
 
-
+De klasse [Mobilteitsdienst](https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/vervoersknooppunten/#Mobiliteitsdienst) maakt het mogelijk om het type (bijvoorbeeld een deelwagen) en zijn aanbieder te beschrijven:
+![Alt text](image-9.png)
 
 
 ```json
@@ -288,6 +301,8 @@ Het OSLO model maakt het mogelijk om zowel niveau, onderdeel als type te omschri
 
 ### Aanbieder deelwagen
 
+Wanneer de aanbieder van een Mobiliteitsdienst een organisatie is, kan dit best beschreven worden gebruik makend van het OSLO model [organisatie-basis](https://data.vlaanderen.be/doc/applicatieprofiel/organisatie-basis/):
+![Alt text](image-10.png)
 
 ```json
 {
