@@ -12,6 +12,7 @@ nav_order: 2
 ## Id en naam
 
 Eerst en vooral wordt een Hoppinpunt gedefinieerd:
+
 ![Alt text](image-4.png)
 
 Een Hoppinpunt is een subklasse van GeregistreerdVervoersknooppunt, wat op zich ook een subklasse is van een Vervoersknooppunt.
@@ -39,6 +40,7 @@ Een Hoppinpunt is een subklasse van GeregistreerdVervoersknooppunt, wat op zich 
 Om de locatie van het Hoppinpunt te omschrijven, wordt dit mogelijk om gebruik te maken van "Vervoersknooppunt.locatie".
 
 Het [OSLO model](https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/vervoersknooppunten) geeft aan dat het mogelijk is om [polygonen](https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/vervoersknooppunten/#Polygoon) te omschrijven:
+
 ![Alt text](image-5.png)
 
 ```json
@@ -73,6 +75,7 @@ Het [OSLO model](https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/ver
 ## Wegbeheerder
 
 Informatie rond de wegbeheerder kunnen worden beschreven worden (zoals classificatie).
+
 ![Alt text](image-14.png)
 
 Om een organisatie toe te wijzen als wegbeheerder, kan dit gebruikmakend van het OSLO model [organisatie-basis](https://data.vlaanderen.be/doc/applicatieprofiel/organisatie-basis/).
@@ -94,6 +97,7 @@ Om een organisatie toe te wijzen als wegbeheerder, kan dit gebruikmakend van het
 ## Transportobject
 
 Het treinstation als [transportknoop](https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/vervoersknooppunten/#Transportknoop) wordt mogelijk ook te omschrijven via het Hoppin OSLO model:
+
 ![Alt text](image-11.png)
 
 ```json
@@ -174,6 +178,7 @@ Via de klasse [AanvullendeDienst](https://data.vlaanderen.be/doc/applicatieprofi
 ### Lader
 
 Laadpalen kunnen worden beschreven via de klasse [lader](https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/vervoersknooppunten/#Lader):
+
 ![Alt text](image-13.png)
 
 ```json
@@ -190,6 +195,7 @@ Laadpalen kunnen worden beschreven via de klasse [lader](https://data.vlaanderen
 ### Fietsstalling
 
 De OSLO klasse [fietsstalling](https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/vervoersknooppunten/#Fietsstalling) is een subklasse van Parkeerfaciliteit. Deze klassen laten het toe om openingsuren, eigenschappen zoals overdekt/afsluitbaar al dan niet, aanwezigheid van fietsdeelfaciliteiten, kenmerk, e.d. te omschrijven:
+
 ![Alt text](image-8.png)
 
 ```json
@@ -234,6 +240,7 @@ De OSLO klasse [fietsstalling](https://data.vlaanderen.be/doc/applicatieprofiel/
 ### Hoppinzuil
 
 Het OSLO model omschrijft hoe een [Hoppinzuil](https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/vervoersknooppunten/#Hoppinzuil) kan omschreven worden:
+
 ![Alt text](image-6.png)
 
 Basisinformatie zoals zuilnaam als zuilnummer zitten reeds vervat onder de klasse Hoppinzuil. Om de locatie te omschrijven van dit Hoppinzuil, kan dit via "Infrastructuurelement". "Hoppinzuil" is namelijk een subklasse van "Infrastructuurelement".
@@ -261,6 +268,7 @@ Basisinformatie zoals zuilnaam als zuilnummer zitten reeds vervat onder de klass
 De [toegankelijkheid](https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/vervoersknooppunten/#Toegankelijkheid) beschrijven van een Hoppinpunt, kan via de klasse "Vervoersknooppunt" wat de eigenschap "toegankelijkheid" bevat.
 
 Het OSLO model maakt het mogelijk om zowel niveau, onderdeel als type te omschrijven:
+
 ![Alt text](image-7.png)
 
 ```json
@@ -281,6 +289,7 @@ Het OSLO model maakt het mogelijk om zowel niveau, onderdeel als type te omschri
 ## Mobiliteitsdienstverlening
 
 De klasse [Mobilteitsdienst](https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/vervoersknooppunten/#Mobiliteitsdienst) maakt het mogelijk om het type (bijvoorbeeld een deelwagen) en zijn aanbieder te beschrijven:
+
 ![Alt text](image-9.png)
 
 
@@ -302,6 +311,7 @@ De klasse [Mobilteitsdienst](https://data.vlaanderen.be/doc/applicatieprofiel/mo
 ### Aanbieder deelwagen
 
 Wanneer de aanbieder van een Mobiliteitsdienst een organisatie is, kan dit best beschreven worden gebruik makend van het OSLO model [organisatie-basis](https://data.vlaanderen.be/doc/applicatieprofiel/organisatie-basis/):
+
 ![Alt text](image-10.png)
 
 ```json
