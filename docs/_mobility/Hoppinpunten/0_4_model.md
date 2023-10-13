@@ -9,7 +9,7 @@ nav_order: 4
 
 {: .note}
 In het kader van de Hoppinpunten dataset werd een OSLO applicatieprofiel met bijhorend vocabularium uitgewerkt:
-[](https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/vervoersknooppunten/)
+![](https://data.vlaanderen.be/doc/applicatieprofiel/mobiliteit/vervoersknooppunten/)
 
 
 <div id="enlargeImage">
