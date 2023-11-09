@@ -9,5 +9,5 @@ nav_order: 4
 
 
 {% highlight json %}
-{% include_relative  compact1.jsonld %}
+{% include_relative  compact.jsonld %}
 {% endhighlight %}
