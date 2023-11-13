@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: Geomobility
-title: OSLO mapping
+title: OSLO mapping (implementatie)
 nav_order: 4
 ---
 
