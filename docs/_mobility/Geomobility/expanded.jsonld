@@ -41,7 +41,7 @@
   },
   {
     "@id": "_:mpt001",
-    "@type": "https://implementatie.data.vlaanderen.be/ns/vsds-verkeersmetingen#Verkeersmeetpunt"
+    "@type": "https://data.vlaanderen.be/ns/Verkeersmetingen#Verkeersmeetpunt"
   },
   {
     "@id": "_:pr001",
